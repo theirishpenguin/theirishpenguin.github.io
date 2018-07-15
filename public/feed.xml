@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Irish Penguin</title>
+    <description>Ruby/JS dev. One eye on design. Occasionally stops writing code and starts writing words when the Internet is down. Thoughts and opinions expressed here are my own. If you're interested in Ruby in Ireland, be sure to check out RubyIreland.com.
+</description>
+    <link>http://www.theirishpenguin.com/</link>
+    <atom:link href="http://www.theirishpenguin.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 15 Jul 2018 09:31:02 +0000</pubDate>
+    <lastBuildDate>Sun, 15 Jul 2018 09:31:02 +0000</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Morning Moments from UXDX Conf 2016</title>
+        <description>&lt;p&gt;The RDS was looking stunning for the arrival of UXDX Conf on the Dublin
+scene. By genius or by co-incidence the organisers had picked a day on
+which the schools were off, making for a pleasant low-traffic commute.
+As you would expect, the registration process was smooth ( and exhibited
+good UX :) and the coffee kicked the cobwebs off any latent sleepiness
+hanging around. Here are some moments from the first half of the day,
+far from a comprehensive roundup. Any talks excluded were simply victims
+of resourcing constraints, whilst trying to write this up on the
+day.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Main Conf&quot; src=&quot;/assets/images/uxdx-conf-2016/main-conf.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Douglas Powell, Design Principal at IBM got the day off to a positive
+start…&lt;/p&gt;
+
+&lt;p class=&quot;nice-quote&quot;&gt;&quot;This is an amazing time to be a designer.&quot;&lt;/p&gt;
+
+&lt;p&gt;Douglas expanded on why by outlining the increasing count of designers
+that are now involved as VCs, the number of design students in China,
+and the design course that’s been plotted by industry ever since 2007
+and the arrival of the iPhone. A significant subset of people arriving
+to UXDX are probably feeling their way in design, perhaps coming from
+different backgrounds, and Douglas had plenty of advice for them. In
+particular, he pointed anyone not familiar with the work of John Maeda
+towards the #designintech report, a crucial resource to help keep
+abreast of some of the latest design thinking. Here is the &lt;a href=&quot;http://www.kpcb.com/blog/design-in-tech-report-2016&quot;&gt;2016
+edition&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Douglas Powell&quot; src=&quot;/assets/images/uxdx-conf-2016/douglas.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Douglas talked about the importance of diversity in the product team in
+order to build teams capable of arriving at great designs. He filled us
+in on some headline figures, including IBM’s ratio of designers to
+developers, which has evolved over the years from 1:33 to 1:8. And he
+closed his session by stressing the importance of empathy within your
+team as well as within the design process itself…&lt;/p&gt;
+
+&lt;p class=&quot;nice-quote&quot;&gt;&quot;Empathy, first with each other then with our user.&quot;&lt;/p&gt;
+
+&lt;p&gt;Another one of the mornings talks was by Rasmus Skjoldan, Lead Product
+Manager of Magnolia CMS. He challenged certain mantras such as “Rapid
+Prototyping is always awesome”, warning of the danger of taking this too
+far. While good for early feedback, it can lead to teams prematurely narrowing down the breath of
+potential solutions in a rush to get a product to market. He noted the
+fashion industry’s approach to mitigating this by baking multiple trends
+and ideas into a single concept car or piece of haute couture - ie. a
+deliberately unsellable product. From here, distinct lines of sellable
+products can be then developed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Rasmus Change Aversion&quot; src=&quot;/assets/images/uxdx-conf-2016/change-aversion.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Later, Frontend’s Founder - Fiona Murphy - continued the call to arms…&lt;/p&gt;
+
+&lt;p class=&quot;nice-quote&quot;&gt;“Design like you give a damn.”&lt;/p&gt;
+
+&lt;p&gt;… and she posed the question of whether UX could change the world. This
+was a talk littered with feel good moments. She outlined the positive
+effects of the Estonian government’s declaration of access to Internet
+being a fundamental human right and how UX can improve the experience of
+migrants by simplifying processes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Fiona Design Damn&quot; src=&quot;/assets/images/uxdx-conf-2016/design-damn.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Adrian Trenaman, SVP Engineering at HBC Digital/GILT gave a very
+entertaining talk on organising multi-discipline teams and how this
+evolved over time at GILT. Early on, they realised that to create
+autonomous teams they needed to…&lt;/p&gt;
+
+&lt;p class=&quot;nice-quote&quot;&gt;“Give engineers a problem, not a solution.”&lt;/p&gt;
+
+&lt;p&gt;… and look to make engineers “agents of change”. These autonomous teams
+followed a KPI driven development process to ensure they were on the
+right track. But they found that, initially, autonomous teams would be
+struck with stage fright soon after having taken control of the steering
+wheel. And they invested considerable effort in correcting this.&lt;/p&gt;
+
+&lt;p&gt;In these solutions, Adrian frequently offered contrarian viewpoints. He
+took a Peter Drucker quote “Culture eats strategy for breakfast” and
+added his own twist…&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img style=&quot;max-width: 750px&quot; alt=&quot;Breakfast&quot; src=&quot;/assets/images/uxdx-conf-2016/brekkie.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;… as well as noting that…&lt;/p&gt;
+
+&lt;p class=&quot;nice-quote&quot;&gt; “Great culture is necessary but not sufficient.”&lt;/p&gt;
+
+&lt;p&gt;Adrian continued to put the controversial cat amongst the pigeons,
+promoting a “code first” then ask questions later approach to evolving a
+solution, as well as not being afraid to back away from the data driven
+approach in favour of empathy. He also praised the technique of using a
+Gantt-like chart for planning out 90 day windows. And rather than dividing up the design team and permanently
+embedding them within development teams, they kept this “spiritual
+brotherhood“ together. Breaking them apart would not have been good for
+a team which loved working together as a unit.&lt;/p&gt;
+
+&lt;p&gt;For the motivation of all the teams within the organisation, Adrian
+cited 3 crucial factors: autonomy, mastery and purpose. These three
+factors would be echoed by David O’Donoghue, Head of Engineering at
+Zalando, later on in the day so this trio likely deserve careful
+attention. They were originally put forward in a talk by Daniel Pink
+available &lt;a href=&quot;https://www.youtube.com/watch?v=rrkrvAUbU9Y&quot;&gt;here&lt;/a&gt; when
+researchers observed how teams tackled the &lt;a href=&quot;https://en.wikipedia.org/wiki/Candle_problem&quot;&gt;Candle Problem&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, Adrian signed off with a tremendous set of values…&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img style=&quot;max-width: 550px&quot; alt=&quot;Values&quot; src=&quot;/assets/images/uxdx-conf-2016/values.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Adrian’s slides are available &lt;a href=&quot;http://www.slideshare.net/trenaman/uxdx-2016-developer-thinking-building-a-developer-mindset-throughout-your-organisation&quot;&gt;online&lt;/a&gt; and well worth a look.&lt;/p&gt;
+
+&lt;p&gt;Next up, Travis George, a Gaming Industry Product Specialist talked
+about Designs that Resonate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Travis&quot; src=&quot;/assets/images/uxdx-conf-2016/travis.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;He expanded on this by saying products with resonance are those that
+make you feel like the product was made just for you. He warned that
+great products are not just about smooth user flows, they are about
+making a connection. His talk focused on ensuring that your
+product/development team really feels the same way as the end users
+about the game or product being built…&lt;/p&gt;
+
+&lt;p class=&quot;nice-quote&quot;&gt;&quot;Sympathy is not the same as empathy.&quot;&lt;/p&gt;
+
+&lt;p&gt;There were many more talks to follow and unfortunately we didn’t have
+the bandwidth to try and capture them all. Many thanks to the organisers -
+especially Catherine and Rory - for organising the event, and it will
+be interesting to see where UXDX goes from here. No pressure! :-)&lt;/p&gt;
+
+&lt;div&gt;
+&lt;img style=&quot;float: left; max-width: 50%;&quot; alt=&quot;UXDX Other Logo&quot; src=&quot;/assets/images/uxdx-conf-2016/wood-uxdx.jpg&quot; /&gt;
+&lt;img style=&quot;flat: left; max-width: 50%;&quot; alt=&quot;UXDX Other Logo&quot; src=&quot;/assets/images/uxdx-conf-2016/expo2.jpg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hopefully you enjoyed the coverage of a few early moments from a
+wonderful day at UXDX Conf 2016, especially if you didn’t have the
+privilege of attending.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;P.S.&lt;/strong&gt; Despite restricting the above to just the pre-lunch
+sessions as a matter of practicality, it would be remiss to omit the
+closing keynote entirely - a talk given by Kai En Ong, Head of UX &amp;amp;
+Design of the BBC. She covered a wide diversity of topics, too many to
+detail here, but she made two interesting points on improving the gender
+balance in teams.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Firstly, simply count - measuring and talking about the diversity in
+your teams and on your boards helps bring a focus to the issue.
+Secondly, and less obviously, is check your job description for gender
+specific keywords - you can unintentionally bias your hiring process by
+using language that is coded for one particular gender.&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 02 Nov 2016 23:13:35 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2016/11/02/morning-moments-from-uxdx-conf-2016.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2016/11/02/morning-moments-from-uxdx-conf-2016.html</guid>
+        
+        <category>Design</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fixing a VirtualBox 4 to 5 Upgrade by Reinstalling Guest Host Additions</title>
+        <description>&lt;p&gt;This upgrade did not go quite as smoothly as expected but after a bit of shouting at
+the computer we got there. The issues may have been specific to the
+state of my virtual machine image and possibly won’t affect other people
+upgrading. Anyway in my case, after I upgraded to VirtualBox 5 and began
+to use my image with it, I realized Copy &amp;amp; Paste between the host and the
+guest would not work.&lt;/p&gt;
+
+&lt;figure class=&quot;responsive-post-figure&quot;&gt;
+
+&lt;a title=&quot;By Matthieu James
+(https://code.google.com/p/faenza-icon-theme/) [GPL
+(http://www.gnu.org/licenses/gpl.html)], via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File%3AVirtualbox_Faenza.svg&quot;&gt;&lt;img class=&quot;responsive-post-figure__image&quot; width=&quot;291&quot; alt=&quot;Virtualbox Faenza&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Virtualbox_Faenza.svg/480px-Virtualbox_Faenza.svg.png&quot; /&gt;&lt;/a&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;Additionally Shared folders between the host and guest would not work.
+This left me with no option to communicate a piece of text between the
+host and guest, so rather than limping on like a dying goldfish I was
+forced to confront the problem head on.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Turns out I needed to uninstall and reinstall the Guest Host Additions (GHA).&lt;/b&gt; As
+mentioned before this may be a problem specific to my image. It might
+have only become a problem when I did a software update on the guest OS
+(Ubuntu 14.04). The takeaway point is if Copy and Paste stops
+working, check to see if your Guest Host Additions are borked.&lt;/p&gt;
+
+&lt;p&gt;I had to reinstall the GHA according to the non-open source VirtualBox
+instructions.&lt;/p&gt;
+
+&lt;p&gt;I found the solution to performing a correct GHA reinstall at this
+&lt;a href=&quot;https://forums.virtualbox.org/viewtopic.php?f=7&amp;amp;t=46626#p210465&quot;&gt;link&lt;/a&gt;.
+Here is a summary below.&lt;/p&gt;
+
+&lt;h5 id=&quot;uninstall-gha-as-follows&quot;&gt;Uninstall GHA as follows&lt;/h5&gt;
+&lt;p&gt;&lt;i&gt;&lt;b&gt;NB:&lt;/b&gt; Don’t unmount the existing GHA iso from the Optical
+Storage media (if you do you can re-add it at the correct location on the
+host - eg. /usr/share/virtualbox/VBoxGuestAdditions.iso)&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;With that in mind here is how you can perform an uninstall. Run the
+following within the &lt;b&gt;guest&lt;/b&gt; OS.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /opt/VBoxGuestAdditions-X.Y.Z (where X.Y.Z is the old version of VirtualBox)
+sudo ./uninstall.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h5 id=&quot;reinstall-gha-as-follows&quot;&gt;Reinstall GHA as follows&lt;/h5&gt;
+&lt;p&gt;Ensure you don’t have any Ubuntu based guest host additions
+installed. The command “aptitude search VirtualBox|grep add” should
+return no installed packages.&lt;/p&gt;
+
+&lt;p&gt;Now you are ready to do the reinstall. Run the following within the
+&lt;b&gt;guest&lt;/b&gt; OS.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /media/yourusername
+cd VBOXADDITIONS_X.Y.Z_BUILD
+# ... where X.Y.Z is the NEW version of VirtualBox and BUILD is presumably a build number
+sudo sh ./VBoxLinuxAdditions.run
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now your GHA should be correctly reinstalled and things like Copy &amp;amp;
+Paste as well as Shared folders should work again!&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Title Image Attribution: By Matthieu James (https://code.google.com/p/faenza-icon-theme/) [GPL (http://www.gnu.org/licenses/gpl.html)], via Wikimedia Commons&lt;/i&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Oct 2016 20:26:12 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2016/10/09/fixing-a-virtualbox-4-to-5-upgrade-by-reinstalling-guest-host-additions.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2016/10/09/fixing-a-virtualbox-4-to-5-upgrade-by-reinstalling-guest-host-additions.html</guid>
+        
+        <category>VirtualBox</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>My Embarrassing First Steps with the Javascript fetch() API</title>
+        <description>&lt;p&gt;&lt;b&gt;Spoiler: If you are more interested in the destination than the journey
+then skip to the last code example in this article.&lt;/b&gt;
+So after a decade of the dollar, the great $ symbol that is ubiquitously
+associated with jQuery (and mostly AJAX), we’re finally moving on. Moving
+on to what promises to be a leaner, more modern
+API in the shape of fetch(). My motivation came from
+&lt;a href=&quot;https://github.com/reactjs/redux/issues/723#issuecomment-139927639&quot;&gt;this post&lt;/a&gt;
+about waiting for multiple async calls in Redux. I’d been using jQuery (or a layer on top
+of jQuery such as Backbone) to talk to remote servers since
+James Blunt hit the charts with “You’re Beautiful”. And since moving
+to React it didn’t seem to make much sense to pull in all of jQuery just
+to make a few simple remote calls - so trusting in Dan Abramov (has he
+ever put a foot wrong?!) I decided to polyfill in fetch() and friends,
+and embrace the simplicity of this new standard. Trouble is, it’s not as
+straightforward to get started as you might think it is.&lt;/p&gt;
+
+&lt;figure style=&quot;float: right; margin:20px;&quot;&gt;
+
+&lt;a title=&quot;By JavaScript,Pixabay (pixabay.com) [CC BY 4.0
+(http://creativecommons.org/licenses/by/4.0)], via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File%3AJavascript-736400_960_720.png&quot;&gt;&lt;img width=&quot;256&quot; alt=&quot;Javascript-736400 960 720&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Javascript-736400_960_720.png/256px-Javascript-736400_960_720.png&quot; /&gt;&lt;/a&gt;
+
+&lt;/figure&gt;
+
+&lt;p&gt;First up, my understanding of promises is fairly
+rudimentary - basically they are a fancy way of returning a function
+that will be called at some point in the future, and can handle a happy
+code path and a sad code path. I’d read that jQuery’s way of doing promises
+(deferreds) “are a bit… unhelpful”. And that you should &lt;a href=&quot;http://www.html5rocks.com/en/tutorials/es6/promises/&quot;&gt;cast them to
+standard promises, which is worth doing as soon as possible&lt;/a&gt;,
+. So I had an immediate
+distrust of jQuery’s deferreds from what I had read and was ready to go
+all in on the shiny new fetch() API to ensure that I was using the most
+standard version of promises that bitcoins can buy. By this point
+we’re really up for doing the fetch() thing correctly.&lt;/p&gt;
+
+&lt;p&gt;The first hit on Google for “fetch javascipt” is the
+Mozilla Development Network’s article on the Fetch API and from here it
+is a short hop to the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch&quot;&gt;Using Fetch
+article&lt;/a&gt;.
+So I rushed to the first example, which is&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var myImage = document.querySelector('img');
+
+fetch('flowers.jpg')
+.then(function(response) {
+  return response.blob();
+})
+.then(function(myBlob) {
+  var objectURL = URL.createObjectURL(myBlob);
+  myImage.src = objectURL;
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and wrote the equivalent code (slightly ES6-ified) that I needed which was…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+.then(response =&amp;gt; {
+  debugger
+  //return response.blob();
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I got rid of the second then() because I figured my use case is simpler than
+theirs. And I figured that if I could drop myself into the Chrome
+debugger I could work out the appropriate method on the response
+object to get whatever I needed out. It was all looking familiar and
+simple, just like it said on the tin.&lt;/p&gt;
+
+&lt;p&gt;So I got to my breakpoint and I saw a friendly &lt;code class=&quot;highlighter-rouge&quot;&gt;text()&lt;/code&gt; method available
+as well as a &lt;code class=&quot;highlighter-rouge&quot;&gt;json()&lt;/code&gt; method. And indeed I called them - and
+frustratingly got the following back in my JS console…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[PromiseStatus]] : &quot;resolved&quot;
+[[PromiseValue]] : undefined
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So I googled around for “pending status fetch promise” and the first hit
+was &lt;a href=&quot;http://stackoverflow.com/questions/30329485/why-is-the-promise-still-pending&quot;&gt;StackOverflow&lt;/a&gt; -
+trusting in StackOverflow (have they ever put a foot wrong?!) I
+clicked through to question but saw the answer didn’t look quite as relevant to me
+as I’d hoped. So I moved along - along to lots of articles like
+&lt;a href=&quot;https://github.com/w3c/ServiceWorker/issues/625&quot;&gt;this&lt;/a&gt;, which sounded
+very complicated for the “Hello World!” of the fetch() world that I was
+trying to piece together, so I gave up. I knew that there was
+new-fangled streaming stuff in the new fetch() and I must be tripping up
+on that - might be best to read about that on my aging Nexus phone on
+the commute home.&lt;/p&gt;
+
+&lt;p&gt;As I was closing down the hundreds of tabs I had opened about fetch() - one by one - like a
+roadie taking down marquees at the end of a music festival, I paused
+before X-ing
+the tab where it had all
+&lt;a href=&quot;https://github.com/reactjs/redux/issues/723#issuecomment-139927639&quot;&gt;started&lt;/a&gt;.
+It occurred to me that instead of going for the cheapest item in the
+shop, I should probably try the second cheapest. I’ll
+try two then() calls one after the other.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+.then(response =&amp;gt; {
+  return response.json();
+})
+.then(responseBody =&amp;gt; {
+  debugger
+  // oh responseBody, just please have something in you that isn't pending!
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Boom! Like a green light at the end of a unit test there was finally
+something tangible in the responseBody argument. Encouraged by this I
+could now make sense of more of the original Mozilla Developer Network
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch&quot;&gt;page&lt;/a&gt;,
+in particular their Checking For Success example…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('flowers.jpg').then(function(response) {
+  if(response.ok) {
+    response.blob().then(function(myBlob) {
+      var objectURL = URL.createObjectURL(myBlob);
+      myImage.src = objectURL;
+    });
+  } else {
+    console.log('Network response was not ok.');
+  }
+})
+.catch(function(error) {
+  console.log('There has been a problem with your fetch operation: ' +
+error.message);
+});
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I didn’t give a monkey’s for checking for success in my embryonic
+attempt at calling fetch() earlier. But now I could see that I could do
+the chaining all in one…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+.then(response =&amp;gt; {
+  response.json().then(responseBody =&amp;gt; {
+    debugger
+    console.log(responseBody)
+    // Go'on the responseBody, ya beauty!
+  })
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The ES5 equivalent is something like…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+.then(function(response){
+  response.json().then(function(responseBody){
+    console.log(responseBody)
+  })
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Call it perceptual narrowing when my initial attempt went pear-shaped,
+or call it laziness, or stupidity. Whatever it was, that was one long journey towards
+calling fetch(). Anyway, I hope someone else finds this useful and
+doesn’t have to travel around the Internet a dozen times to ditch the
+dollar and fire off a fetch().&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Title Image Attribution: “By JavaScript”,Pixabay (pixabay.com) [CC BY 4.0 (http://creativecommons.org/licenses/by/4.0)], via Wikimedia Commons&lt;/i&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 09 Sep 2016 23:57:12 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2016/09/09/my-embarrassing-first-steps-with-the-javascript-fetch-api.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2016/09/09/my-embarrassing-first-steps-with-the-javascript-fetch-api.html</guid>
+        
+        <category>javascript</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>I've Got 409 Problems but the Status Header Ain't One</title>
+        <description>&lt;p&gt;A correction…  During last night’s talk on the &lt;a href=&quot;https://github.com/theirishpenguin/js_application_reloader&quot;&gt;JS Application Reloader gem&lt;/a&gt;, I mentioned that when the gem’s back end code detects a reload of the application is required it sends a HTTP 409 to the client. But to use the &lt;a href=&quot;https://www.youtube.com/watch?v=xwdba9C2G14&quot;&gt;Chewbacca defence&lt;/a&gt;, “That does not make sense!” A 409 indicates a conflict.&lt;/p&gt;
+
+&lt;figure style=&quot;float: right; margin:20px;&quot;&gt;&lt;img src=&quot;/assets/images/409image.png&quot; alt=&quot;409 Image&quot; /&gt;&lt;/figure&gt;
+
+&lt;p&gt;Rather, the gem never sent back a 409 and never will. Instead, it returns a HTTP header to indicate an expired status (by default this header is called “X-Js-Application-Reloader-Status”). It is this that indicates to the client that the application needs to be reloaded. Incidentally, the gem does allow you to configure a HTTP status code to send back in this situation if you want to (currently the default is 200, which should probably be changed).&lt;/p&gt;
+
+&lt;p&gt;So where did the pesky 409 come from? Well, it became ingrained in my brain as I’m working on another project to handle optimistic locking - which does indeed send back a 409 when a conflict in records is detected. Nothing to do with JS Application Reloader at all :-) It’s like comparing Apples and Androids.&lt;/p&gt;
+
+&lt;p&gt;For now, I’m making 409 my new lucky number!&lt;/p&gt;
+
+&lt;p&gt;Great meetup last night. Thanks to everyone for making it such fun!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Mar 2015 10:50:16 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2015/03/20/ive-got-409-problems-but-the-status-header-aint-one.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2015/03/20/ive-got-409-problems-but-the-status-header-aint-one.html</guid>
+        
+        <category>gem</category>
+        
+        <category>ruby</category>
+        
+        <category>javascript</category>
+        
+        <category>rails</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Purity of the Potato</title>
+        <description>&lt;p&gt;Pity the potato. It’s &lt;a href=&quot;http://www.potato.ie/national-potato-day/&quot;&gt;National Potato Day&lt;/a&gt;, yet our once budding superstar’s been trending downwards ever since huntergathers began dragging their knuckles to the dining table. A carb allergy has infected the nation leaving the humble potato about as popular as a water tax at a car wash. How did the potato turn from staple diet of the people to an episode of Man v Spud? It just wanted to be your spuddy buddy. Leave aside the fact that this vegetable can conjure up more pun potential than Buzzfeed can whip up kitten stories…&lt;/p&gt;
+
+&lt;figure style=&quot;float: right; margin:20px;&quot;&gt;&lt;img src=&quot;/assets/images/512px-Potato_123.jpg&quot; alt=&quot;Potato&quot; width=&quot;360px&quot; /&gt;&lt;figcaption style=&quot;font-style: italic; margin-top: 5px; width:360px&quot;&gt;&lt;a href=&quot;http://commons.wikimedia.org/wiki/File:Potato_123.jpg&quot;&gt;Photo&lt;/a&gt; by &lt;a href=&quot;http://commons.wikimedia.org/wiki/User:Tahir_mq&quot;&gt;Tahir mq&lt;/a&gt; under the &lt;a href=&quot;http://en.wikipedia.org/wiki/en:Creative_Commons&quot;&gt;CC&lt;/a&gt; &lt;a href=&quot;http://creativecommons.org/licenses/by-sa/3.0/deed.en&quot;&gt;Attribution-Share Alike 3.0 Unported&lt;/a&gt; licence&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;To understand what happened, we need to understand how this noble vegetable starved then conquered a nation. According to popular legend, it all started with another noble - Sir Walter Raleigh. Back then, a good chipper was just a twinkle in Leo Burdock’s eye. In a field in East Cork, Sir Walter declared “What’s up Youghal? Here’s some potatoes!” And the rest is (slightly made up) history. Once we’d a taste for it, our beloved tuber easily out-muscled other foods. Apparently the choice at the time was somewhat limited.&lt;/p&gt;
+
+&lt;p&gt;Other accounts say that the first spud washed up on the shores of Cork, like some glorious cuisine in a bottle from God, just after the Spanish Armada came a cropper. It has also been written that the potato’s introduction into England did not go well, taking flak in newspaper editorials and preachers’ sermons at the time. The man on the street wouldn’t touch it with yours, and rumour had it that potatoes would leave the soil as sterile as a mule convention. Oh, and they made you sick and could cause death. Even Mr Tayto couldn’t talk you into taking a trip to Tayto Park in those days.&lt;/p&gt;
+
+&lt;p&gt;That was then and this is now. Chippies have been ever popular in the best little country in the world. We love our spuds! But the downward spiral here began once Irish restaurants and avid cooks convinced diners to accept things like polenta and couscous. Polenta, a miserable lump which has the texture of damp sawdust, and tastes slightly worse, makes the starting lineup on many a menu. Couscous’ only useful contribution to society is perhaps in the debate over how exactly to pronounce it. Do you go with the lawdy daw Dublin 4 “Koous koous” or the more friendly cat-herding “Kus kus”.&lt;/p&gt;
+
+&lt;p&gt;Here kus kus…&lt;/p&gt;
+
+&lt;p&gt;In Jamie Oliver’s Italian, which does a fine burger, you have to plead your case to ensure your chippies are not doused in garlic, parsley and truffle oil. Whatever happened to the purity of the potato? No nonsense, just a bit of complex carbohydrate and a sprinkle of salt. Hipster eateries offer no respite. In Crackbird you won’t even find a chip on the menu - where’s the craic in that? And don’t start on about sweet potatoes. They’re the kind of thing you should only hear from Robin, pre-Dark Knight, excitedly muttering “Sweet potatoes, Batman!” as the Penguin makes off with the bag of chips that fell from his utility belt.&lt;/p&gt;
+
+&lt;p&gt;Official health guidelines are just as scathing. The “5 A Day” police won’t even count a Maris Piper towards your total, just a big fat potato-shaped zero. But it would be unwise to back against the tenacious potato making a comeback. The current crop of diets will ultimately fall out of flavour. Yes, technically on its own the potato will send your blood sugar levels into orbit with Richard Branson and his partying, &lt;a href=&quot;http://www.thejournal.ie/richard-branson-holiday-time-1688143-Sep2014/&quot;&gt;unlimited-holiday time employees&lt;/a&gt;. But what your gym instructor didn’t tell you is that if you eat your Roosters with a side of meat, its GI drops quicker than Arjen Robben on an ice rink. So no your blood won’t turn to custard. Just sit back, relax, peel a spud and simply enjoy. Of course that doesn’t help us resist all those glorious damn potato flavoured puns that we could drop in here.&lt;/p&gt;
+
+&lt;p&gt;Must… not… mention… going viral on youtuber…  It’s… Golden… Wonder… we… got.. this… far… Dammit!&lt;/p&gt;
+
+&lt;p&gt;Happy National Potato Day, Youghal!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Oct 2014 07:23:11 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2014/10/03/the-purity-of-the-potato.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2014/10/03/the-purity-of-the-potato.html</guid>
+        
+        <category>Opinion Piece</category>
+        
+        <category>National Potato Day</category>
+        
+        <category>Potato</category>
+        
+        <category>Ireland</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Batshift Crazy - Basic Binary Number Representation in Javascript</title>
+        <description>&lt;p&gt;In today’s &lt;a href=&quot;http://www.meetup.com/dublin-code-kata/&quot;&gt;Dublin Code Kata&lt;/a&gt;, we revisited a bit of classic Comp Sci - integer vs binary representation of numbers! And I learned that converting integers to binary numbers isn’t all that hard in Javascript :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;By Cncplayer (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File%3ABinary_Code.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Binary Code&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Binary_Code.jpg/512px-Binary_Code.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, to convert the integer 4 to the binary number 100 you use…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(4 &amp;gt;&amp;gt; 0).toString(2) # gives &quot;100&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And if you want to do chopping of right most digits change the 0 to the number of digits you want to chop off…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(4 &amp;gt;&amp;gt; 1).toString(2) // gives &quot;10&quot;
+(4 &amp;gt;&amp;gt; 2).toString(2) // gives &quot;1&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or if you want to append zeros, use the opposite…&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(4 &amp;lt;&amp;lt; 0).toString(2) // still gives &quot;100&quot;
+(4 &amp;lt;&amp;lt; 1).toString(2) // still gives &quot;1000&quot;
+(4 &amp;lt;&amp;lt; 2).toString(2) // still gives &quot;10000&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;These are called right shift (») and left shift operators («) and there is a variation on the right shift called a zero-fill right shift (»&amp;gt;), as opposed to a sign-propagating right shift (good old »). The difference becomes interesting when you deal with numbers that don’t fit into a 32 bit integer (the upper bound being the magical &lt;a href=&quot;http://en.wikipedia.org/wiki/2147483647&quot;&gt;2147483647&lt;/a&gt; ).&lt;/p&gt;
+
+&lt;p&gt;So if we take a cool two and a half billion we see&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(2500000000 &amp;gt;&amp;gt; 0).toString(2) // gives &quot;-1101010111111010000011100000000&quot;
+(2500000000 &amp;gt;&amp;gt;&amp;gt; 0).toString(2) // gives &quot;10010101000000101111100100000000&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And that all stemmed from today’s enjoyable challenge &lt;a href=&quot;http://codekata.pragprog.com/2007/01/code_kata_fifte.html&quot;&gt;A Diversion&lt;/a&gt;. Thanks to &lt;a href=&quot;https://twitter.com/pragdave&quot;&gt;Prag Dave&lt;/a&gt; for sharing! And thanks to &lt;a href=&quot;https://twitter.com/_minuteman3&quot;&gt;Miles McGuire&lt;/a&gt; for bringing the bitshift brains and explaining the more esoteric cases!&lt;/p&gt;
+
+&lt;p&gt;Here’s some more on &lt;a href=&quot;http://en.wikipedia.org/wiki/Bitwise_operation&quot;&gt;bitwise operators&lt;/a&gt; and more on &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators&quot;&gt;bitwise operators in Javascript&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Aug 2013 11:08:11 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2013/08/02/batshift-crazy.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2013/08/02/batshift-crazy.html</guid>
+        
+        <category>Opinion Piece</category>
+        
+        <category>Dublin Code Kata</category>
+        
+        <category>ireland</category>
+        
+        <category>rails</category>
+        
+        <category>ruby</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Rails Girls Revolution</title>
+        <description>&lt;p&gt;&lt;em&gt;Your first day programming is always going to be a challenging one. It’s hard enough to learn a new language to speak to another human, never mind trying to unravel the mother tongue of a machine. Probably the best way to tackle this challenge is with a sense of mischief, fun and divilment, and a raft of like-minded people. These ingredients made for the perfect recipe that was &lt;a href=&quot;http://railsgirls.com/dublin&quot;&gt;Rails Girls Dublin&lt;/a&gt;, an informal mini-conference like event, that took place at the &lt;a href=&quot;http://www.ndrc.ie/&quot;&gt;NDRC&lt;/a&gt; in Digital Hub on Friday and Saturday.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/BCqzUecCEAMj4OO.jpg:large&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The usually male-dominated field of software development was turned on it’s head for a weekend as an attendee list of 50 girls and women set out to learn web programming and art of glueing the cloud together. This was done through &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Ruby on Rails&lt;/a&gt; - a programming language and toolbox for building web applications in a clear and easy to understand way. This also makes it suitable for newcomers to programming to start off coding and having fun straight away. Ruby is the programming language and Rails is a set of extras that make it particularly useful for the web. Rails Girls is a global organisation that helps make this happen.&lt;/p&gt;
+
+&lt;p&gt;The weekend started off after work on Friday with an installation fest with the simple goal of getting Ruby on Rails onto everyone’s computer - regardless of whether it tasted like an Apple or was some flavour of Windows or Linux. This was a good chance for everyone to get to know each other, break the ice and get a sense of the fantastic atmosphere that was going to engulf the weekend. Afterwards there was a sponsored meal for the coaches, where one impressive fact became apparent - there was a 50/50 male/female ratio within the coaching group. Something that wasn’t expected when Rails Girls Dublin was starting out.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/BCqKNj0CcAAN7Z7.jpg:large&quot; alt=&quot;Diamonds are a girls best friend but gems are even better&quot; style=&quot;width:50%;margin-left:10px&quot; align=&quot;right&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Saturday began at a relaxing pace with some breakfast and two batches of awesome cupcakes, one by &lt;a href=&quot;http://monacocupcakes.ie&quot;&gt;Monaco Cupcakes&lt;/a&gt; and another by Rails Girl &lt;a href=&quot;http://twitter.com/caitrionadwyer&quot;&gt;Caitriona Dwyer&lt;/a&gt;. Then, after a word from the generous sponsors (checkout the list at the end of this post), there was an introductory session on design by &lt;a href=&quot;https://twitter.com/simonrand&quot;&gt;Simon Rand&lt;/a&gt; who had a few tips in there that even old hands could take onboard. Then, despite the best efforts of the Internet trying to work against me, I did a quick session introducing Ruby and the basics of programming. It was really fun going through Ruby with such an interested and engaged audience; and incredible to think that everyone there could call themselves a programmer - in one way or another - by the end of the day.&lt;/p&gt;
+
+&lt;p&gt;One final bit of preparation was a “Bento Box” session with &lt;a href=&quot;http://twitter.com/emcastles&quot;&gt;Emily Castles&lt;/a&gt;, the unstoppable driving force behind Rails Girls Dublin. This got everyone to categorize some of the techie jargon that crops up in web development into different compartments - hence just like a Bento Box! If you missed out on those talks the good news is that you can catch up on Simon’s &lt;a href=&quot;https://speakerdeck.com/simonrand/designing-your-app&quot;&gt;slides&lt;/a&gt; online and go through the basics of Ruby at &lt;a href=&quot;http://www.tryruby.org&quot;&gt;tryruby.org&lt;/a&gt; in your own time.&lt;/p&gt;
+
+&lt;p&gt;Then the main event started, where attendees flipped open their laptops and started hacking on their own Rails application, following a set of guides put together by the fantastic international Rails Girls organisation. Over the course of the day, their applications evolved from a skeleton Rails program, through to one that could handle the uploading and publishing of pictures, before finally being deployed live to a website running online. Here’s a selection of tweets that sum up some of the experiences on this journey,&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://s1307.beta.photobucket.com/user/theirishpenguin/media/self_learn_zps6f731a02.png.html&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width:inherit&quot; src=&quot;http://i1307.photobucket.com/albums/s584/theirishpenguin/self_learn_zps6f731a02.png&quot; border=&quot;0&quot; alt=&quot; photo self_learn_zps6f731a02.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&quot;clear: both;&quot;&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://s1307.beta.photobucket.com/user/theirishpenguin/media/rails_easy_install_zps86d8f2c7.png.html&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width:inherit&quot; src=&quot;http://i1307.photobucket.com/albums/s584/theirishpenguin/rails_easy_install_zps86d8f2c7.png&quot; border=&quot;0&quot; alt=&quot; photo rails_easy_install_zps86d8f2c7.png&quot; align=&quot;right&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&quot;clear: both;&quot;&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://s1307.beta.photobucket.com/user/theirishpenguin/media/awesome_job_zps916b0fe1.png.html&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width:inherit&quot; src=&quot;http://i1307.photobucket.com/albums/s584/theirishpenguin/awesome_job_zps916b0fe1.png&quot; border=&quot;0&quot; alt=&quot; photo awesome_job_zps916b0fe1.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&quot;clear: both;&quot;&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://s1307.beta.photobucket.com/user/theirishpenguin/media/sarah_great_day_zps820b8e72.png.html&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width:inherit&quot; src=&quot;http://i1307.photobucket.com/albums/s584/theirishpenguin/sarah_great_day_zps820b8e72.png&quot; border=&quot;0&quot; alt=&quot; photo sarah_great_day_zps820b8e72.png&quot; align=&quot;right&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div style=&quot;clear: both;&quot;&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;p&gt;Finally, there was a set of great lightning talks before &lt;a href=&quot;http://twitter.com/kategoodbody&quot;&gt;Kate Goodbody&lt;/a&gt; brought the curtain down on Rails Girls Dublin - live coding a Ruby on Rails blog in under 10 minutes as stirring music boomed over the speakers. There wasn’t as much as a single misguided keystroke and it was a wonderful end to a tremendous day of code.&lt;/p&gt;
+
+&lt;p&gt;More generous sponsorship meant that was no fighting over the bill at Arthur’s pub around the corner, where most of us had the chance to go afterwards. Like at many events, the evening was a real highlight as everyone shared their ideas for projects (some of which are already underway) and ways to keep the fire lit this weekend burning.&lt;/p&gt;
+
+&lt;p&gt;The future will be written in code. Google will possibly be one of the biggest car companies in 10 years time; they have a &lt;a href=&quot;http://www.youtube.com/watch?v=cdgQpa1pUUE&quot;&gt;self driving car&lt;/a&gt;. Wearable technology will be woven into the clothing we buy. Every inanimate object we currently see around us will, over time, be transformed into something that reacts to us with software smarts. Whether all this is a good thing or a bad thing is up for debate. What is certain is that it’s crucial that girls and women are represented in the next wave of technology in a way they previously weren’t.&lt;/p&gt;
+
+&lt;p&gt;The next challenge for Rails Girls Dublin will be around how to build on the great start that was made this weekend. With so many attendees, coaches and organisers interested and passionate about making this work, it’s a vision that has every chance of succeeding and surpassing its original goals!&lt;/p&gt;
+
+&lt;p&gt;Sponsors&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.inventorium.org/&quot;&gt;Inventorium&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.redhills.ie/&quot;&gt;Red Hills Software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.paddypower.ie/&quot;&gt;Paddy Power&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.engineyard.com/&quot;&gt;Engine Yard&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kablingy.ie/&quot;&gt;Kablingy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bizimply.com/&quot;&gt;Bizimply&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Resources:&lt;br /&gt;
+&lt;a href=&quot;http://railsgirls.com/dublin&quot;&gt;Dublin section of the Rails Girls website&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.tryruby.org&quot;&gt;Tryruby.org - a simple and fun interactive tutorial to get started with Ruby&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://guides.railsgirls.com/app/&quot;&gt;The Rails Girls App we build on Saturday (tutorial)&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://speakerdeck.com/simonrand/designing-your-app&quot;&gt;Designing your app (slides form Simon’s talk)&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://blog.intercom.io/wireframing-for-web-apps/&quot;&gt;Wireframing for web apps (from the Intercom blog)&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 11 Feb 2013 13:58:11 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2013/02/11/rails-girls-revolution.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2013/02/11/rails-girls-revolution.html</guid>
+        
+        <category>Opinion Piece</category>
+        
+        <category>RailsGirls</category>
+        
+        <category>RubyIreland</category>
+        
+        <category>ireland</category>
+        
+        <category>rails</category>
+        
+        <category>ruby</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Geekslam 1 - NoSQL vs RDBMS</title>
+        <description>&lt;p&gt;Geeks are ending 2012 with a serious bang, after a year that has been so jam packed with tech events that it’s bloody hard to unearth an evening not already occuppied by some tech occasion. Following hot on the heels of the usual post summer conference season, you’d think that Javascripters, Pythonistas, PHPers, Rubyists, .NETers, Nodies, Erlangers (a title that would make for an awesome Cork meetup!) and Objective-C types would waving the white flag and catching up on some zzz’s ahead of Christmas. But no! They’re still kicking ass. Two examples from just this week were &lt;a href=&quot;https://tito.io/league-of-facepalm/dublin-geek-slam&quot;&gt;Geekslam&lt;/a&gt; and the &lt;a href=&quot;http://codingday.org&quot;&gt;Global Day of Code Retreat&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;By Simon Q from United Kingdom (WWE Wrestlemania 28 - The Rock vs John Cena) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File%3AWWE_Wrestlemania_28_-_The_Rock's_Rock_Bottom.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;WWE Wrestlemania 28 - The Rock&amp;#039;s Rock Bottom&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/WWE_Wrestlemania_28_-_The_Rock%27s_Rock_Bottom.jpg/512px-WWE_Wrestlemania_28_-_The_Rock%27s_Rock_Bottom.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Geekslam saw two teams of geeks from various user groups face off on a topic chosen by those who attended. After coming up with a short list, including things like Native vs Web Apps and iOS vs Android, the night was going to be won or lost on the basis of that dinner time conversation classic - “Relational DBs vs NoSQL”. First up though there were talks on a set of subjects as varied as the audience.&lt;/p&gt;
+
+&lt;p&gt;Simon Rand from Dublin JS presented on Appcelerator Titanium, with some of the big takeway points being that it can save you a bunch of time across platforms and give good code reuse as well as being pretty fast, unless you need bleeding raw perfromance for something like gaming. Vinny Glennon from Ruby Ireland talked about some cracking gems he uses to make him a more productive day to day. Not only did this help inform Rubyists about handy tools and libraries they may be missing out on, it also paved the way later for discussion on how other languages/platforms solved similar problems. Next up was Andrew Smith from Dublin ALT.NET who talked about RX.js - a library to compose asynchronous and event-based programs using observable collections and LINQ-style query operators. And completing the talks featuring Javascript love was Richard Rodger, presenting on NodeJS, before taking a breather to sharpen his NodeJS duelling pistol. Ulrich Dangel from Python Ireland gave a great overview of a topic of interest to many devs - GIS Development. And finally, Valdimar Kristjansson explained to us, “Why I love Erlang.”&lt;/p&gt;
+
+&lt;p&gt;Before the ultimate event started there was even time for a mini-battle between NodeJS and Erlang. After both trading blows and scoring impressive points the bout was edged by Erlang, showing that there’s life in the old dog yet, though the Node team did unveil a snazzy NodeCopter later on - so perhaps the Erlang User group is going to be subjected to drone attacks until the next showdown!&lt;/p&gt;
+
+&lt;p&gt;Then onto the main course - the Geekslam - where the audience tweeted some pretty zany situations for NoSQL and RDBMS’s to duke it out (to give you a flavour, consider “AI for global thermonuclear war targetting system from satellite, submarine &amp;amp; silo launch platforms”).&lt;/p&gt;
+
+&lt;p&gt;There were rules. There were marks deducted for below the belt hits. There were double points for “sophisticated trolling”. There was a team of judges who at times appeared to struggle to stay out of the debate. And there was a winner - the unaminous decision went to NoSQL. So keep an eye out for that global thermonuclear war targetting system running on MongoDB!&lt;/p&gt;
+
+&lt;p&gt;It was all good natured fun. The debates rumbled on. Once EngineYard had locked its doors there were still geeks slammin in the Schoolhouse Hotel, then down the canal and finally in the Portobello. Though by that stage there was probably less sophisticated trolling going on!&lt;/p&gt;
+
+&lt;p&gt;Hats off to the EngineYard - the host venue for the evening, the providers of pizza and the contributors of craft beer. And a big hand for the sponsors, &lt;a href=&quot;http://www.nearform.com&quot;&gt;NearForm&lt;/a&gt; who contributed a NodeCopter to the prize list, and &lt;a href=&quot;http://www.demonware.net&quot;&gt;Demonware&lt;/a&gt; who put up a Special edition copy of Black Ops II. And thanks to Paul Campbell and &lt;a href=&quot;http://tito.io&quot;&gt;Tito&lt;/a&gt; for making ticketing enjoyable! EngineYard’s Eamon Leonard did a fantastic job managing the fray - perhaps a career as a boxing referee beckons, maybe even &lt;a href=&quot;http://t.co/X7i5haNm&quot;&gt;chess boxing&lt;/a&gt;. Talk of another Geekslam in January is already underway. Doesn’t look like it’s going to get any easier to find spare evenings for new tech meetups in 2013 either…&lt;/p&gt;
+
+&lt;p&gt;Phew! To save your scrolling thumbs, the Global Day of Code Retreat will be handled in a separate posting :)&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Dec 2012 10:00:00 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2012/12/10/2012-12-10-geekslam-1-nosql-vs-rdmbs.markdown.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2012/12/10/2012-12-10-geekslam-1-nosql-vs-rdmbs.markdown.html</guid>
+        
+        <category>community</category>
+        
+        <category>geekslam</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Search Engine Friendly Redirects for Custom Domains on OpenShift using a .htaccess file</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://openshift.redhat.com&quot;&gt;OpenShift&lt;/a&gt; provides an easy way to
+host your Ruby based blogs (built on
+Sinatra or Jekyll) or Wordpress site, without incurring expense. Being
+content heavy, these kind of apps should really not have
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Duplicate_content&quot;&gt;duplicate content&lt;/a&gt; on different domains out there on that crazy ass Internet. Them spiders just won’t like you as much!&lt;/p&gt;
+
+&lt;p&gt;So what do you do when you have your app at
+&lt;code class=&quot;highlighter-rouge&quot;&gt;http://foo-example.rhcloud.com&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.example.com&lt;/code&gt; because
+you’ve set up a &lt;a href=&quot;https://openshift.redhat.com/community/blogs/custom-url-names-for-your-paas-applications-host-forwarding-and-cnames-the-openshift-way&quot;&gt;custom
+domain&lt;/a&gt; - will that split your SEO Google juice?&lt;/p&gt;
+
+&lt;p&gt;The solution is to use a bit of
+&lt;a href=&quot;http://httpd.apache.org/docs/current/mod/mod_rewrite.html&quot;&gt;.htaccess&lt;/a&gt; magic in order to use
+permanent 301 redirects to shepherd on traffic arriving at
+http://foo-example.rhcloud.com to http://www.example.com&lt;/p&gt;
+
+&lt;h3 id=&quot;solution-for-ruby&quot;&gt;Solution for Ruby&lt;/h3&gt;
+
+&lt;p&gt;Here’s a example .htaccess file for a Jekyll/Sinatra hybrid app. It can
+be dropped under your example_app/public directory.&lt;/p&gt;
+
+&lt;p&gt;(Note: public can be used instead of a _site directory
+for convenience on OpenShift)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;IfModule mod_rewrite.c&amp;gt;
+RewriteEngine On
+&amp;lt;/IfModule&amp;gt;
+
+RewriteCond %{HTTP_HOST} ^foo-example.rhcloud.com$
+RewriteRule (.*)$ http://www.example.com/$1 [R=301,L]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But if you rebuild a Jekyll site locally it will blow away the .htaccess
+file if you put it under your example_app/public directory. So I leave
+it in the root directory. Then you can use a &lt;code class=&quot;highlighter-rouge&quot;&gt;action hook&lt;/code&gt; to move it
+from the root directory of your app to under the example_app/public
+directory. Here it is and you can put it in the file &lt;code class=&quot;highlighter-rouge&quot;&gt;example_app/.openshift/action_hooks/deploy&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Move .htaccess from root folder to public folder on every deploy
+mv $HOME/app-root/repo/.htaccess $HOME/app-root/repo/public/.htaccess
+
+# Paranoidly ensuring sane permissions (in case we check in dodgy perms)
+chmod 644 $HOME/app-root/repo/public/.htaccess
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The last line ensures that the .htaccess file has the correct
+permissions. If you have a Wordpress site instead you should still carry
+&lt;code class=&quot;highlighter-rouge&quot;&gt;chmod 644 example_app/php/.htaccess&lt;/code&gt; before you check it into git the
+first time - just to be on the safe side.&lt;/p&gt;
+
+&lt;h3 id=&quot;solution-for-wordpress&quot;&gt;Solution for Wordpress&lt;/h3&gt;
+
+&lt;p&gt;Here’s a example .htaccess file for a Wordpress site, which you can drop
+under your example_app/php directory. Just replace
+foo-example.rhcloud.com with your app URL and http://www.example.com
+with your custom domain URL.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# BEGIN WordPress
+&amp;lt;IfModule mod_rewrite.c&amp;gt;
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+&amp;lt;/IfModule&amp;gt;
+# END WordPress
+
+RewriteCond %{HTTP_HOST} ^foo-example.rhcloud.com$
+RewriteRule (.*)$ http://www.example.com/$1 [R=301,L]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Again, remember to do a chmod 644 on the .htaccess file like above in the
+Ruby section to ensure it has the correct permissions.&lt;/p&gt;
+
+&lt;h3 id=&quot;testing&quot;&gt;Testing&lt;/h3&gt;
+
+&lt;p&gt;With all the above in place, your next &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; should
+deliver you the redirecting experience you are looking for! Just visit
+your app URL at http://foo-example.rhcloud.com and hopefully you are
+whisked away to your custom domain URL. Thanks to the guys on the OpenShift
+forums, especially kpendic and statikip for taking the time to help out with this.&lt;/p&gt;
+
+&lt;p&gt;Till the next time, keep it Shifty!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Sep 2012 22:58:10 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2012/09/11/2012-09-11-search-engine-friendly-redirects-for-custom-domains-on-openshift-using-a-htaccess-file.markdown.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2012/09/11/2012-09-11-search-engine-friendly-redirects-for-custom-domains-on-openshift-using-a-htaccess-file.markdown.html</guid>
+        
+        <category>ruby</category>
+        
+        <category>openshift</category>
+        
+        <category>seo</category>
+        
+        <category>custom domain</category>
+        
+        <category>apache</category>
+        
+        <category>redirect</category>
+        
+        <category>htaccess</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>SpreeConf 2012 Day 1 with an Incredible Ecommerce Community</title>
+        <description>&lt;p&gt;It’s great to hear a conference open with the quote, “Open Source projects are partly about technology and massively about community” [David Brady, Ruby Rogues #51]. This was how Chris Mar introduced &lt;a href=&quot;http://spreecommerce.com/&quot;&gt;Spree Commerce&lt;/a&gt; to us, setting the tone for the two days of E-commerce, Ruby and Javascript related action at the Guinness Storehouse in Dublin. It went down as an event which showed the best of Spree, the hospitality of the Irish and the folly of missing this event!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://p.twimg.com/A05ESuDCAAA2ki2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Unfortuntely, due to work commitments I missed half of the talks, so this is an incomplete account. There were also a few gaps in memory due to a whiskey surprise (more on that later) and the occasional pint of Guinness, but that was to be expected :)&lt;/p&gt;
+
+&lt;h3 id=&quot;the-night-before&quot;&gt;The Night Before&lt;/h3&gt;
+
+&lt;p&gt;But first there was the small matter of pre-conference drinks to get out of the way. Tuesday was the night and Kehoe’s was the venue; doubling as a pre-conf party and a RubyIreland meetup to get the mix going. It served it’s main aim pretty well - introducing the jet-lagged attendees to a tasty pint of Guinness or two and each other. There was a very nice vibe about the place and some even turned it up a notch or two by heading down to a local improv comedy gig.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/47513359@N03/7882885746/&quot; title=&quot;Kehoes by theirishpenguin, on Flickr&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7258/7882885746_fc839b7fe9.jpg&quot; width=&quot;375&quot; height=&quot;500&quot; alt=&quot;Kehoes&quot; style=&quot;width:50%;padding-right:10px&quot; align=&quot;left&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;day-1&quot;&gt;Day 1&lt;/h3&gt;
+
+&lt;p&gt;The smell of hops always engulfs the Guinness Storehouse building where SpreeConf was being held. It’s a pretty unique experience and a pleasant assault on the senses. Once the lanyards were dished out, the coffee-infused developers sat down to @cmar’s intro to Spree Commerce and the community.&lt;/p&gt;
+
+&lt;p&gt;Next up, Gregg Pollack walked us all through one of his interactive &lt;a href=&quot;http://www.codeschool.com/&quot;&gt;Code School&lt;/a&gt; video/codecasts, “A Sip of CoffeeScript”. His incredibly soothing hypnotic voice is good for videocasts - as well as being easy on the ears for hangovers. After the talk, it was in a discussion with Benoit Curdy (@bcurdy) on Twitter that it finally hit me that CoffeeScript has shifted from “nice to have” to “must have” territory; as it makes classic Class-based Object Oriented development possible (or at least the appearance of it).&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, that was my day 1 talks over. But for everyone else there was Testing Spree Stores and Extensions by M. Scott Ford and Intro to Backbone.js by Nick Gauthier to look forward to before a Group Tour of the Guinness Storehouse.&lt;/p&gt;
+
+&lt;h3 id=&quot;night-1&quot;&gt;Night 1&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://p.twimg.com/A1QTpZ8CMAE9_gj.jpg&quot; alt=&quot;99 Ice Cream&quot; style=&quot;width:50%;padding-left:10px&quot; align=&quot;right&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the plus side I did make it back apres work - just in time for dinner. Two distinct groups emerged.&lt;/p&gt;
+
+&lt;p&gt;Group 1: the classy, wine-sipping, Indian-lovin gourmands who went straight to Jaipur on George’s St, which served up some incredible dishes. The crown jewel had to be the Lamb Chilli Fry - lamb cubes doused in tounge curling dry spices. Yum!&lt;/p&gt;
+
+&lt;p&gt;Group 2: the “keepin it real crew”, out on a hunt for Beshoffs Fish’n’Chips. Some got 99’s, some didn’t. But everyone made it back for the Github sponsored Lightening Talks that evening… and the SpreeConf whiskey…&lt;/p&gt;
+
+&lt;h3 id=&quot;the-what&quot;&gt;The What?&lt;/h3&gt;
+&lt;p&gt;That’s right - the Spree team had a specially customised Yellow Spot whiskey just for event. And it was smooth as Greg Pollocks voice! There must be one or two budding distillers in the Spree team. Maybe one day we’ll see the Spree Distillery make its debut! But in the meantime, the razorsharp Nick Gauthier had to navigate his way through a suprise desk of unseen slides for a ‘blind’ presentation. And navigate it he did!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/47513359@N03/7879956332/&quot; title=&quot;The SpreeConf 2012 Dublin Whiskey by theirishpenguin, on Flickr&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7268/7879956332_ba230919e2.jpg&quot; width=&quot;375&quot; height=&quot;500&quot; alt=&quot;The SpreeConf 2012 Dublin Whiskey&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Phew… and that was just day 1… huzzah!&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 29 Aug 2012 13:58:11 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2012/08/29/spreeconf-2012-day-1-with-an-incredible-ecommerce-community.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2012/08/29/spreeconf-2012-day-1-with-an-incredible-ecommerce-community.html</guid>
+        
+        <category>Opinion Piece</category>
+        
+        <category>RubyIreland</category>
+        
+        <category>Spree</category>
+        
+        <category>Ecommerce</category>
+        
+        <category>ireland</category>
+        
+        <category>rails</category>
+        
+        <category>ruby</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

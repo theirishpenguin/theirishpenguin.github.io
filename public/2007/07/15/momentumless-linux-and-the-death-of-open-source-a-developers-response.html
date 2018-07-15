@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Momentumless Linux and the Death of Open Source - A Developer's Response</title>
+  <meta name="description" content="A couple of blog and news posts on the Internet this week seemed to make the headlines with death knells for Linux and Open Source for a multitude of reasons...">
+
+  <link rel="canonical" href="http://www.theirishpenguin.com/2007/07/15/momentumless-linux-and-the-death-of-open-source-a-developers-response.html">
+  <link rel="alternate" type="application/rss+xml" title="The Irish Penguin" href="http://www.theirishpenguin.com/feed.xml" />
+
+  <!-- Material Design Lite css Library -->
+  <!--<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">-->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.brown-pink.min.css" />
+  
+  <!-- Material Design Fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Custom theme css -->
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+
+  <body>
+
+    <!-- Start Layout -->
+    
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- search layout -->
+<div class="super-search" id="js-search">
+  <ul class="super-search__results" id="js-search__results"></ul>        
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored super-search__close-btn" onclick="superSearch.toggle()">
+    <i class="material-icons">close</i>
+  </button>
+</div>
+<!-- /end search -->
+        <header class="mdl-layout__header">
+
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a class="penguin-site-title-link" href="http://www.theirishpenguin.com">The Irish Penguin <span class="mdl-cell--hide-phone"> - Watching Open Source Win</span></a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      
+
+      <!-- Penguin: Disabling for now -->
+      <!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="js-search__input">
+          <i class="material-icons">search</i>
+        </label>
+
+        <div class="mdl-textfield__expandable-holder" >
+          <input class="mdl-textfield__input super-search__input" type="text" id="js-search__input" />
+        </div>
+      </div>
+      -->
+      <!-- End of Penguin: Disabling for now -->
+
+      <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-left">
+        <i class="material-icons">more_vert</i>
+      </button>
+
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
+        
+        <li><a href="https://twitter.com/theirishpenguin" class="mdl-menu__item">Twitter</a></li>
+        
+        <li><a href="https://github.com/theirishpenguin" class="mdl-menu__item">Github</a></li>
+        
+        <li><a href="http://www.rubyireland.com" class="mdl-menu__item">Ruby Ireland</a></li>
+        
+        <li><a href="feed.xml" class="mdl-menu__item">Subscribe via RSS</a></li>
+        
+        <li><a href="about.html" class="mdl-menu__item">About</a></li>
+        
+      </ul>
+    </div>
+  </header>
+
+  <!--
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+    
+      
+      <a class="mdl-navigation__link" href="/about.html">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+    </nav>
+
+  </div>
+  -->
+
+
+    
+
+    <div class="post-ribbon"></div>
+<main class="post-main mdl-layout__content">
+  <div class="post-container mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+    <div class="post-section mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+      <div class="mdl-color-text--grey-500">
+      Jul 15, 2007 •  
+      </div>
+      <h3>Momentumless Linux and the Death of Open Source - A Developer's Response</h3>
+      <article class="post-content">
+        <p><p>A couple of blog and news posts on the Internet this week seemed to make the headlines with death knells for Linux and Open Source for a multitude of reasons, both chronic (less anti-Microsoft sentiment about) and recent (GPL 3). But on reading, I couldn’t help but feel that both posts sounded wrong, utterly utterly wrong in fact. No disrespect intended to the authors of course.</p>
+
+<p>The first post <a href="http://www.informationweek.com/software/open-source-is-dead-long-live-open-paten/229215592">Open Source Is Dead, Long Live Open Patents?</a> by David DeJean, which took a commonly cited angle on GPL3 hurting Open Source by fragmenting the community. But that is to not understand the community. Bare in mind one important fact about community-oriented Open Source developers, of which I am one - we write the software because we love to. For the vast majority of SMD’s (Small-to-Medium size project Developers, for want of a better term) we don’t really care whether our project is GPL2 or GPL3 - why? Because they are both effective Open Source licences and they will both serve our personal purposes fine as either licence would suit our pet projects. Of course, we’ll all still get our goat up as to whether Linux or the GNU Compiler Tools should be GPL 2 or 3 - but that’s a separate issue - it’s won’t stop us writing the software we love. It is naive for commentators to think that because a new licence comes out that it will hurt the amount of FOSS produced. As for businesses, if it made sense to switch to Linux before GPL 3, it will still make sense after GPL3 - irrespective of what or who adopts GPL 3. It technically affects Tivo (although they will be able to stick with Linux 2.4 kernel) - so what? Such cases only make up a small part of the econosphere. Plenty of business providers seem to be happy (note: link to http://www.builderau.com.au/news/soa/GPL3-welcomed-by-IBM-Red-Hat-Novell-MySQL/0,339028227,339279403,00.htm no longer works). Even embedded solution providers are saying that GPL 3 won’t turn customers off, with Jason Wacha of MontaVista saying, “Our customers are used to working with licenses that are much more restrictive than the GPL. In my opinion, typical proprietary licenses are much more restrictive in pretty much all instances than the GPL.” (Reference: http://www.internetnews.com/dev-news/article.php/3686486)</p>
+
+<p>The second article <a href="http://www.itbusinessedge.com/cm/blogs/enderle/why-open-source-and-linux-are-losing-momentum/?cs=16550">Why Open Source and Linux Are Losing Momentum</a> seemed a bizarre choice of title for a engineering philosophy and a platform which is currently experiencing stellar momentum towards ever greater adoption. As one commenter at the end of the article said - check out the Gartner and IDC statistics. But being a lazy developer I’ll just speak from my own experience. I’m finding that small to medium sized Microsoft shops are getting squeezed as Microsoft have made it more difficult for such companies to maintain partnership status. Today, a given company is required to have more and more MCSE’s or MCAD’s on the books in order to get any level of partnership. But obviously it is easier for 100 employee company to get X number of MCSE’s than it is for a company of 4 employees. Despite the fact that small tight teams tend to deliver better results (in a traditionally managed non-bazaar environment). So why penalise the small guys? Why make them fork out more licencing costs for things such as Visual Studio and Team Studio while the big fish get these through the partnership program?</p>
+
+<p>Perhaps, Rob Enderle, the author of this second article might reflect on this as a reason for lower software project margins than blindly (I don’t mean to be offensive, I really don’t, but the following assertion amazed me) stating that GPL and Linux drove developers to India. If Microsoft want to help boost profit margins for software houses then help developers in small business. Otherwise the trend showing that <a href="http://www.pcworld.com/article/id,134115-c,researchreports/article.html">Microsoft’s Windows platform is losing traction as a target for application developers in North America</a> is likely to continue. In this article, John Andrews, the CEO of Evans Data, says “We attribute [the decline] largely to the increase in developers beginning to target Linux and different Linux [distributions].”</p>
+
+<p>One reason that seems to be driving this shift is that customers like web apps more than desktop applications and even though C# marches forward, making big progress on the taking Java on head to head, it is being flanked by the likes of Ruby and even Python on the web app development scene. It also is interesting to note that if you have recently had your Microsoft partnership cut short and you still want to dog food you will probably be using SourceSafe to manage your source code. My advice - don’t. Because similarly positioned competitors are most likely using <a href="http://subversion.tigris.org/">Subversion</a> and this will give them a technical advantage that you will find hard to bridge. SourceSafe is interesting in that, despite it’s name, it does not source control code. Unless you like tagging every revision - there is no way to see what you project looked like for a given revision - something that is trivial in Subversion and in particular <a href="http://tortoisesvn.tigris.org/">TortoiseSvn</a>. It’s a sign of the times when it makes so much more sense for Microsoft Shops to use Free Software alternatives to dog food.</p>
+
+<p>Another bone of contention I have with the article is it’s stance on outsourcing. The reason that jobs get outsourced is simple because the destination countries have well skilled professional people who can help lower costs for a business if properly utilised. It is the U.S. that agrees trade pacts with these countries, not Richard Stallman, Linus Torvalds - those happy bed fellows :) - or Eben Moglen. If you don’t like that then vote accordingly but I’m a little confused at how GPL/Linux could be blamed. On the subject of Google rising on the hard work of FOSS, it’s worth noting that Google does participate in the community - Google Web Toolkit, Google Summer of Code and Google’s Open Source Project Hosting service to name but a few - and in addition, Google pays lots of top notch Linux dev’s a handsome salary.</p>
+
+<p>Another point I took from the article was how Bill Gates almost ‘invented’ the notion of software developer jobs and turned a bunch of hobbyists into professionals - from the <a href="http://www.thocp.net/companies/microsoft/microsoft_company.htm">Microsoft history</a> link provided. But realistically it just so happened that Microsoft came on the scene just as desktops started becoming useful to business in this manner. There were plenty of others out there to pay developers - I certainly think that IBM would have paid a few along the way. A more interesting trip back in time would be to 1991, when Bill Gates said <a href="http://eupat.ffii.org/archiv/zitate/#bgates91">Patents exclude competitors, lead industry to standstill</a> compared to the anti-Linux saber rattling patent assault going on at the moment. No doubt you’ve all seen the now infamous <a href="http://money.cnn.com/magazines/fortune/fortune_archive/2007/05/28/100033867/">Fortune</a> magazine article linked to on more than one occasion.</p>
+
+<p>So that’s another day in the life of the Internet. I’ll sign off on the following note. At one point in the latter article I’ve covered, Rob Enderle, asks of GPL 3 “What has it done to increase software value, programmer salaries or software company profitability?” My answer is simple, by championing the goal of removing the scourge of software patents from the software industry, the GPL encourages the development of programs without the fear and persecution of anti-competitive legal intervention from 3rd parties. It’s message is clear ‘Spend your precious cash on paying software developers, not lawyers’. Rob says that Microsoft is no longer a danger… We’ll all believe that when they sign up to the patent non-proliferation treaty. Until then, look up, sit back, and watch them pigs fly!</p>
+</p>
+      </article>
+      <!-- Disqus comments -->
+      
+      <div>
+        <h3>Comments</h3>
+        <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'theirishpenguin';
+        var disqus_developer = 0; // developer mode is on
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+      </div>
+      
+    </div>
+  </div>
+</main>
+
+    <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer--middle-section">
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">INFO</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="mailto:"></a></li>
+        <li><a href="/feed.xml">subscribe via RSS</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">SOCIAL</h1>
+      <ul class="mdl-mega-footer--link-list">
+        
+        <li>
+          <a href="https://github.com/theirishpenguin">
+            <span class="icon  icon--github">
+              <svg viewBox="0 0 16 16">
+                <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+
+            <span class="username">theirishpenguin</span>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="https://twitter.com/theirishpenguin">
+            <span class="icon  icon--twitter">
+              <svg viewBox="0 0 16 16">
+                <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+              </svg>
+            </span>
+
+            <span class="username">theirishpenguin</span>
+          </a>
+        </li>
+      
+	  
+      
+	  
+	  
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">ABOUT</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li>Ruby/JS dev. One eye on design. Occasionally stops writing code and starts writing words when the Internet is down. Thoughts and opinions expressed here are my own. If you're interested in Ruby in Ireland, be sure to check out RubyIreland.com.
+</li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- Penguin: Disabling for now
+  <div class="mdl-mega-footer--bottom-section">
+    <div class="mdl-logo">The Irish Penguin</div>
+    <ul class="mdl-mega-footer--link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+    -->
+  </div>
+
+</footer>
+
+
+    </div>
+    <!-- /End Layout -->
+
+    <!-- Material Design Lite js Library -->
+    <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    
+    <script rel="javascript" type="text/javascript" src="/js/search.js"></script>
+    <script rel="javascript" type="text/javascript">
+      superSearch({
+        searchFile: '/feed.xml',
+        searchSelector: '#js-search', // CSS Selector for search container element.
+        inputSelector: '#js-search__input', // CSS selector for <input>
+        resultsSelector: '#js-search__results' // CSS selector for results container
+      });
+    </script>
+  </body>
+
+</html>

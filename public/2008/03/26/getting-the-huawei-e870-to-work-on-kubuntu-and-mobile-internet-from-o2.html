@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Getting the Huawei E870 to work on Kubuntu (and Mobile Internet from O2) </title>
+  <meta name="description" content="It’s a shiny express card and it promises Internet free from cables, plugs and sockets but will it work on your pretty Kubuntu laptop? Let’s hope so. This gu...">
+
+  <link rel="canonical" href="http://www.theirishpenguin.com/2008/03/26/getting-the-huawei-e870-to-work-on-kubuntu-and-mobile-internet-from-o2.html">
+  <link rel="alternate" type="application/rss+xml" title="The Irish Penguin" href="http://www.theirishpenguin.com/feed.xml" />
+
+  <!-- Material Design Lite css Library -->
+  <!--<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">-->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.brown-pink.min.css" />
+  
+  <!-- Material Design Fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Custom theme css -->
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+
+  <body>
+
+    <!-- Start Layout -->
+    
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- search layout -->
+<div class="super-search" id="js-search">
+  <ul class="super-search__results" id="js-search__results"></ul>        
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored super-search__close-btn" onclick="superSearch.toggle()">
+    <i class="material-icons">close</i>
+  </button>
+</div>
+<!-- /end search -->
+        <header class="mdl-layout__header">
+
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a class="penguin-site-title-link" href="http://www.theirishpenguin.com">The Irish Penguin <span class="mdl-cell--hide-phone"> - Watching Open Source Win</span></a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      
+
+      <!-- Penguin: Disabling for now -->
+      <!--
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="js-search__input">
+          <i class="material-icons">search</i>
+        </label>
+
+        <div class="mdl-textfield__expandable-holder" >
+          <input class="mdl-textfield__input super-search__input" type="text" id="js-search__input" />
+        </div>
+      </div>
+      -->
+      <!-- End of Penguin: Disabling for now -->
+
+      <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-left">
+        <i class="material-icons">more_vert</i>
+      </button>
+
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
+        
+        <li><a href="https://twitter.com/theirishpenguin" class="mdl-menu__item">Twitter</a></li>
+        
+        <li><a href="https://github.com/theirishpenguin" class="mdl-menu__item">Github</a></li>
+        
+        <li><a href="http://www.rubyireland.com" class="mdl-menu__item">Ruby Ireland</a></li>
+        
+        <li><a href="feed.xml" class="mdl-menu__item">Subscribe via RSS</a></li>
+        
+        <li><a href="about.html" class="mdl-menu__item">About</a></li>
+        
+      </ul>
+    </div>
+  </header>
+
+  <!--
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+    
+      
+      <a class="mdl-navigation__link" href="/about.html">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+    </nav>
+
+  </div>
+  -->
+
+
+    
+
+    <div class="post-ribbon"></div>
+<main class="post-main mdl-layout__content">
+  <div class="post-container mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+    <div class="post-section mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+      <div class="mdl-color-text--grey-500">
+      Mar 26, 2008 •  
+      </div>
+      <h3>Getting the Huawei E870 to work on Kubuntu (and Mobile Internet from O2) </h3>
+      <article class="post-content">
+        <p><p>It’s a shiny express card and it promises Internet free from cables, plugs and sockets but will it work on your pretty Kubuntu laptop? Let’s hope so. This guide worked for me and hopefully it’ll work for you too!</p>
+
+<p>Now before we start let me tell you my setup. I’ve got this working on a Kubuntu based Dell Inspiron using O2 as my network provider. It did not work on a separate Dell Vostro running Ubuntu 7.10 (however I did get it working on a different Kubuntu 7.10 Dell Inspiron laptop). So I’m not sure whether that was a Ubuntu or Vostro thing or just bad luck. Also, note that the below approach worked for me when setting up Huawei’s E220 USB modem too.</p>
+
+<p>In any case, here’s the 6 step plan to happiness
+1.) Download the huaweiAktBbo-i386.out file
+2.) Create the /etc/chatscripts/huawei-e220.chat file
+3.) Create the /etc/ppp/peers/huawei-e220 file
+4.) Create the /etc/wvdial-huawei.conf
+5.) Edit the /etc/resolv.conf
+6.) Create and tailor the /home/username/bin/connectme script (and chmod it!)
+7.) Tip of the day - lose the Edge!</p>
+
+<p><strong>1.) Download the huaweiAktBbo-i386.out</strong>
+This can be done by visiting <a href="http://www.kanoistika.sk/bobovsky/archiv/umts/">http://www.kanoistika.sk/bobovsky/archiv/umts/</a> and downloading the file huaweiAktBbo-i386. If you really want you can also build it from the C source provided (in order to build it you will need to have a C compiler and some basic tools on your system). NB: Copy the huaweiAktBbo-i386.out file to your /home/username/bin directory after downloading. If you don’t have a bin folder under your home directory then create one (‘mkdir /home/username/bin’). Also ensure that it is in your $PATH environment variable. Try echo $PATH and if you don’t see it listed add the following line to your /home/username/.bashrc file</p>
+
+<p>export PATH=$PATH:/home/username/bin</p>
+
+<p>To get this change immediately picked up by your shell run the command ‘source ~/.bashrc’. This something I didn’t learn for years!!! D’oh!</p>
+
+<p><strong>2.) Create the following /etc/chatscripts/huawei-e220.chat file</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>TIMEOUT 3
+ABORT BUSY
+ABORT 'NO CARRIER'
+ABORT VOICE
+ABORT 'NO DIALTONE'
+ABORT 'NO DIAL TONE'
+ABORT 'NO ANSWER'
+ABORT DELAYED
+"" ATZ
+OK ATQ0V1E1S0=0&amp;C1&amp;D2
+OK ATDT*99#
+CONNECT ""
+</code></pre>
+</div>
+
+<p><strong>3.) Create the /etc/ppp/peers/huawei-e220 file</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/dev/ttyUSB0
+460800
+noipdefault
+defaultroute
+persist
+noauth
+nodetach
+usepeerdns
+connect "/usr/sbin/chat -vf /etc/chatscripts/huawei-e220.chat"
+</code></pre>
+</div>
+
+<p><strong>4.) Create the /etc/wvdial-huawei.conf</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[Dialer Defaults]
+Modem = /dev/ttyUSB0
+#Baud = 3600000
+Baud = 7200000
+Init1 = ATZ
+Init2 = ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2
+Init3 =
+Area Code =
+Phone = *99#
+Username = ppp
+Password = ppp
+Ask Password = 0
+Dial Command = ATDT
+Stupid Mode = 1
+Compuserve = 0
+Force Address =
+Idle Seconds = 0
+DialMessage1 =
+DialMessage2 =
+ISDN = 0
+Auto DNS = 1
+</code></pre>
+</div>
+
+<p><strong>5.) Edit the /etc/resolv.conf file</strong>
+Add the following entries at the top of this file (they are O2’s nameservers)</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>nameserver 62.40.32.33
+nameserver 62.40.32.34
+</code></pre>
+</div>
+
+<p><strong>6.) Create the and tailor the /home/username/bin/connectme script as follows (and chmod it!)</strong>
+Note: See step 1 for more instructions if you don’t have a bin folder in your home directory</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+sudo /home/username/bin/huaweiAktBbo-i386.out <span class="c"># CHANGE THIS TO YOUR 'USERNAME'</span>
+sleep 3 <span class="c"># wait for the USB host to settle down...</span>
+sudo wvdial --config /etc/wvdial-huawei.conf
+<span class="c">#/usr/sbin/pppd call provider</span>
+</code></pre>
+</div>
+
+<p>Then just do a ‘chmod u+x /home/username/bin/connectme’ from the command line (to allow you to run ‘connectme’ from the command line directly) and hopefully you should be ready to rock! The next step is to insert your E870 into the express slot. You might start to see Linux picking up the the devices and popping dialogs asking you if you want to mount the device (you should select ‘Cancel’ for them all).Wait about 5 seconds for it to steady itself and then run ‘connectme’ from the command line. You should see</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Hladam HUAWEI E220 a prepnem na modem - bbo 06
+4 set feature request returned 0
+Prepnute-OK, Mas ttyUSB0 ttyUSB1 (cez usbserial vendor=0x12d1 product=0x1003)
+pozri /proc/bus/usb/devices
+WvDial&lt;*1&gt;: WvDial: Internet dialer version 1.56
+WvModem&lt;*1&gt;: Cannot get information for serial port.
+WvDial&lt;*1&gt;: Initializing modem.
+WvDial&lt;*1&gt;: Sending: ATZ
+WvDial Modem&lt;*1&gt;: ATZ
+WvDial Modem&lt;*1&gt;: OK
+WvDial&lt;*1&gt;: Sending: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2
+WvDial Modem&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;C1 &amp;D2
+WvDial Modem&lt;*1&gt;: OK
+WvDial&lt;*1&gt;: Modem initialized.
+WvDial&lt;*1&gt;: Sending: ATDT*99#
+WvDial&lt;*1&gt;: Waiting for carrier.
+WvDial Modem&lt;*1&gt;: ATDT*99#
+WvDial Modem&lt;*1&gt;: CONNECT
+WvDial&lt;*1&gt;: Carrier detected.  Starting PPP immediately.
+WvDial: Starting pppd at Tue Mar 25 21:22:08 2008
+WvDial: Pid of pppd: 11465
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: Using interface ppp0
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: local  IP address 62.40.58.185
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: remote IP address 10.64.64.64
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: primary   DNS address 62.40.32.33
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: secondary DNS address 62.40.32.34
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+</code></pre>
+</div>
+
+<p>If you want to disconnect from the web simply press Ctrl-C twice to kill it off. The first time you press it, it talks of wanting to exit gracefully - but better to press it a second time and exit effectively ;-)</p>
+
+<p>You’ll see the following</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Caught signal 2:  Attempting to exit gracefully...
+WvDial&lt;*1&gt;: Terminating on signal 15
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: Connect time 8.6 minutes.
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
+WvDial&lt;*1&gt;: Disconnecting at Tue Mar 25 21:30:45 2008
+</code></pre>
+</div>
+
+<p><strong>7.) Tip of the day - lose the Edge!</strong>
+Disclaimer: this is just my opinion as to the performance of the Edge network so O2 lawyers keep your knickers on (however Apple iPhone suckers, enjoy the sheer speed of the Edge network, getting dripfeed broadband at 1500 Euros a year!). In stark contrast though, my experience with the HSDPA network have been good. Yes, as you may have already guessed, the Edge network was not really delivering for me. But a friend of mine showed me how to change your O2 broadband Express card (or USB modem) settings so that it not even bother connecting if it can’t get a proper UTMS or HSDPA signal. For this you need a Windows friend. Install the express card on their machine and from the O2 broadband application and select “Tools-&gt;Choose Network Type-&gt;3G Only”. This setting directly updates the card so even when you switch back to a using it on a Linux box it will go with 3G only. If I don’t do this I’ve found that it will flip flop between Edge (GPRS) and 3G networks and drive you mad in the process. I found it pretty much impossible to even check my email on Edge.</p>
+
+<p>Special thanks to Andy and Paul on the <a href="http://www.linux.ie">ILUG</a> mailing lists for their help and also to O2, Vodaphone, Three et al. for providing Mobile Internet via hardware that can actually be used on an Open Source platform such as Linux; as we hopefully move from an era of proprietary lock-in and DRM-based crippleware to software that delivers genuine value for businesses and users.  Vodafone have gone as far as having their own Open Source website to help along development at <a href="http://www.vodafonebetavine.net/web/guest/projects/open_source">Betavine.</a> Enjoy!</p>
+
+<p>The revolution will not be televised! It will be streamed over TCP/IP…</p>
+</p>
+      </article>
+      <!-- Disqus comments -->
+      
+      <div>
+        <h3>Comments</h3>
+        <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'theirishpenguin';
+        var disqus_developer = 0; // developer mode is on
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+      </div>
+      
+    </div>
+  </div>
+</main>
+
+    <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer--middle-section">
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">INFO</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="mailto:"></a></li>
+        <li><a href="/feed.xml">subscribe via RSS</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">SOCIAL</h1>
+      <ul class="mdl-mega-footer--link-list">
+        
+        <li>
+          <a href="https://github.com/theirishpenguin">
+            <span class="icon  icon--github">
+              <svg viewBox="0 0 16 16">
+                <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+
+            <span class="username">theirishpenguin</span>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="https://twitter.com/theirishpenguin">
+            <span class="icon  icon--twitter">
+              <svg viewBox="0 0 16 16">
+                <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+              </svg>
+            </span>
+
+            <span class="username">theirishpenguin</span>
+          </a>
+        </li>
+      
+	  
+      
+	  
+	  
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">ABOUT</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li>Ruby/JS dev. One eye on design. Occasionally stops writing code and starts writing words when the Internet is down. Thoughts and opinions expressed here are my own. If you're interested in Ruby in Ireland, be sure to check out RubyIreland.com.
+</li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- Penguin: Disabling for now
+  <div class="mdl-mega-footer--bottom-section">
+    <div class="mdl-logo">The Irish Penguin</div>
+    <ul class="mdl-mega-footer--link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+    -->
+  </div>
+
+</footer>
+
+
+    </div>
+    <!-- /End Layout -->
+
+    <!-- Material Design Lite js Library -->
+    <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    
+    <script rel="javascript" type="text/javascript" src="/js/search.js"></script>
+    <script rel="javascript" type="text/javascript">
+      superSearch({
+        searchFile: '/feed.xml',
+        searchSelector: '#js-search', // CSS Selector for search container element.
+        inputSelector: '#js-search__input', // CSS selector for <input>
+        resultsSelector: '#js-search__results' // CSS selector for results container
+      });
+    </script>
+  </body>
+
+</html>
