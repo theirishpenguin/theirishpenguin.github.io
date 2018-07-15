@@ -3,4 +3,5 @@ gem 'rack', "1.5.2"
 gem 'sinatra'
 gem 'jekyll'
 gem 'rdiscount'
+gem 'puma'
 
