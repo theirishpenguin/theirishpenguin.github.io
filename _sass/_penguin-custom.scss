@@ -1,0 +1,44 @@
+//
+// Custom styles added by theirishpenguin
+//
+
+$penguin-white:  #fff;
+$penguin-background-color: #00BCD4; //#141414;
+
+.penguin-site-title-link {
+  color: $penguin-white !important;
+  font-weight: 400;
+  text-decoration: none !important;
+}
+
+.mdl-layout__header-row {
+  background-color: $penguin-background-color !important;
+}
+
+.mdl-layout__drawer-button {
+  background-color: $penguin-background-color !important;
+}
+
+.section-highlight .mdl-js-ripple-effect {
+  z-index: 2 !important;
+}
+
+.responsive-post-figure { float: right; margin: 20px; }
+
+@media (max-width: 500px) {
+  .responsive-post-figure { float: right; margin: auto; }
+}
+
+.responsive-post-figure__image { width: 291px !important }
+
+@media (max-width: 540px) {
+  .responsive-post-figure__image { width: 100% !important }
+}
+
+.nice-quote {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}

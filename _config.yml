@@ -1,0 +1,64 @@
+# Some extra settings from old jekyll site
+destination: ./public
+exclude: [config.ru, _unpublished_posts, ./public, README, thread-dumper.rb, Rakefile, Rakefile, app.rb, Gemfile, Gemfile.lock, README.md, README_DECLAN, gen_next_post_id, utc_generate_files]
+author :
+  name : Declan McGrath
+  email : declan@weuseopensource.com
+  github : theirishpenguin
+  twitter : theirishpenguin
+  feedburner : theirishpenguin
+production_url : http://www.theirishpenguin.com # Needs to be set for disqus
+
+# Some extra settings from old jekyll site (disabled)
+#permalink: /:categories/:year/:month/:day/:title.html
+#auto: false
+#pygments: true
+
+# Site settings
+title: The Irish Penguin
+tagline: Watching Open Source Win
+#email: your-email@domain.com (disabled)
+description: > # this means to ignore newlines until "baseurl:"
+  Ruby/JS dev. One eye on design. Occasionally stops writing code and
+  starts writing words when the Internet is down. Thoughts and opinions
+  expressed here are my own. If you're interested in Ruby in Ireland,
+  be sure to check out RubyIreland.com.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.theirishpenguin.com" # the base hostname & protocol for your site
+twitter_username: theirishpenguin
+github_username:  theirishpenguin
+#google_play: 'GDGX'
+#google_plus_com: '109485346959707049693'  # Community link
+#google_plus_per: '+GDGManagua'  #Personal link
+#facebook_app_id: 12345
+
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
+
+more_vert:
+  option1:
+    name: Twitter
+    link: https://twitter.com/theirishpenguin
+  option2:
+    name: Github
+    link: https://github.com/theirishpenguin
+  option3:
+    name: Ruby Ireland
+    link: http://www.rubyireland.com
+  option4:
+    name: Subscribe via RSS
+    link: feed.xml
+  option5:
+    name: About
+    link: about.html
+
+disqus: true
+disqus_shortname: theirishpenguin
+
+# Build settings
+markdown: kramdown
+
+# DMG says: set future to true if you want to be able to see future blog posts.
+future: true

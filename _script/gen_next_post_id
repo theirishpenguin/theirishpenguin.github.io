@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+# This will figure out the next post ID for your next post.
+# Useful if integrating with something like Disqus.
+# You may need to rename 'wordpress_id' to something else
+# depending on your situation...
+
+puts `grep -r 'wordpress_id:' _posts`.split("\n").map{|line| /\A.*wordpress_id: (\d+)\z/.match(line)[1].to_i}.sort.last.succ
