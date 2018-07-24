@@ -16,7 +16,7 @@ production_url : http://www.theirishpenguin.com # Needs to be set for disqus
 
 # Site settings
 title: The Irish Penguin
-tagline: Watching Open Source Win
+tagline: Sorry About The Word Count
 #email: your-email@domain.com (disabled)
 description: > # this means to ignore newlines until "baseurl:"
   Ruby/JS dev. One eye on design. Occasionally stops writing code and

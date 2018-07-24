@@ -5,7 +5,7 @@ layout: post
 slug: morning-moments-from-uxdx-conf-2016
 title: Morning Moments from UXDX Conf 2016
 wordpress_id: 1054
-highlight: true
+highlight: false
 image: /assets/images/uxdx-logo.png
 tags:
 - Design
