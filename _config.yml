@@ -21,8 +21,7 @@ tagline: Sorry About The Word Count
 description: > # this means to ignore newlines until "baseurl:"
   Ruby/JS dev. One eye on design. Occasionally stops writing code and
   starts writing words when the Internet is down. Thoughts and opinions
-  expressed here are my own. If you're interested in Ruby in Ireland,
-  be sure to check out RubyIreland.com.
+  expressed here are my own.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.theirishpenguin.com" # the base hostname & protocol for your site
 twitter_username: theirishpenguin
@@ -49,10 +48,10 @@ more_vert:
     link: http://www.rubyireland.com
   option4:
     name: Subscribe via RSS
-    link: feed.xml
+    link: /feed.xml
   option5:
     name: About
-    link: about.html
+    link: /about.html
 
 disqus: true
 disqus_shortname: theirishpenguin
