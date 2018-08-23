@@ -2,13 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Irish Penguin</title>
-    <description>Ruby/JS dev. One eye on design. Occasionally stops writing code and starts writing words when the Internet is down. Thoughts and opinions expressed here are my own. If you're interested in Ruby in Ireland, be sure to check out RubyIreland.com.
+    <description>Ruby/JS dev. One eye on design. Occasionally stops writing code and starts writing words when the Internet is down. Thoughts and opinions expressed here are my own.
 </description>
     <link>http://www.theirishpenguin.com/</link>
     <atom:link href="http://www.theirishpenguin.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Jul 2018 22:13:01 +0000</pubDate>
-    <lastBuildDate>Wed, 25 Jul 2018 22:13:01 +0000</lastBuildDate>
+    <pubDate>Thu, 23 Aug 2018 09:51:07 +0000</pubDate>
+    <lastBuildDate>Thu, 23 Aug 2018 09:51:07 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>There Is No Place Quite Like Hell</title>
+        <description>&lt;p&gt;So I recently came across a headline somewhere outlining that pope Francis said that hell did not exist. Given a recent uptick in my interest in philosophy, it struck me as an interesting article to dive into. Of course, anytime you really want to find an article you recently swiped past, the forces of the universe will conspire against you to make sure that you never succeed in finding it. So I resorted to the only thing that can consistently mitigate the forces of the universe - Google. A quick Internet search later and we were back in business. And I had got something altogether different.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure style=&quot;margin:0px;&quot;&gt;
+    &lt;img src=&quot;/assets/images/flame_of_fire_800w.jpg&quot; alt=&quot;Hell Picture&quot; /&gt;
+    &lt;figcaption style=&quot;font-style: italic; margin-top: 5px;&quot;&gt;
+        &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Flame_of_fire.jpg&quot;&gt;Photo&lt;/a&gt;
+        by &lt;a href=&quot;https://commons.wikimedia.org/wiki/User:Lviatour&quot;&gt;Luc Viatour&lt;/a&gt;
+        under the &lt;a href=&quot;http://en.wikipedia.org/wiki/en:Creative_Commons&quot;&gt;CC&lt;/a&gt; &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.5/deed.en&quot;&gt;Attribution-ShareAlike 2.5 Generic&lt;/a&gt;
+        licence.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Apparently &lt;a href=&quot;https://www.washingtonpost.com/news/acts-of-faith/wp/2018/03/29/vatican-denies-report-that-says-pope-francis-believes-hell-does-not-exist/&quot;&gt;the pope did not say that hell did not exist&lt;/a&gt; but instead was misquoted. Rather the doctrine states that “the chief punishment of hell is eternal separation from God”. Well, let’s go Aristotle on this and see if this latter interpretation is logically possible…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;God is omnipresent&lt;/li&gt;
+  &lt;li&gt;Sidenote (and axiom) - God created hell&lt;/li&gt;
+  &lt;li&gt;Hell is defined primarily as a separation from God (as noted in the linked article above)&lt;/li&gt;
+  &lt;li&gt;But God must be present in hell otherwise he is not omnipresent (ie. there would be places he cannot be - a contradiction)&lt;/li&gt;
+  &lt;li&gt;Therefore it is not possible for one to be separated from God - as God is omnipresent&lt;/li&gt;
+  &lt;li&gt;Conclusion - hell cannot exist as per that definition&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So we may not quite have put the fallible in papal infallibility yet but we have arrived at an interesting place. Now there are some lines of attack on the above conclusion.&lt;/p&gt;
+
+&lt;h5 id=&quot;omnipresent-slipperiness&quot;&gt;Omnipresent Slipperiness&lt;/h5&gt;
+
+&lt;p&gt;The first place to cast doubt on the above logic is to bend the meaning of omnipresent. As we humans are well versed in experiencing and thinking about “being present” as a occupying a place in space and time, this can lead to defining presence as a physical location. And one could argue that hell could exist beyond what we know as space and time. To satisfy the separation from God claim, however, God still cannot exist in this hell. That would imply that there is an area beyond space and time that God does not exist in - and it would seem unlikely that this is a satisfactory conclusion for any interlocutor. So omnipresent means omnipresent in space and time as well as beyond space and time - no exceptions.&lt;/p&gt;
+
+&lt;h5 id=&quot;separation-slipperiness&quot;&gt;Separation Slipperiness&lt;/h5&gt;
+
+&lt;p&gt;If omnipresent is taken to mean omnipresent in the broadest sense of the word, as noted in the previous point, then a next reasonable line of attack is to pressure the definition of separation. This, it could be argued, means a feeling of isolation from God rather than the (meta)physical separation from God that would immediately spring to mind. This would require God to somehow impart thoughts of isolation in the mind of the condemned. For the purposes of this argument we need to grant that something akin to feeling, thoughts and mind are possible in the metaphysical world. Once granted, we would also accept that God has omnipotence as per the doctrine and is all powerful. Indeed, this omnipotence could then be used to impart the thought of isolation. However, this would appear to be a rather bizarre employment of illusions - inducing a feeling of isolation in a subject that you created, for the purposes of punishing them for actions they took based on how you created them. At this point it would begin to simply look like a sadistic abusive relationship, which would hardly be compatible with the spirit of the doctrine (if you excuse the pun).&lt;/p&gt;
+
+&lt;h5 id=&quot;dimensional-quagmire&quot;&gt;Dimensional Quagmire&lt;/h5&gt;
+
+&lt;p&gt;One can argue and expend much energy on things like - if the logic proposed entertains a hell, which resides outside of space and time then how can it be created by God in the first place - as there would be no time dimension to allow hell to come into existence. However, the logic leading to the conclusion that “hell cannot exist as a separation from God” at the core of this article adds and subtracts nothing from the existing doctrine. So feel free to think for as long as you want about these issues but it would appear to be out of scope.&lt;/p&gt;
+
+&lt;p&gt;There you have it - there is no place quite like hell!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Aug 2018 09:16:12 +0000</pubDate>
+        <link>http://www.theirishpenguin.com/2018/08/23/2018-08-23-there-is-no-place-quite-like-hell.html</link>
+        <guid isPermaLink="true">http://www.theirishpenguin.com/2018/08/23/2018-08-23-there-is-no-place-quite-like-hell.html</guid>
+        
+        <category>Philosophy</category>
+        
+        
+      </item>
     
       <item>
         <title>On Sam Harris, Jordan Peterson and Douglas Murray at Dublin's 3Arena. And Why...</title>
@@ -700,39 +752,6 @@ dollar and fire off a fetch().&lt;/p&gt;
         <category>rails</category>
         
         <category>ruby</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Geekslam 1 - NoSQL vs RDBMS</title>
-        <description>&lt;p&gt;Geeks are ending 2012 with a serious bang, after a year that has been so jam packed with tech events that it’s bloody hard to unearth an evening not already occuppied by some tech occasion. Following hot on the heels of the usual post summer conference season, you’d think that Javascripters, Pythonistas, PHPers, Rubyists, .NETers, Nodies, Erlangers (a title that would make for an awesome Cork meetup!) and Objective-C types would waving the white flag and catching up on some zzz’s ahead of Christmas. But no! They’re still kicking ass. Two examples from just this week were &lt;a href=&quot;https://tito.io/league-of-facepalm/dublin-geek-slam&quot;&gt;Geekslam&lt;/a&gt; and the &lt;a href=&quot;http://codingday.org&quot;&gt;Global Day of Code Retreat&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a title=&quot;By Simon Q from United Kingdom (WWE Wrestlemania 28 - The Rock vs John Cena) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File%3AWWE_Wrestlemania_28_-_The_Rock's_Rock_Bottom.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;WWE Wrestlemania 28 - The Rock&amp;#039;s Rock Bottom&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/WWE_Wrestlemania_28_-_The_Rock%27s_Rock_Bottom.jpg/512px-WWE_Wrestlemania_28_-_The_Rock%27s_Rock_Bottom.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Geekslam saw two teams of geeks from various user groups face off on a topic chosen by those who attended. After coming up with a short list, including things like Native vs Web Apps and iOS vs Android, the night was going to be won or lost on the basis of that dinner time conversation classic - “Relational DBs vs NoSQL”. First up though there were talks on a set of subjects as varied as the audience.&lt;/p&gt;
-
-&lt;p&gt;Simon Rand from Dublin JS presented on Appcelerator Titanium, with some of the big takeway points being that it can save you a bunch of time across platforms and give good code reuse as well as being pretty fast, unless you need bleeding raw perfromance for something like gaming. Vinny Glennon from Ruby Ireland talked about some cracking gems he uses to make him a more productive day to day. Not only did this help inform Rubyists about handy tools and libraries they may be missing out on, it also paved the way later for discussion on how other languages/platforms solved similar problems. Next up was Andrew Smith from Dublin ALT.NET who talked about RX.js - a library to compose asynchronous and event-based programs using observable collections and LINQ-style query operators. And completing the talks featuring Javascript love was Richard Rodger, presenting on NodeJS, before taking a breather to sharpen his NodeJS duelling pistol. Ulrich Dangel from Python Ireland gave a great overview of a topic of interest to many devs - GIS Development. And finally, Valdimar Kristjansson explained to us, “Why I love Erlang.”&lt;/p&gt;
-
-&lt;p&gt;Before the ultimate event started there was even time for a mini-battle between NodeJS and Erlang. After both trading blows and scoring impressive points the bout was edged by Erlang, showing that there’s life in the old dog yet, though the Node team did unveil a snazzy NodeCopter later on - so perhaps the Erlang User group is going to be subjected to drone attacks until the next showdown!&lt;/p&gt;
-
-&lt;p&gt;Then onto the main course - the Geekslam - where the audience tweeted some pretty zany situations for NoSQL and RDBMS’s to duke it out (to give you a flavour, consider “AI for global thermonuclear war targetting system from satellite, submarine &amp;amp; silo launch platforms”).&lt;/p&gt;
-
-&lt;p&gt;There were rules. There were marks deducted for below the belt hits. There were double points for “sophisticated trolling”. There was a team of judges who at times appeared to struggle to stay out of the debate. And there was a winner - the unaminous decision went to NoSQL. So keep an eye out for that global thermonuclear war targetting system running on MongoDB!&lt;/p&gt;
-
-&lt;p&gt;It was all good natured fun. The debates rumbled on. Once EngineYard had locked its doors there were still geeks slammin in the Schoolhouse Hotel, then down the canal and finally in the Portobello. Though by that stage there was probably less sophisticated trolling going on!&lt;/p&gt;
-
-&lt;p&gt;Hats off to the EngineYard - the host venue for the evening, the providers of pizza and the contributors of craft beer. And a big hand for the sponsors, &lt;a href=&quot;http://www.nearform.com&quot;&gt;NearForm&lt;/a&gt; who contributed a NodeCopter to the prize list, and &lt;a href=&quot;http://www.demonware.net&quot;&gt;Demonware&lt;/a&gt; who put up a Special edition copy of Black Ops II. And thanks to Paul Campbell and &lt;a href=&quot;http://tito.io&quot;&gt;Tito&lt;/a&gt; for making ticketing enjoyable! EngineYard’s Eamon Leonard did a fantastic job managing the fray - perhaps a career as a boxing referee beckons, maybe even &lt;a href=&quot;http://t.co/X7i5haNm&quot;&gt;chess boxing&lt;/a&gt;. Talk of another Geekslam in January is already underway. Doesn’t look like it’s going to get any easier to find spare evenings for new tech meetups in 2013 either…&lt;/p&gt;
-
-&lt;p&gt;Phew! To save your scrolling thumbs, the Global Day of Code Retreat will be handled in a separate posting :)&lt;/p&gt;
-</description>
-        <pubDate>Mon, 10 Dec 2012 10:00:00 +0000</pubDate>
-        <link>http://www.theirishpenguin.com/2012/12/10/2012-12-10-geekslam-1-nosql-vs-rdmbs.markdown.html</link>
-        <guid isPermaLink="true">http://www.theirishpenguin.com/2012/12/10/2012-12-10-geekslam-1-nosql-vs-rdmbs.markdown.html</guid>
-        
-        <category>community</category>
-        
-        <category>geekslam</category>
         
         
       </item>

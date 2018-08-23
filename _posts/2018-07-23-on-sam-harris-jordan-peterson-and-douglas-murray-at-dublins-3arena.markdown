@@ -5,7 +5,7 @@ layout: post
 slug: on-sam-harris-jordan-peterson-and-douglas-murray-at-dublins-3arena
 title: On Sam Harris, Jordan Peterson and Douglas Murray at Dublin's 3Arena. And Why...
 wordpress_id: 1055
-highlight: true
+highlight: false
 image: /assets/images/lightbulb-1875247_640.jpg
 tags:
 - Philosophy
