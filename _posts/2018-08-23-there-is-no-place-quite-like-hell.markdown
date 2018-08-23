@@ -11,7 +11,7 @@ tags:
 - Philosophy
 ---
 
-So I recently came across a headline somewhere outlining that pope Francis said that hell did not exist. Given a recent uptick in my interest in philosophy, it struck me as an interesting article to dive into. Of course, anytime you really want to find an article you recently swiped past, the forces of the universe will conspire against you to make sure that you never succeed in finding it. So I resorted to the only thing that can consistently mitigate the forces of the universe - Google. A quick Internet search later and we were back in business. And I had got something altogether different.
+So I recently came across a headline somewhere outlining that Pope Francis said that hell did not exist. Given a recent uptick in my interest in philosophy, it struck me as an interesting article to dive into. Of course, anytime you really want to find an article you recently swiped past, the forces of the universe will conspire against you to make sure that you never succeed in finding it. So I resorted to the only thing that can consistently mitigate the forces of the universe - Google. A quick Internet search later and we were back in business. And I had got something altogether different.
 
 <p>
 <figure style="margin:0px;">
@@ -27,7 +27,7 @@ So I recently came across a headline somewhere outlining that pope Francis said 
 </p>
 
 
-Apparently [the pope did not say that hell did not exist](https://www.washingtonpost.com/news/acts-of-faith/wp/2018/03/29/vatican-denies-report-that-says-pope-francis-believes-hell-does-not-exist/) but instead was misquoted. Rather the doctrine states that “the chief punishment of hell is eternal separation from God”. Well, let’s go Aristotle on this and see if this latter interpretation is logically possible...
+Apparently [the Pope did not say that hell did not exist](https://www.washingtonpost.com/news/acts-of-faith/wp/2018/03/29/vatican-denies-report-that-says-pope-francis-believes-hell-does-not-exist/) but instead was misquoted. Rather the doctrine states that “the chief punishment of hell is eternal separation from God”. Well, let’s go Aristotle on this and see if this latter interpretation is logically possible...
 
 * God is omnipresent
 * Sidenote (and axiom) - God created hell
