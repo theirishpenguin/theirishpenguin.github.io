@@ -10,7 +10,7 @@ tags:
 - Philosophy
 ---
 
-This post is the expansion a of a tweet.
+This post is the expansion this [tweet](https://twitter.com/theirishpenguin/status/1038930632339058689).
 
 **On the question of - is it pointless to debate if there will be no actionable outcome?**
 
