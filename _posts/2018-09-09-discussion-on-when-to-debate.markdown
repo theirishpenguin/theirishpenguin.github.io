@@ -60,7 +60,7 @@ person's position, with many ambiguous points clarified.
 
 **Regarding the [questions](https://twitter.com/lalonde/status/1038747232651169792) relating to the Fox News piece, asking "should we have an ethnically diverse population in a country?"**
 
-This is a good example of when decisions gets tricky. Should we be afraid of this question being asked? No. I
+This is a good example of when decisions get tricky. Should we be afraid of this question being asked? No. I
 haven't seen the rest of the Fox News piece other than the clip
 shared but I suspect Japan could be used as an argument for the pro-low
 diversity argument (NB: do not take the mentioning of that argument as an endorsement of that
