@@ -5,7 +5,7 @@ layout: post
 slug: 2018-08-23-there-is-no-place-quite-like-hell
 title: There Is No Place Quite Like Hell
 wordpress_id: 1057
-highlight: true
+highlight: false
 image: /assets/images/flame_of_fire_800w.jpg
 tags:
 - Philosophy
