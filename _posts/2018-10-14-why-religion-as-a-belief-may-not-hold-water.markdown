@@ -77,7 +77,7 @@ This is one of the core fields of philosophy, arguably first argued by
 Xenophanes in the 5th century BCE. Since then, Plato, Aristotle and pretty
 much every significant philosopher has had something to say
 about it. [[2](https://historyofphilosophy.net/xenophanes)] This difference
-is crucial and can guide us was to whether we want
+is crucial and can guide us as to whether we want
 to live in a country with blasphemy legislation, or without. The former
 is the current situation in Ireland and other jurisdictions that have
 legal measures in place to repress critical thinking. We have an
