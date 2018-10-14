@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Getting Ruby Plasmoids up and running in KDE 4.1 (on Kubuntu)</title>
-  <meta name="description" content="NOTE: THIS ARTICLE IS NOT YET COMPLETE. IF YOU FOLLOW IT THEN YOU WILL GO A LONG WAY BUT THE PLASMOID IS NOT YET DISPLAYING. SEE THE ‘Run your applet’ SECTIO...">
+  <title>Why Religion As A Belief May Not Hold Water</title>
+  <meta name="description" content="The clock is ticking down in the run up to Ireland’s blasphemyreferendum on October 26th. Few commentators think that the law shouldremain on the books. Howe...">
 
-  <link rel="canonical" href="http://www.theirishpenguin.com/2008/08/02/getting-ruby-plasmoids-up-and-running-in-kde-41-on-kubuntu.html">
+  <link rel="canonical" href="http://www.theirishpenguin.com/2018/10/14/2018-10-14-why-religion-as-a-belief-may-not-hold-water.html">
   <link rel="alternate" type="application/rss+xml" title="The Irish Penguin" href="http://www.theirishpenguin.com/feed.xml" />
 
   <!-- Material Design Lite css Library -->
@@ -109,134 +109,96 @@
     <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     <div class="post-section mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
       <div class="mdl-color-text--grey-500">
-      Aug 2, 2008 •  
+      Oct 14, 2018 •  
       </div>
-      <h3>Getting Ruby Plasmoids up and running in KDE 4.1 (on Kubuntu)</h3>
+      <h3>Why Religion As A Belief May Not Hold Water</h3>
       <article class="post-content">
-        <p><p><strong>NOTE:</strong> THIS ARTICLE IS NOT YET COMPLETE. IF YOU FOLLOW IT THEN YOU WILL GO A LONG WAY BUT THE PLASMOID IS NOT YET DISPLAYING. SEE THE ‘Run your applet’ SECTION NEAR THE END OF THIS ARTICLE BEFORE PROCEEDING.</p>
+        <p><p>The clock is ticking down in the run up to Ireland’s blasphemy
+referendum on October 26th. Few commentators think that the law should
+remain on the books. However, John Waters writes in The Sunday Times
+that the blasphemy law should be kept to safeguard respect and belief
+[<a href="https://www.thetimes.co.uk/article/john-waters-launches-campaign-to-keep-blasphemy-in-constitution-5rg0nzbt7">1</a>].
+His argument is confused on two grounds.</p>
 
-<h3 id="introduction">Introduction</h3>
-<p>KDE 4.1 is an absolutely terrific release of the KDE desktop, licking most of the issues presented in the original 4.0 release. Although it is still an early adopter release, 4.1 will be of interest to techie’s who want to get their mitts on a sexy new graphical interface and is reasonably stable for daily usage. Not quite ready for Aunt Tillie yet though! One of the nicest features is the beauty and simplicity of Plasmoids and these super flexible little gadgets can now be written in Ruby - well almost!</p>
+<p>
+<figure style="margin:0px;">
+    <img src="/assets/images/Knowledge-sharing.jpg" alt="Knowledge" />
+    <figcaption style="font-style: italic; margin-top: 5px;">
+        <a href="https://commons.wikimedia.org/wiki/File:Knowledge-sharing.jpg">Photo</a>
+        by <a href="https://commons.wikimedia.org/w/index.php?title=User:Ansonlobo&amp;action=edit&amp;redlink=1">Ansonlobo</a>
+        under the <a href="http://en.wikipedia.org/wiki/en:Creative_Commons">CC</a> <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Attribution-ShareAlike 4.0 International License</a>
+        license.
+    </figcaption>
+</figure>
+</p>
 
-<p>This guide assumes that you’re using Kubuntu Hardy Heron. But you should be able to adjust the instructions for any distro.</p>
+<p>Firstly, just because something is held as a belief should not mean that
+it is automatically worthy of respect. For example, you could hold the
+belief that it is right to slaughter 5000 innocent women and children,
+however it does not follow that this belief should be respected.
+Secondly, and perhaps worth exploring in more detail here, is the
+question of the meaning of <em>belief</em> itself. It could be argued that religions, typically, do not
+truly offer a set of beliefs. Rather, they <em>assert to know</em>. This may seem
+like a trivial difference, but it has important consequences. We can
+flesh this out with a thought experiment.</p>
 
-<ul>
-  <li>
-    <p>The starting point for our tour is to have Ruby installed. Google this if you’re unsure as to whether or not it’s installed.</p>
-  </li>
-  <li>
-    <p>We need to install cmake via ‘sudo aptitude install cmake’. This is a cross-platform build system, similar to make.</p>
-  </li>
-  <li>
-    <p>It’s likely that you will need to install the build UNIX build tools via ‘aptitude search build-essential’.</p>
-  </li>
-</ul>
+<p>I may be looking for my jacket at the end of an evening at a friend’s
+house. I am standing in the hall and vaguely remember leaving the jacket
+in the kitchen, which is directly off the hall. If it is in the kitchen,
+but I do not have a clear line of sight to it, then I may <em>believe</em> that
+the jacket is in the kitchen. However, if I do have a clear line of
+sight to the jacket, then I will <em>know</em> that it is in the kitchen. The
+effect of these two differing mindsets can be tested. If I merely
+believe that my jacket is in the kitchen, and someone then tells me that
+it in the sitting room, then I will most likely accept their suggestion
+as a possibility. I will not dogmatically argue with them that, in fact,
+the jacket is in the kitchen. I will not get angry at them. Nor will I
+demand that it is offensive for them to suggest that the jacket may be
+in a different room to the one I had in mind.</p>
 
-<h3 id="get-coding">Get coding!</h3>
-<p>And now you’re be ready to go. The main tutorial out there on Ruby Plasmoids at time of writing is the <a href="http://techbase.kde.org/Development/Tutorials/Plasma/RubyApplet">Ruby Applet tutorial on KDE Techbase</a>. This is a very good, well written guide on creating a simple Ruby applet in which a web browser is embeded inside the plasmoid. But the guide has a couple of gotcha’s, especially for the newbie (myself included!), so we have listed solutions to these problems as we go. In summary, use our article as an supplement to KDE Techbase’s.</p>
+<p>However, if I am asserting that I know that the jacket is in the kitchen
+and someone tells me otherwise, there is a good chance that I would
+robustly disagree with them. For I would
+know that the jacket is in the room; I may even be pointing at the
+jacket with conviction. Which of the two - <em>belief</em> or <em>assert to know</em> -
+best describes the position of those who would argue for the
+preservation of blasphemy legislation? Do they ever put forward their
+<em>beliefs</em> and then qualify them by saying they might be wrong? Do these
+sound like the kind of beliefs that may need defending by a
+constitutional protection? Do these sounds like beliefs at all?</p>
 
-<p>Ok, to start with a demo everyone wants a nicely packaged directory of files, so let’s quickly put together the basic directory structure for our plasmoid - it’s pretty simple!</p>
+<p>This difference, between belief and asserted knowledge, is not a new
+concept being introduced here. Rather, it has been at the heart of
+civilisation for over two thousand years - as epistemology - the
+study of how certain we can be of things.
+This is one of the core fields of philosophy, arguably first argued by
+Xenophanes in the 5th century BCE. Since then, Plato, Aristotle and pretty
+much every significant philosopher has had something to say
+about it. [<a href="https://historyofphilosophy.net/xenophanes">2</a>] This difference
+is crucial and can guide us was to whether we want
+to live in a country with blasphemy legislation, or without. The former
+is the current situation in Ireland and other jurisdictions that have
+legal measures in place to repress critical thinking. We have an
+opportunity to put clear light between Ireland and countries that would
+threaten, sanction and, in some cases, torture those who would defy
+religious belief. [<a href="https://www.irishexaminer.com/breakingnews/views/ourview/blasphemy-referendum--it-is-important-that-we-all-vote-874981.html">3</a>]
+So what is to be done on Friday, October 26th? We
+are at a point in history where we can <em>assert to know</em> that repealing
+this law is the right thing to do.</p>
 
-<ul>
-  <li>
-    <p>Create a directory called ‘ruby-web-applet’</p>
-  </li>
-  <li>
-    <p>Save the files <a href="http://websvn.kde.org/trunk/KDE/kdebindings/ruby/plasma/examples/applets/webapplet/plasma-ruby-applet-web.desktop?view=markup">plasma-ruby-applet-web.desktop</a> and <a href="http://websvn.kde.org/trunk/KDE/kdebindings/ruby/plasma/examples/applets/webapplet/web_applet.rb?view=markup">web_applet.rb</a> into this directory.</p>
-  </li>
-  <li>
-    <p>Create a file called CMakeLists.txt under your ruby-web-applet directory and paste the following code into it</p>
+<h4 id="references">References</h4>
 
-    <p>set(SERVICES_INSTALL_DIR /usr/lib/kde4/share/kde4/services/)
-set(DATA_INSTALL_DIR /usr/lib/kde4/share/kde4/apps/)</p>
+<ol>
+  <li>Coyne, Ellen, <a href="https://www.thetimes.co.uk/article/john-waters-launches-campaign-to-keep-blasphemy-in-constitution-5rg0nzbt7">John Waters Launches Campaign To Keep Blasphemy In
+Constitution</a>, Thetimes.Co.Uk, 2018</li>
+  <li>Adamson, Peter, <a href="https://historyofphilosophy.net/xenophanes">3 - Created In Our Image: Xenophanes Against Greek
+Religion</a>, History Of Philosophy Without Any Gaps, 2018.
+<em>Transcript of quote: ‘He [Xenophanes] is distinguishing between
+believing something and really knowing it, a distinction that will be
+tremendously useful down the line when we get to Plato’ (16m20s)</em></li>
+  <li><a href="https://www.irishexaminer.com/breakingnews/views/ourview/blasphemy-referendum--it-is-important-that-we-all-vote-874981.html">Blasphemy Referendum - It Is Important That We All Vote</a>, irishexaminer.com, 2018</li>
+</ol>
 
-    <p>FIND_PACKAGE (Ruby REQUIRED)</p>
-
-    <p>include_directories( ${RUBY_INCLUDE_PATH} )
-install(FILES plasma-ruby-applet-web.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(FILES web_applet.rb DESTINATION ${DATA_INSTALL_DIR}/plasma_ruby_web_applet)</p>
-  </li>
-</ul>
-
-<h3 id="go-to-kde-techbase">Go to KDE Techbase</h3>
-<p>Once you have the above directory in place, go and read the <a href="http://techbase.kde.org/Development/Tutorials/Plasma/RubyApplet">Ruby Applet tutorial on KDE Techbase</a> article down to just before the ‘Install and test the Applet’ paragraph. This will teach you what’s going on in the code. At that point come back to me as I’ll go into a little more detail on the final installation procedure!</p>
-
-<h3 id="youre-back">You’re back!</h3>
-<p>Great! Ok, so we have the files on disk, you have a good idea of what the code is doing, now let’s install it and kick your plasmoid into action!</p>
-
-<p>Open the CMakeLists.txt file listed above in a text editor. Change the path listed for KDE4 services and data directories to the ones on your system. These are the lines to change.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>set(SERVICES_INSTALL_DIR /usr/lib/kde4/share/kde4/services/)
-set(DATA_INSTALL_DIR /usr/lib/kde4/share/kde4/apps/)
-</code></pre>
-</div>
-
-<blockquote>
-  <p>Do this by replacing ‘/usr/lib/kde4/share/kde4/services/’ with the output of the command ‘kde4-config –install services’ and replace ‘/usr/lib/kde4/share/kde4/apps/’ with the output of the command ‘kde4-config –install data’ command. If you are using Kubuntu then they should be the same as mine but otherwise you may need to change them.</p>
-</blockquote>
-
-<p>Then make sure you are inside your ruby-web-applet directory and type</p>
-
-<blockquote>
-  <p>cmake .</p>
-</blockquote>
-
-<p>to generate nice makefiles for you which the make command can then use. Don’t forget the trailing dot! Now type ‘make’ and ‘sudo make install’. This will install your plasmoid code into the KDE4 services directory (you can see where this is by running ‘kde4-config –install services’) and your plasmoid data into the KDE4 data directory (you can see where this is by running ‘kde4-config –install data’). Effectively, the installation just involves the two files - plasma-ruby-applet-web.desktop web_applet.rb. If it’s worked then you’ll get output like</p>
-
-<blockquote>
-  <p>Install the project…
-– Install configuration: “”
-– Installing: /usr/lib/kde4/share/kde4/services/plasma-ruby-applet-web.desktop
-– Installing: /usr/lib/kde4/share/kde4/apps/plasma_ruby_web_applet/web_applet.rb</p>
-</blockquote>
-
-<p>The applet is now installed!</p>
-
-<h3 id="run-your-applet-this-does-not-work-yet">Run your applet (THIS DOES NOT WORK YET)</h3>
-<p>There are two ways to do this. In a developer kind of way you can run ‘kbuildsycoca4’ from the command line followed by ‘plasmoidviewer plasma-ruby-web-applet’. Unfortunately this currently brings up the error</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>findServiceByDesktopPath:  not found
-findServiceByDesktopPath:  not found
-</code></pre>
-</div>
-
-<p>**IF YOU HAVE A SOLUTION TO THIS THEN PLEASE COMMENT BELOW!!! **</p>
-
-<p>As a user, the cmake/make/make install procedure should have done all the necessary to install your plasmoid and you can activate it by going to the right of the task bar and clicking the Add Widgets icon. You should see your plasmoid listed but unfortunately this is not yet working - presumably for the same reason as the above. Oh well, I’m sure a solution will soon be posted. Until then, happy hackin!</p>
-
-<h3 id="final-notes">Final notes</h3>
-
-<p>Note that the KDE techbase article provides a version of this file but it didn’t work for me because</p>
-
-<ul>
-  <li>
-    <p>I knew nothing about cmake or cmake files and I didn’t even cop that right clicking on the CMakeLists.txt file link in their article and saving it to disk would also save a load of HTML into the file</p>
-  </li>
-  <li>
-    <p>The line ‘FIND_PACKAGE (RUBY REQUIRED)’ should really be ‘FIND_PACKAGE (Ruby REQUIRED)’ as it’s case sensitive and will otherwise give you the error</p>
-  </li>
-</ul>
-
-<blockquote>
-  <p>CMake Error at CMakeLists.txt:6 (FIND_PACKAGE):
-find_package could not find module FindRUBY.cmake or a configuration file for package RUBY.</p>
-</blockquote>
-
-<p>Adjust CMAKE_MODULE_PATH to find FindRUBY.cmake or set RUBY_DIR to the directory containing a CMake configuration file for RUBY.  The file will have one of the following names:</p>
-
-<p>RUBYConfig.cmake
-ruby-config.cmake</p>
-
-<ul>
-  <li>
-    <p>The destination targets specified in the file didn’t work for me. Perhaps some environment variables need to be set somewhere</p>
-  </li>
-  <li>
-    <p>I didn’t even know how to use cmake! Or that you needed to follow it up with ‘make’. Anyway we’ll come cover this soon!</p>
-  </li>
-</ul>
-
-<p>I didn’t need to set any CMAKE_MODULE_PATH but if you are having troubles with this then it’s at /usr/share/cmake-2.6/Modules/ on Kubuntu Hardy Heron. You may be able to set it in your script if your having difficulties as follows ‘set(CMAKE_MODULE_PATH /usr/share/cmake-2.6/Modules/)’. Again I haven’t tried this my self!</p>
 </p>
       </article>
       <!-- Disqus comments -->
