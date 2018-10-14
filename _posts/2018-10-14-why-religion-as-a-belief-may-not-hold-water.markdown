@@ -28,7 +28,7 @@ His argument is confused on two grounds.
         by <a
         href="https://commons.wikimedia.org/w/index.php?title=User:Ansonlobo&action=edit&redlink=1">Ansonlobo</a>
         under the <a href="http://en.wikipedia.org/wiki/en:Creative_Commons">CC</a> <a
-        href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Attribution-ShareAlike 4.0 International License</a>
+        href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Attribution-ShareAlike 4.0 International</a>
         license.
     </figcaption>
 </figure>
