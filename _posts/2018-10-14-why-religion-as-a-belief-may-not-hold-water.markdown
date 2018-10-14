@@ -52,7 +52,7 @@ the jacket is in the kitchen. However, if I do have a clear line of
 sight to the jacket, then I will *know* that it is in the kitchen. The
 effect of these two differing mindsets can be tested. If I merely
 believe that my jacket is in the kitchen, and someone then tells me that
-it in the sitting room, then I will most likely accept their suggestion
+it is in the sitting room, then I will most likely accept their suggestion
 as a possibility. I will not dogmatically argue with them that, in fact,
 the jacket is in the kitchen. I will not get angry at them. Nor will I
 demand that it is offensive for them to suggest that the jacket may be
