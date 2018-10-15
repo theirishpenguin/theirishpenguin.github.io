@@ -11,10 +11,10 @@ tags:
 - Philosophy
 ---
 
-The clock is ticking down in the run up to Ireland’s blasphemy
-referendum on October 26th. Few commentators think that the law should
-remain on the books. However, John Waters writes in The Sunday Times
-that the blasphemy law should be kept to safeguard respect and belief
+The clock is ticking down in the run up to Ireland’s blasphemy 
+referendum on October 26th. Few commentators think that the law should 
+remain on the books. However, John Waters writes in The Sunday Times 
+that the blasphemy law should be kept to safeguard respect and belief 
 [[1](https://www.thetimes.co.uk/article/john-waters-launches-campaign-to-keep-blasphemy-in-constitution-5rg0nzbt7)].
 His argument is confused on two grounds.
 

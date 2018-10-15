@@ -31,6 +31,10 @@ github_username:  theirishpenguin
 #google_plus_per: '+GDGManagua'  #Personal link
 #facebook_app_id: 12345
 
+# For twitter unfurling
+title_image: "http://www.theirishpenguin.com/images/coffee_avatar.jpg"
+creator: theirishpenguin
+
 # Layout settings
 header_type: default  # values [ drawer, default ]
 post_type: highlight    # values [ highlight, default ]
