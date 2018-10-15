@@ -99,3 +99,9 @@ believing something and really knowing it, a distinction that will be
 tremendously useful down the line when we get to Plato' (16m20s)*
 3. [Blasphemy Referendum - It Is Important That We All Vote](https://www.irishexaminer.com/breakingnews/views/ourview/blasphemy-referendum--it-is-important-that-we-all-vote-874981.html), irishexaminer.com, 2018
 
+#### P.S.
+
+The field of epistemology, the discerning *knowledge* from *belief*, is
+an extensive one. Trying to cover it here in detail would not do it justice.
+We will likely explore this in a future post with reference to the above.
+
