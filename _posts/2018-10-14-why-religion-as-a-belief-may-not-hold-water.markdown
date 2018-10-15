@@ -3,7 +3,7 @@ comments: true
 date: 2018-10-14 21:36:12
 layout: post
 slug: 2018-10-14-why-religion-as-a-belief-may-not-hold-water
-title: Why Religion as a Belief May Not Hold Water
+title: Why Religion As a Belief May Not Hold Water
 wordpress_id: 1059
 highlight: true
 image: /assets/images/Knowledge-sharing.jpg
