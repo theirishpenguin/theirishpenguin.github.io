@@ -364,3 +364,9 @@ MIT Licensed
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 1.3; }
+
+blockquote:before {
+  content: none; }
+
+blockquote:after {
+  content: none; }
