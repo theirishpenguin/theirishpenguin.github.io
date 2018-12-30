@@ -12,10 +12,8 @@ tags:
 ---
 
 The clock is ticking down in the run up to Ireland’s blasphemy 
-referendum on October 26th. Few commentators think that the law should 
-remain on the books. However, John Waters writes in The Sunday Times 
-that the blasphemy law should be kept to safeguard respect and belief 
-[[1](https://www.thetimes.co.uk/article/john-waters-launches-campaign-to-keep-blasphemy-in-constitution-5rg0nzbt7)].
+referendum on October 26th. Few commentators think that the references to blasphemy should 
+remain in the Irish constitution. However, John Waters featured in The Times, proposing that they should be kept in place to safeguard respect and belief [[1](https://www.thetimes.co.uk/article/john-waters-launches-campaign-to-keep-blasphemy-in-constitution-5rg0nzbt7)].
 His argument is confused on two grounds.
 
 <p>
@@ -67,7 +65,7 @@ best describes the position of those who would argue for the
 preservation of blasphemy legislation? Do they ever put forward their
 *beliefs* and then qualify them by saying they might be wrong? Do these
 sound like the kind of beliefs that may need defending by a
-constitutional protection? Do these sounds like beliefs at all?
+constitutional or legislative protection? Do these sounds like beliefs at all?
 
 This difference, between belief and asserted knowledge, is not a new
 concept being introduced here. Rather, it has been at the heart of
