@@ -5,7 +5,7 @@ layout: post
 slug: 2018-12-06-on-gender-sex-and-a-spectrum-of-influences
 title: On Gender, Sex and a Spectrum of Influences
 wordpress_id: 1060
-highlight: true
+highlight: false
 image: /assets/images/skeleton-digital-picture-800.jpeg
 tags:
 - Philosophy

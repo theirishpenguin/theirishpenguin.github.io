@@ -17,7 +17,7 @@ I've just read a very interesting <a href="https://charity.wtf/2021/01/23/questi
 which tackles the question:
 
 
- > How do i feel worthwhile as a manager when my people are doing all the implementing?”
+ > How do I feel worthwhile as a manager when my people are doing all the implementing?”
 
 There are some great points in that post. I had a few thoughts stemming from
 reading it and looked to hurriedly work through them in my own post here, and perhaps take things in a different direction. This started as a tweet but quickly spilled over the character limit. And I'd also like to
@@ -27,7 +27,7 @@ principle that can guide us - though not necessarily an easy answer:
 &nbsp; &nbsp; &nbsp; &nbsp; **_Your job as a manager should be to act as a proponent and propagator of moral action for your team_**<br />&nbsp; &nbsp; &nbsp; &nbsp; ... and, in some way, for your organisation and wider society.
 
 <div style="text-align: right; padding-bottom: 30px;">
-<i>(But let's scope this to the first one for now and not get overly ambitious 😀)</i>
+<i>(But let's scope this to the first one for now and not get overly ambitious </i>😀<i>)</i>
 </div>
 
 If you disagree, then you may be on shaky ground...
@@ -81,7 +81,7 @@ context to efficiently dive into an existing problem that needs code
 implementation in your organisation - hence, the suggestion to look into
 a new technology instead).
 
-My claim that there exists a *moral core* requirement may come into conflict (or may not; again, not wanting to put words in any mouths) with at least part of Charity
+My claim, that there exists a *moral core* requirement to have a shot at being a satisfied manager, may come into conflict (or may not; again, not wanting to put words in any mouths) with at least part of Charity
 Majors's blog post:
 
 >There seems to be precisely one acceptable answer to the question of
@@ -92,16 +92,25 @@ Majors's blog post:
 >ever-loving crap out of me.)
 
 <div style="text-align: right; padding-bottom: 30px;">
-<i><b>Sidenote: </b>Charity's analogy to sleepless, vomit-coated parenthood is hilarious 😀</i>
+<i><b>Sidenote: </b>Charity's analogy to sleepless, vomit-coated parenthood is hilarious</i> 😀
 </div>
 
 My claim of a moral core requirement may appear too closely tied to
 a manager fundamentally getting their kicks out of postively empowering others. I do believe, however, that if your core is not about
 doing right by others then you will find the going difficult. If your moral code isn't set up for success then neither will the
-actual code, nor your team, nor your chances of ongoing satisfaction. On the point of receiving credit, isn't it a rarity for an organisation to skip giving credit to managers?
+actual code, nor your team, nor your chances of ongoing satisfaction. On the point of receiving credit, isn't it a rarity for an organisation to skip giving credit to managers altogether?
 
 ##### What if you are a moral monster 👹 yet still want to be a manager?
 Well, the good news is that much of morality can be learned. In many ways, you are what you
 read. So, skipping a few of the blog posts on the latest tech trends and
-finding some enjoyable and informative podcasts or books on ethics and philosophy more generally can help. These
-can give you a solid foundation to extract happiness from managing and to be a more effective manager. Reducing lies, Lip-Servive Development (perhaps the topic of a future blog post, but you can guess at the meaning for now), and dogma are three great places to start.
+finding some enjoyable and informative podcasts or books on ethics and philosophy can help. These
+can give you a solid foundation to extract happiness from managing and to be a more effective manager. Reducing lies, Lip-Service Development (perhaps the topic of a future blog post, but you can guess at the meaning for now), and dogma are three great places to start.
+
+<h5><i>P.S.</i></h5>
+<i>
+The skillsets required for being a good manager can differ from the skillsets
+required for being a good engineer, but there are plenty of other
+excellent resources on that. So we've out of scoped that topic for the purposes of
+the above discussion. It is is suffice to say, however, that a moral compass is an important
+part of the engineer's toolkit as well as a managers.
+</i>

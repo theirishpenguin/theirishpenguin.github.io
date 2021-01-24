@@ -1,3 +1,4 @@
 #!/bin/bash
 
-TZ=UTC jekyll serve --host=0.0.0.0
+#TZ=UTC jekyll serve --host=0.0.0.0
+~/.asdf/shims/bundle exec jekyll serve
