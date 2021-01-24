@@ -27,7 +27,7 @@ GEM
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     puma (3.12.0)
-    rack (1.5.2)
+    rack (1.6.13)
     rack-protection (1.5.3)
       rack
     rb-fsevent (0.9.7)
@@ -49,6 +49,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   puma
-  rack (= 1.5.2)
+  rack (= 1.6.13)
   rdiscount
   sinatra
