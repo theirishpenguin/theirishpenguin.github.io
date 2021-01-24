@@ -70,7 +70,7 @@ satisfaction and worth from being a manager. If not, you should be wary.
 
 ##### Beyond Courage...
 There is more to say on all this of course, such as the extra hours that it can
-sometimes take because you are, at least in part, responsible for the
+sometimes take because you are, at least partially, responsible for the
 result of other people's work. And, I agree that missing out on the
 problem solving and solution design nearer the code-level can be fatal
 enough to one's happiness to decide against being a manager. In the
@@ -110,7 +110,7 @@ can give you a solid foundation to extract happiness from managing and to be a m
 <i>
 The skillsets required for being a good manager can differ from the skillsets
 required for being a good engineer, but there are plenty of other
-excellent resources on that. So we've out-of-scoped that topic for the purposes of
+excellent resources on that. So that's been out-of-scoped for the purposes of
 the above discussion. It is is suffice to say, however, that a moral compass is an important
-part of the engineer's toolkit as well as a managers.
+part of the engineer's toolkit as well as a manager's.
 </i>
