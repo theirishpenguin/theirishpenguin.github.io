@@ -5,7 +5,7 @@ layout: post
 slug: 2012-09-11-search-engine-friendly-redirects-for-custom-domains-on-openshift-using-a-htaccess-file.markdown
 title: "Search Engine Friendly Redirects for Custom Domains on OpenShift using a .htaccess file"
 wordpress_id: 1046
-image: http://thenewstack.io/wp-content/uploads/2016/05/Open_Shift.png
+image: https://thenewstack.io/wp-content/uploads/2016/05/Open_Shift.png
 tags:
 - ruby
 - openshift
