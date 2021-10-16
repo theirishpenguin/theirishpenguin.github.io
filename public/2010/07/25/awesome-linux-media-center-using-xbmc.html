@@ -149,14 +149,13 @@
     <p>By visiting System -&gt; Settings -&gt; Network -&gt; Services you can <em>Allow control of XBMC via HTTP</em> by setting Port, Username and Password. If you know the IP address of the machine you are running XBMC on then you can simply browse to http://YOUR_MACHINE_IP_ADDRESS:PORT from any web browser enabled device to control your media center (for example http://192.168.1.7:6666). Note: XBMC must be running on the machine for this to work</p>
   </li>
   <li>
-    <p>Once you have your music library set up, you will notice that you cannot access it through the web interface. To enable this, simply edit <code class="highlighter-rouge">~/.xbmc/userdata/sources.xml</code> by adding the following to the <code class="highlighter-rouge">&lt;music&gt;</code> element</p>
+    <p>Once you have your music library set up, you will notice that you cannot access it through the web interface. To enable this, simply edit <code class="language-plaintext highlighter-rouge">~/.xbmc/userdata/sources.xml</code> by adding the following to the <code class="language-plaintext highlighter-rouge">&lt;music&gt;</code> element</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>&lt;source&gt;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;source&gt;
 &lt;name&gt;Library&lt;/name&gt;
 &lt;path&gt;musicdb://&lt;/path&gt;
 &lt;/source&gt;
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
 </ul>
 

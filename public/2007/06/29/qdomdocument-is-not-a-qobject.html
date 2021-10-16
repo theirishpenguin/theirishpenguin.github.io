@@ -130,7 +130,7 @@
       <article class="post-content">
         <p><p>Aha! Here’s one that caught me out for a while. I was writing a class that inherited from QDomDocument and was more than a bit puzzled when I got the error</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>moc_fdom.cpp:37: error: 'staticMetaObject' is not a member of 'QDomDocument'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>moc_fdom.cpp:37: error: 'staticMetaObject' is not a member of 'QDomDocument'
 moc_fdom.cpp: In member function 'virtual void*
 JsDomDocument::qt_metacast(const char*)':
 moc_fdom.cpp:51: error: 'qt_metacast' is not a member of 'QDomDocument'
@@ -140,19 +140,17 @@ moc_fdom.cpp:56: error: 'qt_metacall' is not a member of 'QDomDocument'
 gmake[1]: *** [moc_fdom.o] Error 1
 gmake: *** [sub-src-make_default] Error 2
 *** Exited with status: 2 ***
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Turns out QDomDocument isn’t a QObject so I was making the mistake of including the Q_OBJECT macro at the start of my class definition. D’oh!</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>class XDomDocument : public QDomDocument
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class XDomDocument : public QDomDocument
 {
     Q_OBJECT //Don't do this!!!
     public:
         XDomDocument();
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>A side effect of not being a QObject is that you cannot wire up signals and slots in the normal manner. Although googling around should bring up a few workarounds.</p>
 </p>

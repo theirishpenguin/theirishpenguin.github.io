@@ -236,9 +236,8 @@
 
 <p>So that’s it in a nutshell. How do get all this lovely goodness to turn your Rails web app into a skeleton desktop app? One command, mon ami! From the root of your Rails directory simply run</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./script/generate qtify DiscJockey Sponsor
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./script/generate qtify DiscJockey Sponsor
+</code></pre></div></div>
 
 <p>So let’s say you have no Rails app right now. Here’s how to get to a basic web app and skeleton desktop app in double quick time!</p>
 
@@ -256,7 +255,7 @@
 
 <p>Ok, let’s cook you up a Rails app. Here we are using Rails 2.3.5 and assuming you are at a Linux command line (see <a href="http://github.com/theirishpenguin/qtonrails">Qt on Rails github project</a> page for more installation details of Qt on Rails itself)…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>rails RadRadio
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails RadRadio
 cd RadRadio
 ./script/plugin install git://github.com/theirishpenguin/qtonrails.git
 ./script/generate scaffold DiscJockey name:string date_of_birth:date programme_name:string radio_slot:time max_num_guests:integer next_review:datetime
@@ -267,8 +266,7 @@ cd vendor/plugins/qtonrails
 ./run
 # If ./run on it's own gave you a permission error you can try 'ruby ./run' instead
 # Oh yeah!
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="what-you-see-is-almost-what-you-get">What you see is almost what you get…</h3>
 
@@ -276,7 +274,7 @@ cd vendor/plugins/qtonrails
 
 <p>Let’s have a quick look at form validation in action. Add a validates_presence_of validator to your DiscJockey and Sponsor Rails models so that they look as follows</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#In app/models/disc_jockey.rb (under root of your Rails app, not under qtonrails)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#In app/models/disc_jockey.rb (under root of your Rails app, not under qtonrails)
 
 class DiscJockey &lt; ActiveRecord::Base
     validates_presence_of :name
@@ -287,8 +285,7 @@ end
 class Sponsor &lt; ActiveRecord::Base
     validates_presence_of :name
 end
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Close and restart the RadRadio Qt on Rails app. When you hit the New button and try to create a new Disc Jockey or Sponsor without a name, you will see that the Rails model validation kicks in and you get a validation message telling you that you need to correct the name field. Validation also works if you are editing a record after clicking the Edit button, however validation messages don’t appear if you edit a record in-place in the grid (just because I haven’t had a chance to implement that yet).</p>
 

@@ -136,9 +136,8 @@
 
 <p>So how do you do this? Simply put something along the lines of</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>response.headers['Cache-Control'] = 'public, max-age=60'
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response.headers['Cache-Control'] = 'public, max-age=60'
+</code></pre></div></div>
 
 <p>as the first line of your action for the page you wish to cache. The max-age setting means that this will be cached for 60 seconds. After you put this in your application and redeploy to Heroku, you can see if it’s working by using http://hurl.it</p>
 

@@ -135,7 +135,7 @@ content heavy, these kind of apps should really not have
 <a href="http://en.wikipedia.org/wiki/Duplicate_content">duplicate content</a> on different domains out there on that crazy ass Internet. Them spiders just won’t like you as much!</p>
 
 <p>So what do you do when you have your app at
-<code class="highlighter-rouge">http://foo-example.rhcloud.com</code> and <code class="highlighter-rouge">http://www.example.com</code> because
+<code class="language-plaintext highlighter-rouge">http://foo-example.rhcloud.com</code> and <code class="language-plaintext highlighter-rouge">http://www.example.com</code> because
 you’ve set up a <a href="https://openshift.redhat.com/community/blogs/custom-url-names-for-your-paas-applications-host-forwarding-and-cnames-the-openshift-way">custom
 domain</a> - will that split your SEO Google juice?</p>
 
@@ -152,32 +152,30 @@ be dropped under your example_app/public directory.</p>
 <p>(Note: public can be used instead of a _site directory
 for convenience on OpenShift)</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;IfModule mod_rewrite.c&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;IfModule mod_rewrite.c&gt;
 RewriteEngine On
 &lt;/IfModule&gt;
 
 RewriteCond %{HTTP_HOST} ^foo-example.rhcloud.com$
 RewriteRule (.*)$ http://www.example.com/$1 [R=301,L]
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>But if you rebuild a Jekyll site locally it will blow away the .htaccess
 file if you put it under your example_app/public directory. So I leave
-it in the root directory. Then you can use a <code class="highlighter-rouge">action hook</code> to move it
+it in the root directory. Then you can use a <code class="language-plaintext highlighter-rouge">action hook</code> to move it
 from the root directory of your app to under the example_app/public
-directory. Here it is and you can put it in the file <code class="highlighter-rouge">example_app/.openshift/action_hooks/deploy</code></p>
+directory. Here it is and you can put it in the file <code class="language-plaintext highlighter-rouge">example_app/.openshift/action_hooks/deploy</code></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># Move .htaccess from root folder to public folder on every deploy
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Move .htaccess from root folder to public folder on every deploy
 mv $HOME/app-root/repo/.htaccess $HOME/app-root/repo/public/.htaccess
 
 # Paranoidly ensuring sane permissions (in case we check in dodgy perms)
 chmod 644 $HOME/app-root/repo/public/.htaccess
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The last line ensures that the .htaccess file has the correct
 permissions. If you have a Wordpress site instead you should still carry
-<code class="highlighter-rouge">chmod 644 example_app/php/.htaccess</code> before you check it into git the
+<code class="language-plaintext highlighter-rouge">chmod 644 example_app/php/.htaccess</code> before you check it into git the
 first time - just to be on the safe side.</p>
 
 <h3 id="solution-for-wordpress">Solution for Wordpress</h3>
@@ -187,7 +185,7 @@ under your example_app/php directory. Just replace
 foo-example.rhcloud.com with your app URL and http://www.example.com
 with your custom domain URL.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># BEGIN WordPress
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># BEGIN WordPress
 &lt;IfModule mod_rewrite.c&gt;
 RewriteEngine On
 RewriteBase /
@@ -199,15 +197,14 @@ RewriteRule . /index.php [L]
 
 RewriteCond %{HTTP_HOST} ^foo-example.rhcloud.com$
 RewriteRule (.*)$ http://www.example.com/$1 [R=301,L]
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Again, remember to do a chmod 644 on the .htaccess file like above in the
 Ruby section to ensure it has the correct permissions.</p>
 
 <h3 id="testing">Testing</h3>
 
-<p>With all the above in place, your next <code class="highlighter-rouge">git push</code> should
+<p>With all the above in place, your next <code class="language-plaintext highlighter-rouge">git push</code> should
 deliver you the redirecting experience you are looking for! Just visit
 your app URL at http://foo-example.rhcloud.com and hopefully you are
 whisked away to your custom domain URL. Thanks to the guys on the OpenShift

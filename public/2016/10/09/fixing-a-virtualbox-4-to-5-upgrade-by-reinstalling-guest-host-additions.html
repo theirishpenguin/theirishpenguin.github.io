@@ -169,10 +169,9 @@ host - eg. /usr/share/virtualbox/VBoxGuestAdditions.iso)</i></p>
 <p>With that in mind here is how you can perform an uninstall. Run the
 following within the <b>guest</b> OS.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>cd /opt/VBoxGuestAdditions-X.Y.Z (where X.Y.Z is the old version of VirtualBox)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /opt/VBoxGuestAdditions-X.Y.Z (where X.Y.Z is the old version of VirtualBox)
 sudo ./uninstall.sh
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h5 id="reinstall-gha-as-follows">Reinstall GHA as follows</h5>
 <p>Ensure you don’t have any Ubuntu based guest host additions
@@ -182,12 +181,11 @@ return no installed packages.</p>
 <p>Now you are ready to do the reinstall. Run the following within the
 <b>guest</b> OS.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>cd /media/yourusername
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /media/yourusername
 cd VBOXADDITIONS_X.Y.Z_BUILD
 # ... where X.Y.Z is the NEW version of VirtualBox and BUILD is presumably a build number
 sudo sh ./VBoxLinuxAdditions.run
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Now your GHA should be correctly reinstalled and things like Copy &amp;
 Paste as well as Shared folders should work again!</p>

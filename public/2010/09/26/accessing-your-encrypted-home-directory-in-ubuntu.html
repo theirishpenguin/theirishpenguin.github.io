@@ -136,10 +136,10 @@
 
 <ul>
   <li>
-    <p>The package name of the encryption utility is the same on OpenSuse 11.2, so you can use <code class="highlighter-rouge">zypper install ecryptfs-utils</code></p>
+    <p>The package name of the encryption utility is the same on OpenSuse 11.2, so you can use <code class="language-plaintext highlighter-rouge">zypper install ecryptfs-utils</code></p>
   </li>
   <li>
-    <p>The syntax of the <code class="highlighter-rouge">ecryptfs-add-passphrase</code> seemed to be different as it didn’t have a <code class="highlighter-rouge">--fnek</code> option</p>
+    <p>The syntax of the <code class="language-plaintext highlighter-rouge">ecryptfs-add-passphrase</code> seemed to be different as it didn’t have a <code class="language-plaintext highlighter-rouge">--fnek</code> option</p>
   </li>
   <li>
     <p>I suspect the problem is that the ecryptfs utility that comes with OpenSuse 11.2 doesn’t support file name encryption. I found that I could decrypt the files and directories, view their contents but the file and directory names were all mangled</p>
@@ -152,7 +152,7 @@
 
 <p>First, we need the <strong>mount passphrase</strong> that was generated when you first installed Ubuntu with the directory encrypted (or whenever you manually encrypted the directory, if you didn’t do so during installation). If you were diligent at time of encryption you have written this down somewhere. For the rest of us :-), log into the Ubuntu containing the encrypted home directory and run the command,</p>
 
-<p><code class="highlighter-rouge">ecryptfs-unwrap-passphrase /home/.ecryptfs/ubuntu_user/.ecryptfs/wrapped-passphrase</code></p>
+<p><code class="language-plaintext highlighter-rouge">ecryptfs-unwrap-passphrase /home/.ecryptfs/ubuntu_user/.ecryptfs/wrapped-passphrase</code></p>
 
 <p>Then type in your login passphrase (it’s the one that you usually type to login into your computer) when prompted in order to reveal the mount passphrase (the big jumble of characters). Record the mount passphrase somewhere as you’ll need it later.</p>
 
@@ -166,16 +166,15 @@
   <li>
     <p>Ensure that you have the encryption utilities installed</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install ecryptfs-utils
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install ecryptfs-utils
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>Browse to the encrypted home directory on the other partition using your file manager in order to mount it. I used Dolphin on Kubuntu to browse to <code class="highlighter-rouge">/media/disk-3/home</code></p>
+    <p>Browse to the encrypted home directory on the other partition using your file manager in order to mount it. I used Dolphin on Kubuntu to browse to <code class="language-plaintext highlighter-rouge">/media/disk-3/home</code></p>
 
     <ul>
       <li>
-        <p>If you have found the correct directory you should see 2 files <code class="highlighter-rouge">Access-Your-Private-Data.desktop</code> and <code class="highlighter-rouge">README.txt</code></p>
+        <p>If you have found the correct directory you should see 2 files <code class="language-plaintext highlighter-rouge">Access-Your-Private-Data.desktop</code> and <code class="language-plaintext highlighter-rouge">README.txt</code></p>
       </li>
       <li>
         <p>We will need this directory later</p>
@@ -185,35 +184,31 @@
   <li>
     <p>From the command line, navigate to your normal home directory on Kubuntu</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>cd /home/kubuntu_user
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /home/kubuntu_user
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Create a directory in which we can mount the encrypted home directory</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>mkdir OtherHome
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir OtherHome
+</code></pre></div>    </div>
   </li>
   <li>
     <p>We need to get a special signature that will be used later for decrypting filenames (you can skip this step if you are trying to access Ubuntu 8.10 or less I think)</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo ecryptfs-add-passphrase --fnek
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ecryptfs-add-passphrase --fnek
+</code></pre></div>    </div>
 
     <p>Note: first you will need to enter your sudo password and then the mount passphrase</p>
 
-    <p>Pay attention to the second <code class="highlighter-rouge">"Inserted auth tok with sig"</code> line and note down the value in square brackets (eg. 66a9f67af69a86aa) as we will need this signature later</p>
+    <p>Pay attention to the second <code class="language-plaintext highlighter-rouge">"Inserted auth tok with sig"</code> line and note down the value in square brackets (eg. 66a9f67af69a86aa) as we will need this signature later</p>
   </li>
   <li>
     <p>Here’s the real magic, which decrypts the home directory on Ubuntu and accesses it via the OtherHome directory on Kubuntu.
-Note: Carefully look at the command and change the <code class="highlighter-rouge">/media/disk-3/home/.ecryptfs/ubuntu_user/.Private/</code> bit to whatever is correct for you</p>
+Note: Carefully look at the command and change the <code class="language-plaintext highlighter-rouge">/media/disk-3/home/.ecryptfs/ubuntu_user/.Private/</code> bit to whatever is correct for you</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo mount -t ecryptfs /media/disk-3/home/.ecryptfs/ubuntu_user/.Private/ /home/kubuntu_user/OtherHome
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -t ecryptfs /media/disk-3/home/.ecryptfs/ubuntu_user/.Private/ /home/kubuntu_user/OtherHome
+</code></pre></div>    </div>
 
     <p>You will be asked a series of questions</p>
 
@@ -242,21 +237,20 @@ Note: Carefully look at the command and change the <code class="highlighter-roug
       <li>
         <p>Note: You will get the following warning but there is no need to worry about it</p>
 
-        <div class="highlighter-rouge"><pre class="highlight"><code>WARNING: Based on the contents of [/root/.ecryptfs/sig-cache.txt],
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WARNING: Based on the contents of [/root/.ecryptfs/sig-cache.txt],
 it looks like you have never mounted with this key
 before. This could mean that you have typed your
 passphrase wrong
-</code></pre>
-        </div>
+</code></pre></div>        </div>
       </li>
     </ul>
   </li>
   <li>
-    <p>If it worked then the very last line will be <code class="highlighter-rouge">Mounted eCryptfs</code></p>
+    <p>If it worked then the very last line will be <code class="language-plaintext highlighter-rouge">Mounted eCryptfs</code></p>
   </li>
 </ul>
 
-<p>You should now be able to navigate into <code class="highlighter-rouge">OtherHome</code> and access the files there. Hurrah!</p>
+<p>You should now be able to navigate into <code class="language-plaintext highlighter-rouge">OtherHome</code> and access the files there. Hurrah!</p>
 </p>
       </article>
       <!-- Disqus comments -->

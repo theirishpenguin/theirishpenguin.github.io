@@ -130,7 +130,7 @@
       <article class="post-content">
         <p><p>Even though, you’re using MongoMapper with Ruby and Rails, you may sometimes want to do queries using the Mongo database itself. Here’s how I do it (note: there may be a better way, please post a comment).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># Getting at the mongodb instance
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Getting at the mongodb instance
 MongoMapper.database
 
 # Listing its collections
@@ -148,8 +148,7 @@ MongoMapper.database['questions'].find({}).each {|x| puts x.inspect}
 # In the Question model you can use this shortcut
 # collection to get at the questions collection
 collection.find({}).to_a
-</code></pre>
-</div>
+</code></pre></div></div>
 </p>
       </article>
       <!-- Disqus comments -->

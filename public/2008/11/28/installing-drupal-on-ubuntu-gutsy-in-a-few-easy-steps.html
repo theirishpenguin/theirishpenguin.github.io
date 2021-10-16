@@ -130,19 +130,17 @@
       <article class="post-content">
         <p><p>Drupal is a great solution if you’re looking for a CMS system. In order to sneakily install LAMP with the minimum of fuss, I usually just install mod php and mod mysql (the apache related modules for php and mysql respectively) and that triggers pretty much everything else to be pulled automatically! So, from the command line…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo aptitude install libapache2-mod-php5
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo aptitude install libapache2-mod-php5
 sudo aptitude install php5-mysql
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>… should give you Apache, MySQL and PHP in one fell swoop. Just to be sure that all is well run the following install commands</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install mysql-server
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install mysql-server
 sudo apt-get install apache2
 sudo apt-get install php5
 sudo apt-get install php5-mysql
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Then download and install Drupal (version 6.6 at time of writing) at http://drupal.org and follow their install guide.</p>
 
@@ -150,7 +148,7 @@ sudo apt-get install php5-mysql
 
 <p>“Your web server does not appear to support any common database types. Check with your hosting provider to see if they offer any databases that Drupal supports.”</p>
 
-<p>Turns out my apache config was dodge as when I did a <code class="highlighter-rouge">sudo apache2ctl restart</code> I got the following…</p>
+<p>Turns out my apache config was dodge as when I did a <code class="language-plaintext highlighter-rouge">sudo apache2ctl restart</code> I got the following…</p>
 
 <p>“apache2: Could not reliably determine the server’s fully qualified domain name, using 127.0.1.1 for ServerName”</p>
 

@@ -136,7 +136,7 @@
 
 <p>Steps:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#Remove the MeeGo core repo
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#Remove the MeeGo core repo
 sudo zypper rr core
 
 # Enable the testing repo
@@ -144,20 +144,18 @@ sudo zypper ar http://download.meego.com/live/Trunk:/Testing/standard/Trunk:Test
 
 # Enable the dev repo
 sudo zypper ar http://download.meego.com/live/devel:/quality/testing/devel:quality.repo
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>If you run into trouble remove this last repo with the command. If you do so you will be able to go no further.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo zypper rr devel_quality
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo zypper rr devel_quality
 
 # Install Ruby 1.8.7
 sudo zypper install ruby
 
 # Install rubygems
 sudo zypper install rubygems
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Yay! You’re done! This guide would likely not have happened unless the MeeGo conference and its sponsors had not given away free MeeGo netbooks to the smiling attendees. Well done guys! And thank you!</p>
 </p>

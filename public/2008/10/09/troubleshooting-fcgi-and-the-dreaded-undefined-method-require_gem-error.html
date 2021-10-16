@@ -130,9 +130,8 @@
       <article class="post-content">
         <p><p>It happens to the best of us. We’ve coded our app go to deploy it and encounter some dispatch.fcgi issue. Today was the turn of</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>dispatch.fcgi error: undefined method `require_gem' for main:Object (NoMethodError)
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dispatch.fcgi error: undefined method `require_gem' for main:Object (NoMethodError)
+</code></pre></div></div>
 
 <p>Well way to troubleshoot and arrive at a solution is to actually run ./dispatch.fcgi. I didn’t know you could do this! It’s well handy! If you are on a remote server to which you don’t have ssh access then you can probably still run it as a cron job. Something like cd /path/to/my/app/public &amp;&amp; ./dispatch.fcgi should do it. Remember that the dispatch.fcgi file is in the public directory of your application. The combination of running ./dispatch.fcgi and viewing the Rails log file revealed the useful error message above. Then a quick google search revealed that we need to change require_gem to simply gem (see <a href="http://blog.nanorails.com/articles/2007/12/20/ruby-gem-1-0-is-out">here</a>).</p>
 

@@ -181,10 +181,9 @@ install(FILES web_applet.rb DESTINATION ${DATA_INSTALL_DIR}/plasma_ruby_web_appl
 
 <p>Open the CMakeLists.txt file listed above in a text editor. Change the path listed for KDE4 services and data directories to the ones on your system. These are the lines to change.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>set(SERVICES_INSTALL_DIR /usr/lib/kde4/share/kde4/services/)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set(SERVICES_INSTALL_DIR /usr/lib/kde4/share/kde4/services/)
 set(DATA_INSTALL_DIR /usr/lib/kde4/share/kde4/apps/)
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <blockquote>
   <p>Do this by replacing ‘/usr/lib/kde4/share/kde4/services/’ with the output of the command ‘kde4-config –install services’ and replace ‘/usr/lib/kde4/share/kde4/apps/’ with the output of the command ‘kde4-config –install data’ command. If you are using Kubuntu then they should be the same as mine but otherwise you may need to change them.</p>
@@ -210,10 +209,9 @@ set(DATA_INSTALL_DIR /usr/lib/kde4/share/kde4/apps/)
 <h3 id="run-your-applet-this-does-not-work-yet">Run your applet (THIS DOES NOT WORK YET)</h3>
 <p>There are two ways to do this. In a developer kind of way you can run ‘kbuildsycoca4’ from the command line followed by ‘plasmoidviewer plasma-ruby-web-applet’. Unfortunately this currently brings up the error</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>findServiceByDesktopPath:  not found
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>findServiceByDesktopPath:  not found
 findServiceByDesktopPath:  not found
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>**IF YOU HAVE A SOLUTION TO THIS THEN PLEASE COMMENT BELOW!!! **</p>
 

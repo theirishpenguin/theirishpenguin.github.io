@@ -130,7 +130,7 @@
       <article class="post-content">
         <p><p>Argghhh!!! I went bananas for a little while getting my head around this. What are we trying to achieve? Well, say let’s we have a model called Consultant which has a many-to-many relationship with Company though a Contract association. The Contract model is basically sitting on topic of a simple join in the database which has consultant_id and and company_id fields.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>class Consultant &lt; ActiveRecord::Base
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Consultant &lt; ActiveRecord::Base
   has_many :contracts
   has_many :companies, :through =&gt; :contracts
 
@@ -150,8 +150,7 @@ class Contract &lt; ActiveRecord::Base
     :message =&gt; "cannot have a contract with the same company more than once"
 
 end
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>We have a New Consultant page which allows us to associate existing Companies with a Consultant by adding/removing Contracts. A Consultant cannot have a contract with a Company more than once, hence we need a validate_uniqueness_of validation on the Contract association.</p>
 
@@ -173,7 +172,7 @@ end
 
 <p>Here’s the complete config/locales/en.yml file. Note: Whitespace and indentation is very important.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>en:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>en:
   activerecord:
     errors:
       messages:
@@ -188,8 +187,7 @@ end
         consultant_id: Builder # NNB: This the big one! Notice how must translate the foreign key field to Builder for the association!!!
     models:
       consultant: Builder # This causes the consultant model to be referred to as Builder on the UI
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>So there you have it. The foreign key is the key, so to speak!</p>
 

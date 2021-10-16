@@ -161,18 +161,16 @@
   <li>
     <p>Install rubygems, qtruby and  sqlite3 with ruby bindings</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install rubygems
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install rubygems
 sudo apt-get install libqt4-ruby
 apt-get install libsqlite3-ruby
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Install the bits we need need from Rails (without installing documentation)</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo gem install activerecord activesupport activeresource --no-ri --no-rdoc
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gem install activerecord activesupport activeresource --no-ri --no-rdoc
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Zip up your Qt on Rails application and copy to any directory on to the N900. Note that the Qt on Rails application consists of the entire Rails directory directory including the vendor/plugins/qtonrails directory intact and  a sqlite3 database already created under the db directory).</p>
@@ -181,7 +179,7 @@ apt-get install libsqlite3-ruby
 
 <p>If you don’t have your own Qt on Rails application to hand then you can create the RadRadio app discussed in the “Make it so, Jim!” section of the <a href="http://www.theirishpenguin.com/2010/06/21/qt-on-rails-v0-1-released-but-is-this-ruby-based-qt-and-kde-app-framework-doomed/">v0.1 release blog post</a></p>
 
-<p>In the Qt on Rails v0.1 release there is a bug that accidentally introduces a dependency on a korundum library, which is not needed in this case. <a href="http://github.com/theirishpenguin/qtonrails/issues#issue/2">An issue is logged</a> against this in the <a href="http://github.com/theirishpenguin/qtonrails/issues">Qt on Rails Issue Tracker</a> As a workaround, find and remove any occurrences of <code class="highlighter-rouge">require 'korundum4'</code> in files under the <code class="highlighter-rouge">vendor/plugins/qtonrails/app</code> directory</p>
+<p>In the Qt on Rails v0.1 release there is a bug that accidentally introduces a dependency on a korundum library, which is not needed in this case. <a href="http://github.com/theirishpenguin/qtonrails/issues#issue/2">An issue is logged</a> against this in the <a href="http://github.com/theirishpenguin/qtonrails/issues">Qt on Rails Issue Tracker</a> As a workaround, find and remove any occurrences of <code class="language-plaintext highlighter-rouge">require 'korundum4'</code> in files under the <code class="language-plaintext highlighter-rouge">vendor/plugins/qtonrails/app</code> directory</p>
 
 <ul>
   <li>
@@ -190,9 +188,8 @@ apt-get install libsqlite3-ruby
   <li>
     <p>Finally, via the good ol’ Debian Chroot terminal, change directory to the vendor/plugins/qtonrails directory of your app and execute</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>ruby1.8 run
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby1.8 run
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Boom! You should see your Qt on Rails app in all it’s glory!</p>

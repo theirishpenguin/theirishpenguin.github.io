@@ -132,39 +132,39 @@
 
 <ul>
   <li>
-    <p>Install git, subversion and git-svn (the latter can be installed on Ubuntu using <code class="highlighter-rouge">apt-get install git-svn</code>)</p>
+    <p>Install git, subversion and git-svn (the latter can be installed on Ubuntu using <code class="language-plaintext highlighter-rouge">apt-get install git-svn</code>)</p>
   </li>
   <li>
     <p>Acquire a copy of an svn repository (or just a folder in the repository) as a git repository locally</p>
 
-    <p><code class="highlighter-rouge">git svn clone https://yoursubversionserver.com/svn/trunk/some_folder</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git svn clone https://yoursubversionserver.com/svn/trunk/some_folder</code></p>
 
     <p>Note: You can choose to omit the ‘some_folder’ at the end if you want everything in trunk. You can also be more specific about which folder you are interested in, eg.</p>
 
-    <p><code class="highlighter-rouge">git svn clone https://yoursubversionserver.com/svn/trunk/some_folder/wow/really/specifc/folder</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git svn clone https://yoursubversionserver.com/svn/trunk/some_folder/wow/really/specifc/folder</code></p>
   </li>
   <li>
-    <p>Change a file in the repository and use the usual <code class="highlighter-rouge">git commit</code> command to commit it to a local repository</p>
+    <p>Change a file in the repository and use the usual <code class="language-plaintext highlighter-rouge">git commit</code> command to commit it to a local repository</p>
   </li>
   <li>
     <p>To push changes from your local git repo to the subversion repo use</p>
 
-    <p><code class="highlighter-rouge">git svn dcommit</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git svn dcommit</code></p>
   </li>
   <li>
     <p>To pull down changes from the remote subversion repo to your local git repository use</p>
 
-    <p><code class="highlighter-rouge">git svn rebase</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git svn rebase</code></p>
   </li>
   <li>
-    <p>Just to be clear - in the last step we really did use the <code class="highlighter-rouge">git svn rebase</code> command to get changes from the remote repository.</p>
+    <p>Just to be clear - in the last step we really did use the <code class="language-plaintext highlighter-rouge">git svn rebase</code> command to get changes from the remote repository.</p>
   </li>
 </ul>
 
 <blockquote>
-  <p>Do not use <code class="highlighter-rouge">git pull</code>. See the REBASE VS. PULL/MERGE section of the <a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html">git-svn docs</a> as to why</p>
+  <p>Do not use <code class="language-plaintext highlighter-rouge">git pull</code>. See the REBASE VS. PULL/MERGE section of the <a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html">git-svn docs</a> as to why</p>
 
-  <p>Do not use <code class="highlighter-rouge">git clone/pull/merge/push</code> on your local git repositories that are derived from a subversion repo. See the CAVEATS section of the <a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html">git-svn docs</a> as to why</p>
+  <p>Do not use <code class="language-plaintext highlighter-rouge">git clone/pull/merge/push</code> on your local git repositories that are derived from a subversion repo. See the CAVEATS section of the <a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html">git-svn docs</a> as to why</p>
 </blockquote>
 
 <p>More basic examples are also list at the bottom of the <a href="http://www.kernel.org/pub/software/scm/git/docs/git-svn.html">git-svn docs</a>.</p>

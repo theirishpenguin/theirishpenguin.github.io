@@ -134,33 +134,29 @@
 
 <p>For example, to convert the integer 4 to the binary number 100 you use…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(4 &gt;&gt; 0).toString(2) # gives "100"
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(4 &gt;&gt; 0).toString(2) # gives "100"
+</code></pre></div></div>
 
 <p>And if you want to do chopping of right most digits change the 0 to the number of digits you want to chop off…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(4 &gt;&gt; 1).toString(2) // gives "10"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(4 &gt;&gt; 1).toString(2) // gives "10"
 (4 &gt;&gt; 2).toString(2) // gives "1"
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Or if you want to append zeros, use the opposite…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(4 &lt;&lt; 0).toString(2) // still gives "100"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(4 &lt;&lt; 0).toString(2) // still gives "100"
 (4 &lt;&lt; 1).toString(2) // still gives "1000"
 (4 &lt;&lt; 2).toString(2) // still gives "10000"
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>These are called right shift (») and left shift operators («) and there is a variation on the right shift called a zero-fill right shift (»&gt;), as opposed to a sign-propagating right shift (good old »). The difference becomes interesting when you deal with numbers that don’t fit into a 32 bit integer (the upper bound being the magical <a href="http://en.wikipedia.org/wiki/2147483647">2147483647</a> ).</p>
 
 <p>So if we take a cool two and a half billion we see</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(2500000000 &gt;&gt; 0).toString(2) // gives "-1101010111111010000011100000000"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(2500000000 &gt;&gt; 0).toString(2) // gives "-1101010111111010000011100000000"
 (2500000000 &gt;&gt;&gt; 0).toString(2) // gives "10010101000000101111100100000000"
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>And that all stemmed from today’s enjoyable challenge <a href="http://codekata.pragprog.com/2007/01/code_kata_fifte.html">A Diversion</a>. Thanks to <a href="https://twitter.com/pragdave">Prag Dave</a> for sharing! And thanks to <a href="https://twitter.com/_minuteman3">Miles McGuire</a> for bringing the bitshift brains and explaining the more esoteric cases!</p>
 

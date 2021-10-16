@@ -130,13 +130,13 @@
       <article class="post-content">
         <p><p>I couldn’t get readline to be picked up using the ‘rvm package install readline’ command. So instead I had to install the readline development headers as a Debian package</p>
 
-<p><code class="highlighter-rouge">sudo aptitude install libreadline6-dev</code></p>
+<p><code class="language-plaintext highlighter-rouge">sudo aptitude install libreadline6-dev</code></p>
 
 <p>And then tell rvm about the /usr directory when installing ruby</p>
 
 <p>(Note: I had run ‘rvm package install zlib’ and ‘rvm package install openssl’ before running this next command)</p>
 
-<p><code class="highlighter-rouge">rvm install 1.8.7 -C --with-zlib-dir=$HOME/.rvm/usr --with-openssl-dir=$HOME/.rvm/usr --with-readline-dir=/usr</code></p>
+<p><code class="language-plaintext highlighter-rouge">rvm install 1.8.7 -C --with-zlib-dir=$HOME/.rvm/usr --with-openssl-dir=$HOME/.rvm/usr --with-readline-dir=/usr</code></p>
 
 <p>This solution should also work for Ubuntu.</p>
 </p>

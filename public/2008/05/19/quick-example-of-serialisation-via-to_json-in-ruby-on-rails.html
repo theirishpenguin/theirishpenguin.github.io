@@ -132,18 +132,16 @@
 
 <p>SERIALISING</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>json_string = a_house.to_json
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>json_string = a_house.to_json
+</code></pre></div></div>
 
 <p>DESERIALISING</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>an_object = ActiveSupport::JSON.decode(json_string) # gives you an object of type Object
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>an_object = ActiveSupport::JSON.decode(json_string) # gives you an object of type Object
 
 a_house.from_json(json_string) # gives you an object of type House, note that a_house
                                # is an instance of House
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>These are pretty straightforward and do exactly what they say on the tin. Of the deserialising methods, note that using ActiveSupport directly gives you an object of type Object so you may prefer the stronger typing of the second technique which gives you an actual House object.</p>
 
@@ -169,7 +167,7 @@ There are times when you will want to override the default serialisation that Ra
 
 <p>We’ll need to override the default to_json method on the House model.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>class House::Base
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class House::Base
   def to_json
     result = Hash.new
 
@@ -186,8 +184,7 @@ There are times when you will want to override the default serialisation that Ra
     result.to_json
   end
 end
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The above was partially taken from the howtogeneratejson at http://wiki.rubyonrails.org/rails/pages/howtogeneratejson page on the Rails wiki (which is no longer available), which is has little bit more detail. Now all you need to do is call the a_house.to_json method and you get lots of lovely JSON which represents your model! One final note is that you may not want to override the default to_json method. If not, just call your method something else like to_custom_json. Also, there’s</p>
 </p>

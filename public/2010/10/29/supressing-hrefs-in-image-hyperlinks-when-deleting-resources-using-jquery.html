@@ -130,28 +130,25 @@
       <article class="post-content">
         <p><p>This week we’re trying to delete a resource using jquery within a Rails 2.3 app. First thing to note when using Rails is that if you set :method =&gt; :delete like below you will get a whole bunch of obtrusive prototype library javascript injected into the hyperlinks onclick() event. This can clash with your jquery code so you can’t use :method =&gt; :delete alongside jquery. And it doesn’t make any sense to do it this way. The number one reason that someone  (err… yes, me!) will get into this mess is that they’ve been using the image_tag and link_to helper’s and just forgotten that all this extra prototype code will be generated. So this is not so good for what we want…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;%= link_to image_tag('/images/delete.png', :title =&gt; 'Delete the thing', :class =&gt; 'clearPrintQueueOnClick'), '/things/3', :method =&gt; :delete %&gt;
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;%= link_to image_tag('/images/delete.png', :title =&gt; 'Delete the thing', :class =&gt; 'clearPrintQueueOnClick'), '/things/3', :method =&gt; :delete %&gt;
+</code></pre></div></div>
 
 <p>But this is better…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;%= link_to image_tag('/images/delete.png', :title =&gt; 'Delete the thing', :class =&gt; 'deleteThingOnClick'), '/please_enable_javascript.html' %&gt;
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;%= link_to image_tag('/images/delete.png', :title =&gt; 'Delete the thing', :class =&gt; 'deleteThingOnClick'), '/please_enable_javascript.html' %&gt;
+</code></pre></div></div>
 
 <p>Note: That we have jquery code set up against anything that has the class deleteThingOnClick.</p>
 
-<p>Ok, if the user’s browser does not have javascript enabled it will take them to the <code class="highlighter-rouge">please_enable_javascript.html</code> which you can drop in your public html. If you want to support non-javascript browsers you can create a page with a form for doing delete requests - an example is shown in this blog <a href="http://gaskell.org/unobtrusive-deleting-with-rails-and-jquery/">entry</a> by Andy Gaskell.</p>
+<p>Ok, if the user’s browser does not have javascript enabled it will take them to the <code class="language-plaintext highlighter-rouge">please_enable_javascript.html</code> which you can drop in your public html. If you want to support non-javascript browsers you can create a page with a form for doing delete requests - an example is shown in this blog <a href="http://gaskell.org/unobtrusive-deleting-with-rails-and-jquery/">entry</a> by Andy Gaskell.</p>
 
 <p>With those pitfalls out of the way, all that remains to do to supress the href is to add event.preventDefault(); to the start of your deleteThingOnClick handler</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$("a").click(function(event) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$("a").click(function(event) {
     event.preventDefault();
     // rest of your deletion code goes here..
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>That’s it really! Exit stage left…</p>
 </p>

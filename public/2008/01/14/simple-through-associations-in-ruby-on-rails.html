@@ -140,18 +140,17 @@
   <li>
     <p>We shall model this through a join table called order_items</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>orders     order_items    items
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>orders     order_items    items
 -----      ----------     ----
  id         order_id        id
             item_id
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
 </ul>
 
 <p>Before we continue, please note that a massive massive thing to remember is that Order needs to have a has_many to the join table model AS WELL as a has_many (through the join table model) to Item. Also the join table model has a belongs_to for each model.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>  class Order &lt; ActiveRecord::Base
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  class Order &lt; ActiveRecord::Base
         has_many :order_lines #Don't forget this line!
         has_many :items, :through =&gt; :order_lines
   end
@@ -165,8 +164,7 @@
         belongs_to :order
         belongs_to :item
   end
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Ok so that’s it folks! The Penguin has to admit that the above code hasn’t been run in a RoR interpreter so if has typo’s or smelly code please comment below.</p>
 

@@ -130,15 +130,13 @@
       <article class="post-content">
         <p><p>This is a bit of a gotcha for young players in the Javascript game. You have a web page with a DIV which you fill dynamically with, let’s say, 5 IMG elements. How do you get the width of the DIV? You can try</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>document.getElementById('divId').width
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>document.getElementById('divId').width
+</code></pre></div></div>
 
 <p>but it will do you no good. The answer, use</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>document.getElementById('divId').offsetWidth
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>document.getElementById('divId').offsetWidth
+</code></pre></div></div>
 
 <p><a href="http://msdn2.microsoft.com/en-us/library/ms533024.aspx">Here’s</a> a handy guide when it comes to DHTML element position and locations.</p>
 </p>

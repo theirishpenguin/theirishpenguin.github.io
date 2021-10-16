@@ -141,9 +141,8 @@
 
 <p>The MeeGo machine these steps were carried out on was a Leveno IdeaPad, which had the MeeGo core repository disabled and the MeeGo test and devel repos enabled - as outlined at our earlier guide <a href="http://www.theirishpenguin.com/2010/11/18/installing-ruby-and-rubygems-on-meego">Installing Ruby and Rubygems on MeeGo</a>. You may need to do this as well, as these repositories are likely the source of some of the libraries used in this guide. Furthermore you will need to install packages for building python bluezy bindings</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo zypper install gcc make python-devel bluez-libs-devel
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo zypper install gcc make python-devel bluez-libs-devel
+</code></pre></div></div>
 
 <h3 id="pyzeemote-installation-steps">PYZEEMOTE INSTALLATION STEPS</h3>
 
@@ -167,9 +166,8 @@
   <li>
     <p>Change directory to the pyzee directory</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>cd ~/pyzee
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/pyzee
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Extract the PyBluez-0.18 contents</p>
@@ -179,58 +177,51 @@
   <li>
     <p>Change directory to the PyBluez-0.18 directory</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>cd PyBluez-0.18
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd PyBluez-0.18
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Build the python bluetooth bindings by running</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>python setup.py build
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python setup.py build
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Change directory back up one level so that you’re inside the top level of the pyzee directory</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>cd ..
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ..
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Create a symlink to the freshly built bluetooth python bindings, so that they’ll be found when we run pyzeemote</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>ln -s PyBluez-0.18/build/lib.linux-i686-2.6/bluetooth
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ln -s PyBluez-0.18/build/lib.linux-i686-2.6/bluetooth
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Fire up the pyzeemote daemon (you shouldn’t see any output) using</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>python zeemote_listener.py
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python zeemote_listener.py
+</code></pre></div>    </div>
   </li>
 </ol>
 
 <p>You shouldn’t see any output if things went correctly. If you get the following then there is a problem with the bluetooth python bindings built in the last steps</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>---------------------------------------------------
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---------------------------------------------------
 Traceback (most recent call last):
 File "zeemote_listener.py", line 39, in &lt;module&gt;
 from bluetooth import *
 ImportError: No module named bluetooth
 --------------------------------------------------- You'll have to figure out why this is. Perhaps the symlink wasn't created correctly or it was created in the wrong place?
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>
     <p>Run the pyzeemote test suite</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>python pyzeemote-test.py
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python pyzeemote-test.py
+</code></pre></div>    </div>
   </li>
   <li>
     <p>You should see it say</p>

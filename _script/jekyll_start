@@ -1,4 +1,7 @@
 #!/bin/bash
 
 #TZ=UTC jekyll serve --host=0.0.0.0
-~/.asdf/shims/bundle exec jekyll serve
+
+# The JEKYLL_ENV=production was taken from https://talk.jekyllrb.com/t/how-to-setup-a-canonical-url-with-jekyll/3259/7
+# and ensures that the canonical url in pages is correctly generated (ie. not localhost)
+JEKYLL_ENV=production ~/.asdf/shims/bundle exec jekyll serve

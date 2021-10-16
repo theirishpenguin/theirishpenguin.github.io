@@ -130,13 +130,12 @@
       <article class="post-content">
         <p><p>This is just a quick post covering a sound problem I encountered when running OpenSuse 10.2 with Nvidia nForce 430 and Asus M2NPV-VM. The solution that worked for me is to open the /etc/modprobe.conf.local file and make sure it includes the options line below…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#
 # please add local extensions to this file
 #
 
 options snd-hda-intel position_fix=1 model=3stack
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This did the job nicely. I found the solution <a href="http://www.latenightpc.com/blog/archives/2006/11/10/sound-quirk-with-the-nvidia-nforce-430-and-asus-m2npv-vm/">here</a>, which has a lot more detail.</p>
 
