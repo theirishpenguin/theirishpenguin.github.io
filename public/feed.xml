@@ -6,9 +6,9 @@
 </description>
     <link>http://www.theirishpenguin.com/</link>
     <atom:link href="http://www.theirishpenguin.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Jan 2021 22:05:18 +0000</pubDate>
-    <lastBuildDate>Sun, 24 Jan 2021 22:05:18 +0000</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <pubDate>Sat, 16 Oct 2021 23:47:05 +0100</pubDate>
+    <lastBuildDate>Sat, 16 Oct 2021 23:47:05 +0100</lastBuildDate>
+    <generator>Jekyll v3.9.1</generator>
     
       <item>
         <title>Moral Code, Actual Code and Becoming Management - Ought You?</title>
@@ -884,10 +884,9 @@ host - eg. /usr/share/virtualbox/VBoxGuestAdditions.iso)&lt;/i&gt;&lt;/p&gt;
 &lt;p&gt;With that in mind here is how you can perform an uninstall. Run the
 following within the &lt;b&gt;guest&lt;/b&gt; OS.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /opt/VBoxGuestAdditions-X.Y.Z (where X.Y.Z is the old version of VirtualBox)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /opt/VBoxGuestAdditions-X.Y.Z (where X.Y.Z is the old version of VirtualBox)
 sudo ./uninstall.sh
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h5 id=&quot;reinstall-gha-as-follows&quot;&gt;Reinstall GHA as follows&lt;/h5&gt;
 &lt;p&gt;Ensure you don’t have any Ubuntu based guest host additions
@@ -897,12 +896,11 @@ return no installed packages.&lt;/p&gt;
 &lt;p&gt;Now you are ready to do the reinstall. Run the following within the
 &lt;b&gt;guest&lt;/b&gt; OS.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /media/yourusername
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /media/yourusername
 cd VBOXADDITIONS_X.Y.Z_BUILD
 # ... where X.Y.Z is the NEW version of VirtualBox and BUILD is presumably a build number
 sudo sh ./VBoxLinuxAdditions.run
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now your GHA should be correctly reinstalled and things like Copy &amp;amp;
 Paste as well as Shared folders should work again!&lt;/p&gt;
@@ -961,7 +959,7 @@ is a short hop to the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/
 article&lt;/a&gt;.
 So I rushed to the first example, which is&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var myImage = document.querySelector('img');
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var myImage = document.querySelector('img');
 
 fetch('flowers.jpg')
 .then(function(response) {
@@ -971,18 +969,16 @@ fetch('flowers.jpg')
   var objectURL = URL.createObjectURL(myBlob);
   myImage.src = objectURL;
 });
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;and wrote the equivalent code (slightly ES6-ified) that I needed which was…&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
 .then(response =&amp;gt; {
   debugger
   //return response.blob();
 })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;I got rid of the second then() because I figured my use case is simpler than
 theirs. And I figured that if I could drop myself into the Chrome
@@ -990,14 +986,13 @@ debugger I could work out the appropriate method on the response
 object to get whatever I needed out. It was all looking familiar and
 simple, just like it said on the tin.&lt;/p&gt;
 
-&lt;p&gt;So I got to my breakpoint and I saw a friendly &lt;code class=&quot;highlighter-rouge&quot;&gt;text()&lt;/code&gt; method available
-as well as a &lt;code class=&quot;highlighter-rouge&quot;&gt;json()&lt;/code&gt; method. And indeed I called them - and
+&lt;p&gt;So I got to my breakpoint and I saw a friendly &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;text()&lt;/code&gt; method available
+as well as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;json()&lt;/code&gt; method. And indeed I called them - and
 frustratingly got the following back in my JS console…&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[PromiseStatus]] : &quot;resolved&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[[PromiseStatus]] : &quot;resolved&quot;
 [[PromiseValue]] : undefined
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;So I googled around for “pending status fetch promise” and the first hit
 was &lt;a href=&quot;http://stackoverflow.com/questions/30329485/why-is-the-promise-still-pending&quot;&gt;StackOverflow&lt;/a&gt; -
@@ -1020,7 +1015,7 @@ It occurred to me that instead of going for the cheapest item in the
 shop, I should probably try the second cheapest. I’ll
 try two then() calls one after the other.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
 .then(response =&amp;gt; {
   return response.json();
 })
@@ -1028,8 +1023,7 @@ try two then() calls one after the other.&lt;/p&gt;
   debugger
   // oh responseBody, just please have something in you that isn't pending!
 })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Boom! Like a green light at the end of a unit test there was finally
 something tangible in the responseBody argument. Encouraged by this I
@@ -1037,7 +1031,7 @@ could now make sense of more of the original Mozilla Developer Network
 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch&quot;&gt;page&lt;/a&gt;,
 in particular their Checking For Success example…&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('flowers.jpg').then(function(response) {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('flowers.jpg').then(function(response) {
   if(response.ok) {
     response.blob().then(function(myBlob) {
       var objectURL = URL.createObjectURL(myBlob);
@@ -1051,14 +1045,13 @@ in particular their Checking For Success example…&lt;/p&gt;
   console.log('There has been a problem with your fetch operation: ' +
 error.message);
 });
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;I didn’t give a monkey’s for checking for success in my embryonic
 attempt at calling fetch() earlier. But now I could see that I could do
 the chaining all in one…&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
 .then(response =&amp;gt; {
   response.json().then(responseBody =&amp;gt; {
     debugger
@@ -1066,19 +1059,17 @@ the chaining all in one…&lt;/p&gt;
     // Go'on the responseBody, ya beauty!
   })
 })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The ES5 equivalent is something like…&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
 .then(function(response){
   response.json().then(function(responseBody){
     console.log(responseBody)
   })
 })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Call it perceptual narrowing when my initial attempt went pear-shaped,
 or call it laziness, or stupidity. Whatever it was, that was one long journey towards

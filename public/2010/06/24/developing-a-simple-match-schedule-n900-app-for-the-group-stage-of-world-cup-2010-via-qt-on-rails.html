@@ -140,44 +140,40 @@
 
 <p>First we create a Rails app.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>rails WorldCup
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails WorldCup
 cd WorldCup
 ./script/generate scaffold Fixture when:string group:string match:string
 rake db:migrate
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>Then I fired up the web server <code class="highlighter-rouge">./script/server</code> and manually entered the fixtures (stupido! I know!). The ‘When’ field has the date formatted as ‘24/6 - 15:00’.</p>
+<p>Then I fired up the web server <code class="language-plaintext highlighter-rouge">./script/server</code> and manually entered the fixtures (stupido! I know!). The ‘When’ field has the date formatted as ‘24/6 - 15:00’.</p>
 
 <p>Next up, we turn the Rails app into a Qt app using Qt on Rails. We are still in the WorldCup directory.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./script/plugin install git://github.com/theirishpenguin/qtonrails.git
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./script/plugin install git://github.com/theirishpenguin/qtonrails.git
 ./script/generate qtify Fixture
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This generates the skeleton Qt app. Now let’s bend it into shape, starting with the UI. From now on we’ll be working in the qtonrails/ plugin directory.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>cd vendor/plugins/qtonrails
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd vendor/plugins/qtonrails
 designer-qt4 app/qdesigns/qmainwindow.ui
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Once Qt Designer appears, remove the File menu, Commandlink navigation buttons and Action buttons (by more or less right-clicking on those widgets and deleting)</p>
 
 <p>Then regenerate a Ruby code version of the ui files (every time you change the .ui file using Qt Designer you need to do this)</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>rbuic4 app/qdesigns/qmainwindow.ui -x -o app/ui_proxies/qmainwindow.ui.rb
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbuic4 app/qdesigns/qmainwindow.ui -x -o app/ui_proxies/qmainwindow.ui.rb
 
 ./run # or it that doesn't work try: ruby run
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Then I got errors :-). Based on these errors, I changed the following…</p>
 
 <p>From app/qpresenters/main_window_presenter.rb I deleted</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>connect(@ui.viewButton, SIGNAL('clicked()'), self, SLOT('view_clicked()'))
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>connect(@ui.viewButton, SIGNAL('clicked()'), self, SLOT('view_clicked()'))
 
 connect(@ui.newButton, SIGNAL('clicked()'), self, SLOT('new_clicked()'))
 
@@ -188,61 +184,55 @@ connect(@ui.deleteButton, SIGNAL('clicked()'), self, SLOT('delete_clicked()'))
 connect(@ui.fixturesNavLinkButton, SIGNAL('clicked()'), self, SLOT('fixtures_nav_clicked()'))
 
 connect(@ui.actionQuit, SIGNAL('triggered()'), self, SLOT('close()'))
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Now let’s try again</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./run
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./run
+</code></pre></div></div>
 
 <p>Hey it worked! Cool! There’s more stuff we could now delete but we won’t as we’re focusing on doing the bare minimum.</p>
 
 <p>In order to allow a column to be correctly resized and to provide row select behaviour (as opposed to having individual clickable cells), I added the following line just before the end of the initialize() method in app/qpresenters/main_window_presenter.rb</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>@tableview.resizeColumnsToContents()
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@tableview.resizeColumnsToContents()
 @tableview.setSelectionBehavior(Qt::AbstractItemView::SelectRows)
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The resizing of columns to fit their contents will probably become the default in a future Qt on Rails release.</p>
 
-<p>Due to silly bug in Qt on Rails that tries to pull an unnecessary KDE library into generated applications (<a href="http://github.com/theirishpenguin/qtonrails/issues#issue/2">Issue 2 on the GitHub Tracker</a>), we need to remove the line <code class="highlighter-rouge">require 'korundum4'</code> from
-<code class="highlighter-rouge">vendor/plugins/qtonrails/app/ui_proxies/qmainwindow.ui.rb</code>
-<code class="highlighter-rouge">vendor/plugins/qtonrails/app/ui_proxies/fixture_qform.ui.rb</code></p>
+<p>Due to silly bug in Qt on Rails that tries to pull an unnecessary KDE library into generated applications (<a href="http://github.com/theirishpenguin/qtonrails/issues#issue/2">Issue 2 on the GitHub Tracker</a>), we need to remove the line <code class="language-plaintext highlighter-rouge">require 'korundum4'</code> from
+<code class="language-plaintext highlighter-rouge">vendor/plugins/qtonrails/app/ui_proxies/qmainwindow.ui.rb</code>
+<code class="language-plaintext highlighter-rouge">vendor/plugins/qtonrails/app/ui_proxies/fixture_qform.ui.rb</code></p>
 
 <p>In order to display just today’s fixtures, we can change the index action in app/qcontrollers/fixtures_controller.rb (again under the qtonrails/ plugin directory)</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>def index
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def index
   accept_current_fixtures_from Fixture.all
 end
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>… and add the private method</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>def accept_current_fixtures_from(fixtures)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def accept_current_fixtures_from(fixtures)
   fixtures.reject do |fixture|
     dt = fixture.when.split(' - ')[0] # Get date from string
     date_args = (dt.split('/') + ["2010"]).reverse.map &amp;:to_i
     Date.new(*date_args) &lt; Date.today
   end
 end
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note: The application <a href="http://github.com/downloads/theirishpenguin/qtonrails/WorldCup2010-GroupStage-MaemoViewer.tar.gz">source code available</a> has the accept_current_fixtures_from() call commented out. This is because once the World Cup group stage is over in a couple of days the list of fixtures would be empty. I have decided that the value of this app as a useful demo in future outweighs the needs of my users over the next two days :-). In the source code you can simply add the call back in yourself if you wish.</p>
 
 <p>Finally, we make the grid readonly. Because it was late when I did this, I skipped any fancy meta-programming and simply reopened the QtrTableModel to do so. Add this to config/environment.rb</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>class QtrTableModel
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class QtrTableModel
   def flags(index)
     return Qt::ItemIsSelectable | super(index)
   end
 end
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Phew! Done! To deploy the app to your N900, read the instructions at <a href="http://www.theirishpenguin.com/2010/06/21/deploying-your-qt-on-rails-apps-on-the-n900-maemo/">deploying your Qt on Rails apps on the n900 (Maemo)</a>.</p>
 

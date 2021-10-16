@@ -140,19 +140,17 @@
   <li>
     <p>Ok, I’m using Mongoid. Here’s how I define my db connection to be exactly the same as my app’s name in my config/mongoid.yml file</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sync:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sync:
 &lt;&lt;: *defaults
 database: yourappname
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Whenver you want to push or pull to Heroku just change the default Rails environment at the top of your config/application.rb file to be ‘sync’</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>require File.expand_path('../boot', __FILE__)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require File.expand_path('../boot', __FILE__)
 ENV['RAILS_ENV'] = 'sync'
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Now from the command line, you should find ‘heroku mongo:push’ and ‘heroku mongo:pull’ work like a dream. Ahoy, me mongols!</li>
 </ul>

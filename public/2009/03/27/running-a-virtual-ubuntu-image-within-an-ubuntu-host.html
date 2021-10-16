@@ -138,41 +138,36 @@
   <li>
     <p>Install the VirtualBox program</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo aptitude install virtualbox
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo aptitude install virtualbox
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Install 7zip, needed to extract downloaded image</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo aptitude install p7zip
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo aptitude install p7zip
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>Download Ubuntu 8.04 Hardy Heron iso image from <code class="highlighter-rouge">http://virtualbox.wordpress.com/images/ubuntu/</code></p>
+    <p>Download Ubuntu 8.04 Hardy Heron iso image from <code class="language-plaintext highlighter-rouge">http://virtualbox.wordpress.com/images/ubuntu/</code></p>
   </li>
   <li>
     <p>Make a new folder called my_temp</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>Move the downloaded file into my_temp
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Move the downloaded file into my_temp
 cd into my_temp
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Extract image</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>p7zip -d downloaded_imagefile
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p7zip -d downloaded_imagefile
+</code></pre></div>    </div>
 
     <p>This should yield a folder called something like ubuntu-8.04-x86
 cd into this directory and run</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>mv VDI/ubuntu-8.04-x86 ~/.VirtualBox/VDI
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv VDI/ubuntu-8.04-x86 ~/.VirtualBox/VDI
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Create a new virtual machine</p>
@@ -204,9 +199,8 @@ cd into this directory and run</p>
           <li>
             <p>Once downloaded, move the file to /usr/share/virtualbox on your host machine and create the following symlink (as virtualbox won’t recognise the file if it has the revision number in the filename)</p>
 
-            <div class="highlighter-rouge"><pre class="highlight"><code>sudo ln -s /usr/share/virtualbox/VBoxGuestAdditions_2.0.4.iso /usr/share/virtualbox/VBoxGuestAdditions.iso
-</code></pre>
-            </div>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ln -s /usr/share/virtualbox/VBoxGuestAdditions_2.0.4.iso /usr/share/virtualbox/VBoxGuestAdditions.iso
+</code></pre></div>            </div>
           </li>
           <li>
             <p>Once again try to install ‘Guest Host Additions’ from the Devices menu of the running window of you virtual machine. This time it will pick up the local file you downloaded.</p>
@@ -221,7 +215,7 @@ cd into this directory and run</p>
       <li>On your host machine create a directory you will use for sharing</li>
       <li>On your running virtual machine create a directory you will use for sharing</li>
       <li>From the Devices menu of the running VirtualBox windows select Shared Folders and set the ‘folder path’ to the folder you just created on your host. Give it a friendly name in the ‘folder name’ field and elect to make it permanent. Then on your VM run
-<code class="highlighter-rouge">mount -t vboxsf the_friendly_name /path/to/folder/on/virtual/machine</code></li>
+<code class="language-plaintext highlighter-rouge">mount -t vboxsf the_friendly_name /path/to/folder/on/virtual/machine</code></li>
     </ul>
   </li>
 </ul>

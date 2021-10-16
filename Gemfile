@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
-gem 'rack', "1.5.2"
+gem 'rack'
 gem 'sinatra'
 gem 'jekyll'
 gem 'rdiscount'
 gem 'puma'
+gem 'kramdown-parser-gfm'
 

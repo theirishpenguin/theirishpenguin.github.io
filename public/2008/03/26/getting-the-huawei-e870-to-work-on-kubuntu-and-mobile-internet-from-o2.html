@@ -150,7 +150,7 @@ This can be done by visiting <a href="http://www.kanoistika.sk/bobovsky/archiv/u
 
 <p><strong>2.) Create the following /etc/chatscripts/huawei-e220.chat file</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>TIMEOUT 3
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TIMEOUT 3
 ABORT BUSY
 ABORT 'NO CARRIER'
 ABORT VOICE
@@ -162,12 +162,11 @@ ABORT DELAYED
 OK ATQ0V1E1S0=0&amp;C1&amp;D2
 OK ATDT*99#
 CONNECT ""
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>3.) Create the /etc/ppp/peers/huawei-e220 file</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/dev/ttyUSB0
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/dev/ttyUSB0
 460800
 noipdefault
 defaultroute
@@ -176,12 +175,11 @@ noauth
 nodetach
 usepeerdns
 connect "/usr/sbin/chat -vf /etc/chatscripts/huawei-e220.chat"
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>4.) Create the /etc/wvdial-huawei.conf</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[Dialer Defaults]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Dialer Defaults]
 Modem = /dev/ttyUSB0
 #Baud = 3600000
 Baud = 7200000
@@ -202,31 +200,28 @@ DialMessage1 =
 DialMessage2 =
 ISDN = 0
 Auto DNS = 1
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>5.) Edit the /etc/resolv.conf file</strong>
 Add the following entries at the top of this file (they are O2’s nameservers)</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>nameserver 62.40.32.33
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nameserver 62.40.32.33
 nameserver 62.40.32.34
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>6.) Create the and tailor the /home/username/bin/connectme script as follows (and chmod it!)</strong>
 Note: See step 1 for more instructions if you don’t have a bin folder in your home directory</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
-sudo /home/username/bin/huaweiAktBbo-i386.out <span class="c"># CHANGE THIS TO YOUR 'USERNAME'</span>
-sleep 3 <span class="c"># wait for the USB host to settle down...</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+sudo /home/username/bin/huaweiAktBbo-i386.out # CHANGE THIS TO YOUR 'USERNAME'
+sleep 3 # wait for the USB host to settle down...
 sudo wvdial --config /etc/wvdial-huawei.conf
-<span class="c">#/usr/sbin/pppd call provider</span>
-</code></pre>
-</div>
+#/usr/sbin/pppd call provider
+</code></pre></div></div>
 
 <p>Then just do a ‘chmod u+x /home/username/bin/connectme’ from the command line (to allow you to run ‘connectme’ from the command line directly) and hopefully you should be ready to rock! The next step is to insert your E870 into the express slot. You might start to see Linux picking up the the devices and popping dialogs asking you if you want to mount the device (you should select ‘Cancel’ for them all).Wait about 5 seconds for it to steady itself and then run ‘connectme’ from the command line. You should see</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Hladam HUAWEI E220 a prepnem na modem - bbo 06
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hladam HUAWEI E220 a prepnem na modem - bbo 06
 4 set feature request returned 0
 Prepnute-OK, Mas ttyUSB0 ttyUSB1 (cez usbserial vendor=0x12d1 product=0x1003)
 pozri /proc/bus/usb/devices
@@ -263,14 +258,13 @@ WvDial&lt;*1&gt;: primary   DNS address 62.40.32.33
 WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
 WvDial&lt;*1&gt;: secondary DNS address 62.40.32.34
 WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>If you want to disconnect from the web simply press Ctrl-C twice to kill it off. The first time you press it, it talks of wanting to exit gracefully - but better to press it a second time and exit effectively ;-)</p>
 
 <p>You’ll see the following</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Caught signal 2:  Attempting to exit gracefully...
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Caught signal 2:  Attempting to exit gracefully...
 WvDial&lt;*1&gt;: Terminating on signal 15
 WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
 WvDial&lt;*1&gt;: Connect time 8.6 minutes.
@@ -278,8 +272,7 @@ WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
 WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
 WvDial&lt;*1&gt;: pppd: H���h�[06][08]`�[06][08]
 WvDial&lt;*1&gt;: Disconnecting at Tue Mar 25 21:30:45 2008
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>7.) Tip of the day - lose the Edge!</strong>
 Disclaimer: this is just my opinion as to the performance of the Edge network so O2 lawyers keep your knickers on (however Apple iPhone suckers, enjoy the sheer speed of the Edge network, getting dripfeed broadband at 1500 Euros a year!). In stark contrast though, my experience with the HSDPA network have been good. Yes, as you may have already guessed, the Edge network was not really delivering for me. But a friend of mine showed me how to change your O2 broadband Express card (or USB modem) settings so that it not even bother connecting if it can’t get a proper UTMS or HSDPA signal. For this you need a Windows friend. Install the express card on their machine and from the O2 broadband application and select “Tools-&gt;Choose Network Type-&gt;3G Only”. This setting directly updates the card so even when you switch back to a using it on a Linux box it will go with 3G only. If I don’t do this I’ve found that it will flip flop between Edge (GPRS) and 3G networks and drive you mad in the process. I found it pretty much impossible to even check my email on Edge.</p>

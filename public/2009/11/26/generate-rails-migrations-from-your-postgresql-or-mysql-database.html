@@ -136,15 +136,15 @@
     <p>In your config/database.yml file, point at the database you wish to dump to a migrations file</p>
   </li>
   <li>
-    <p>Run the command <code class="highlighter-rouge">rake db:schema:dump</code> This should create a db/schema.rb file. Amazingly this effectively is your migrations file!</p>
+    <p>Run the command <code class="language-plaintext highlighter-rouge">rake db:schema:dump</code> This should create a db/schema.rb file. Amazingly this effectively is your migrations file!</p>
   </li>
   <li>
-    <p>To tidy up create a file called file <code class="highlighter-rouge">db/migrate/20091125205635_create_initial_schema.rb</code></p>
+    <p>To tidy up create a file called file <code class="language-plaintext highlighter-rouge">db/migrate/20091125205635_create_initial_schema.rb</code></p>
   </li>
   <li>
-    <p>Then copy the create_table statements from the schema.rb file into the new file <code class="highlighter-rouge">20091125205635_create_initial_schema.rb</code> Here’s a template</p>
+    <p>Then copy the create_table statements from the schema.rb file into the new file <code class="language-plaintext highlighter-rouge">20091125205635_create_initial_schema.rb</code> Here’s a template</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>class CreateInitialSchema &lt; ActiveRecord::Migration
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class CreateInitialSchema &lt; ActiveRecord::Migration
 
     def self.up
         # Put all create_table statements from schema.rb file here
@@ -159,11 +159,10 @@
     end
 
 end
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>Once you’ve all this done you can just run <code class="highlighter-rouge">rake db:migrate</code> and you should have a new sqlite db up and running under db/development.sqlite3</p>
+    <p>Once you’ve all this done you can just run <code class="language-plaintext highlighter-rouge">rake db:migrate</code> and you should have a new sqlite db up and running under db/development.sqlite3</p>
   </li>
 </ol>
 

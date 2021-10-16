@@ -134,7 +134,7 @@
 
 <p>The above guide requires you to disable the core repository and then enable the devel and testing repositories. I found that when following the below steps, I would get an error trying to install sqlite3 gem itself - saying that the sqlite3.h header could not be found. I had to run the following commands first</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>  # Update all packages on the system
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  # Update all packages on the system
   
   sudo zypper update
   
@@ -149,14 +149,13 @@
   # To fix this, I had to update chromium-browser separately
   
   sudo zypper update chromium
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Ok, so onto the actual install steps for Rails and SQLite3…</p>
 
 <p>RAILS INSTALLATION</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>  #Install ruby and sqlite development headers (as we'll be using
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  #Install ruby and sqlite development headers (as we'll be using
   sqlite as our backend)
   
   sudo zypper install ruby-devel
@@ -195,8 +194,7 @@
   ./script/server
   
   # And then browse to your site in the web browser - http://localhost:3000/animals
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Hurrah! Everything works! (At least I hope it did!). Happy Rails development!</p>
 </p>

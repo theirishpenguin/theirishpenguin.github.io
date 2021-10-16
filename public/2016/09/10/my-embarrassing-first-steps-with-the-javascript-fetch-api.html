@@ -169,7 +169,7 @@ is a short hop to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/
 article</a>.
 So I rushed to the first example, which is</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var myImage = document.querySelector('img');
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var myImage = document.querySelector('img');
 
 fetch('flowers.jpg')
 .then(function(response) {
@@ -179,18 +179,16 @@ fetch('flowers.jpg')
   var objectURL = URL.createObjectURL(myBlob);
   myImage.src = objectURL;
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>and wrote the equivalent code (slightly ES6-ified) that I needed which was…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>fetch('my-json-serving-url')
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fetch('my-json-serving-url')
 .then(response =&gt; {
   debugger
   //return response.blob();
 })
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>I got rid of the second then() because I figured my use case is simpler than
 theirs. And I figured that if I could drop myself into the Chrome
@@ -198,14 +196,13 @@ debugger I could work out the appropriate method on the response
 object to get whatever I needed out. It was all looking familiar and
 simple, just like it said on the tin.</p>
 
-<p>So I got to my breakpoint and I saw a friendly <code class="highlighter-rouge">text()</code> method available
-as well as a <code class="highlighter-rouge">json()</code> method. And indeed I called them - and
+<p>So I got to my breakpoint and I saw a friendly <code class="language-plaintext highlighter-rouge">text()</code> method available
+as well as a <code class="language-plaintext highlighter-rouge">json()</code> method. And indeed I called them - and
 frustratingly got the following back in my JS console…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[[PromiseStatus]] : "resolved"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[PromiseStatus]] : "resolved"
 [[PromiseValue]] : undefined
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>So I googled around for “pending status fetch promise” and the first hit
 was <a href="http://stackoverflow.com/questions/30329485/why-is-the-promise-still-pending">StackOverflow</a> -
@@ -228,7 +225,7 @@ It occurred to me that instead of going for the cheapest item in the
 shop, I should probably try the second cheapest. I’ll
 try two then() calls one after the other.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>fetch('my-json-serving-url')
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fetch('my-json-serving-url')
 .then(response =&gt; {
   return response.json();
 })
@@ -236,8 +233,7 @@ try two then() calls one after the other.</p>
   debugger
   // oh responseBody, just please have something in you that isn't pending!
 })
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Boom! Like a green light at the end of a unit test there was finally
 something tangible in the responseBody argument. Encouraged by this I
@@ -245,7 +241,7 @@ could now make sense of more of the original Mozilla Developer Network
 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">page</a>,
 in particular their Checking For Success example…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>fetch('flowers.jpg').then(function(response) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fetch('flowers.jpg').then(function(response) {
   if(response.ok) {
     response.blob().then(function(myBlob) {
       var objectURL = URL.createObjectURL(myBlob);
@@ -259,14 +255,13 @@ in particular their Checking For Success example…</p>
   console.log('There has been a problem with your fetch operation: ' +
 error.message);
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>I didn’t give a monkey’s for checking for success in my embryonic
 attempt at calling fetch() earlier. But now I could see that I could do
 the chaining all in one…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>fetch('my-json-serving-url')
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fetch('my-json-serving-url')
 .then(response =&gt; {
   response.json().then(responseBody =&gt; {
     debugger
@@ -274,19 +269,17 @@ the chaining all in one…</p>
     // Go'on the responseBody, ya beauty!
   })
 })
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The ES5 equivalent is something like…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>fetch('my-json-serving-url')
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fetch('my-json-serving-url')
 .then(function(response){
   response.json().then(function(responseBody){
     console.log(responseBody)
   })
 })
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Call it perceptual narrowing when my initial attempt went pear-shaped,
 or call it laziness, or stupidity. Whatever it was, that was one long journey towards

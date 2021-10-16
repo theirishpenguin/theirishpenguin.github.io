@@ -132,18 +132,16 @@
 
 <p>We kicked off by following the instructions on the rails wiki (link no longer available). It’s worth paying careful attention to anywhere it says to set path variables. If you find that you are getting an error that says that you version of rubygems is not recent enough (and you can’t get rubygems to update itself) then you can install an older version of Rails, for example 2.3.2, using the following from the command line</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>gem install rails -v 2.3.2
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install rails -v 2.3.2
+</code></pre></div></div>
 
 <p>(Note: If you have already installed a different version of rails you can uninstall it first by using ‘gem uninstall rails’).</p>
 
 <p>The big problem however was getting sqlite3 working. We did install the SQLite Command Line Tool and the SQLite DLL as the Rails Wiki instructions said to - but to no avail. We kept getting a popup error saying that the sqlite3 dll was not found and to please consider reinstalling. Fortunately, we gambled on one of the answers on <a href="http://stackoverflow.com/questions/515639/ruby-cannot-find-sqlite3-driver-on-windows">StackOverflow</a>. Basically the solution was from the command line</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>gem uninstall sqlite3-ruby
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem uninstall sqlite3-ruby
 gem install sqlite3-ruby --source http://gems.rubyinstaller.org
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>And with that we were away! The final thing was to get a nice friendly IDE installed so we plumbed for Netbeans on the <a href="http://netbeans.org/downloads">Netbeans Downloads page</a>. Look out for the special Ruby version of Netbeans which is one of the links around the middle of the downloads page.</p>
 

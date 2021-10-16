@@ -132,52 +132,51 @@
 
 <ol>
   <li>
-    <p>You can check your config using <code class="highlighter-rouge">git config -l</code></p>
+    <p>You can check your config using <code class="language-plaintext highlighter-rouge">git config -l</code></p>
 
     <p>This tells you useful stuff like what remotes you’re bound to, etc.</p>
   </li>
   <li>
-    <p>You can blow away files listed as ‘untracked’ (by the <code class="highlighter-rouge">git status</code> command) using <code class="highlighter-rouge">git clean</code> (be careful!).</p>
+    <p>You can blow away files listed as ‘untracked’ (by the <code class="language-plaintext highlighter-rouge">git status</code> command) using <code class="language-plaintext highlighter-rouge">git clean</code> (be careful!).</p>
 
-    <p>If you want any of those files to hang around (but not appear as ‘untracked’) then add them to your <code class="highlighter-rouge">.gitignore</code> file.</p>
+    <p>If you want any of those files to hang around (but not appear as ‘untracked’) then add them to your <code class="language-plaintext highlighter-rouge">.gitignore</code> file.</p>
   </li>
   <li>
-    <p>You can re-enter your last commit using <code class="highlighter-rouge">git commit --amend</code>. What’s nifty is that you can change files (including file addition and deletion) as well as the commit message. Just do what you gotta do before running the amend command and enter a replacement commit message.</p>
+    <p>You can re-enter your last commit using <code class="language-plaintext highlighter-rouge">git commit --amend</code>. What’s nifty is that you can change files (including file addition and deletion) as well as the commit message. Just do what you gotta do before running the amend command and enter a replacement commit message.</p>
   </li>
   <li>
-    <p>You can undo your last commit completely using <code class="highlighter-rouge">git reset HEAD^</code></p>
+    <p>You can undo your last commit completely using <code class="language-plaintext highlighter-rouge">git reset HEAD^</code></p>
 
     <p>Note: This does not change the working tree.</p>
 
-    <p>Alternatively, you can use the syntax <code class="highlighter-rouge">git HEAD~2</code> instead of <code class="highlighter-rouge">HEAD^^</code></p>
+    <p>Alternatively, you can use the syntax <code class="language-plaintext highlighter-rouge">git HEAD~2</code> instead of <code class="language-plaintext highlighter-rouge">HEAD^^</code></p>
   </li>
   <li>
-    <p>Refer to the last revision by <code class="highlighter-rouge">HEAD</code>, the second last as <code class="highlighter-rouge">HEAD^</code> and the third last as <code class="highlighter-rouge">HEAD^^</code></p>
+    <p>Refer to the last revision by <code class="language-plaintext highlighter-rouge">HEAD</code>, the second last as <code class="language-plaintext highlighter-rouge">HEAD^</code> and the third last as <code class="language-plaintext highlighter-rouge">HEAD^^</code></p>
 
     <p>You can keep adding carrets forever! Sounding like Bugs Bunny there.</p>
   </li>
   <li>
     <p>You can see the contents of a file from a revision using</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>git show rev:path/to/file
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git show rev:path/to/file
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>Ok, this tip is a bit of a longer one. Use <code class="highlighter-rouge">git merge some_other_branch</code> to merge another branch into the one your working on. (Note that <code class="highlighter-rouge">git pull</code> does a merge automatically once it’s completely - if you don’t want this to happen use <code class="highlighter-rouge">git fetch</code>). There are a few possible outcomes:</p>
+    <p>Ok, this tip is a bit of a longer one. Use <code class="language-plaintext highlighter-rouge">git merge some_other_branch</code> to merge another branch into the one your working on. (Note that <code class="language-plaintext highlighter-rouge">git pull</code> does a merge automatically once it’s completely - if you don’t want this to happen use <code class="language-plaintext highlighter-rouge">git fetch</code>). There are a few possible outcomes:</p>
 
     <p>Fast-forward merge : If changes were made on only one of the branches since the last merge, then the merge should happen without any need for you to act.</p>
 
-    <p>Three-way merge: If changes were made on both branches, then git decides how to merge them using an algorithm. If any changes conflict with each other, then git will report them and let you resolve them. Once you’ve fixed any conflicts then you can <code class="highlighter-rouge">git commit</code></p>
+    <p>Three-way merge: If changes were made on both branches, then git decides how to merge them using an algorithm. If any changes conflict with each other, then git will report them and let you resolve them. Once you’ve fixed any conflicts then you can <code class="language-plaintext highlighter-rouge">git commit</code></p>
 
-    <p>If there were no conflicts, git automatically does a commit with a stock commit message for the log. If you don’t like the idea of this then use <code class="highlighter-rouge">git merge --no-commit some_other_branch</code> You need to manually do the commit afterwards. (This is more like how other distributed VCS’s such as Mercurial. This was the tip that inspired this post!).</p>
+    <p>If there were no conflicts, git automatically does a commit with a stock commit message for the log. If you don’t like the idea of this then use <code class="language-plaintext highlighter-rouge">git merge --no-commit some_other_branch</code> You need to manually do the commit afterwards. (This is more like how other distributed VCS’s such as Mercurial. This was the tip that inspired this post!).</p>
   </li>
   <li>
-    <p>Finally, one tip that I found useful is that you don’t want to <code class="highlighter-rouge">git pull</code> into your repository when you have uncommitted changes. Especially if you treasure your sanity. Instead <code class="highlighter-rouge">git stash</code> is your friend. Here’s how</p>
+    <p>Finally, one tip that I found useful is that you don’t want to <code class="language-plaintext highlighter-rouge">git pull</code> into your repository when you have uncommitted changes. Especially if you treasure your sanity. Instead <code class="language-plaintext highlighter-rouge">git stash</code> is your friend. Here’s how</p>
     <ul>
-      <li>Do a <code class="highlighter-rouge">git stash</code> to move your uncommitted changes to a magical place in git temporarily</li>
-      <li>Then do the <code class="highlighter-rouge">git pull</code></li>
-      <li>And finally do a <code class="highlighter-rouge">git stash apply</code> This will now move your ‘stashed’ uncommitted changes back (from the magical temporary place in git) into your working directory and take into account what what was changed by the pull. Neat!</li>
+      <li>Do a <code class="language-plaintext highlighter-rouge">git stash</code> to move your uncommitted changes to a magical place in git temporarily</li>
+      <li>Then do the <code class="language-plaintext highlighter-rouge">git pull</code></li>
+      <li>And finally do a <code class="language-plaintext highlighter-rouge">git stash apply</code> This will now move your ‘stashed’ uncommitted changes back (from the magical temporary place in git) into your working directory and take into account what what was changed by the pull. Neat!</li>
     </ul>
 
     <p>Tips 1-7 taken from:  <a href="http://git.or.cz/course/svn.html">Git - SVN Crash Course</a>. Tip 8 taken from painful experience :-)</p>

@@ -158,9 +158,8 @@
   <li>
     <p>From the command prompt (whilst still logged into Linux), search for the driver on the windows partition (storing the results in a file for easy viewing). For example (your path to Windows will probably be different)</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>find /mnt/windisk/ -iname '*.inf'&gt;inf_files_on_windows.txt
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find /mnt/windisk/ -iname '*.inf'&gt;inf_files_on_windows.txt
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Open inf_files_on_windows.txt in your favourite editor and look for the matching driver. It should be something like WG511v2.INF (this may vary on your system). Do some searches on ‘WG’ or on ‘511’ to track it down. Note: You will need the full path to this file for the next step</p>
@@ -168,9 +167,8 @@
   <li>
     <p>From the command line type (but make sure the path matches the one you found in the previous step and remember to use the FULL path)</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo ndiswrapper -i /mnt/windisk/winnt/inf/WG511v2/WG511v2.INF
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ndiswrapper -i /mnt/windisk/winnt/inf/WG511v2/WG511v2.INF
+</code></pre></div>    </div>
   </li>
   <li>
     <p>N.N.B. Sorry to labour the point but remember you need to reference the ORIGINAL driver file on your windows partion; you can’t copy it over to your Linux partion and reference it from there (I tried!). This is at the heart of the ‘dual boot’ system requirement (perhaps you know a way around this - I’m not terribly clever at this sort of thing!)</p>
@@ -178,16 +176,14 @@
   <li>
     <p>Type the following command to see if your installation was successful</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo ndiswrapper -l
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ndiswrapper -l
+</code></pre></div>    </div>
 
     <p>A message like this indicates success</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>Installed ndis drivers:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Installed ndis drivers:
 wg511v2 driver present
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>A message like this indicates failure (sorry!)
     Installed ndis drivers:
@@ -196,10 +192,9 @@ wg511v2 driver present
   <li>
     <p>I really hope the last step worked. If not you’ll have to re-google and try another solution (double check that you’ve followed this guide correctly first). If so, plug your wireless card into the PCMCIA slot. Then type ‘sudo ndiswrapper -l’ again. You should get</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>Installed ndis drivers:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Installed ndis drivers:
 wg511v2 driver present, hardware present
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>I can remember the excitment when I saw the above line. Share the fun! The rest of this should be a doddle (but don’t count your chickens!)</p>
@@ -207,22 +202,20 @@ wg511v2 driver present, hardware present
   <li>
     <p>Load the ndiswrapper module into the kernel using</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo modprobe ndiswrapper
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo modprobe ndiswrapper
+</code></pre></div>    </div>
   </li>
   <li>
     <p>To see that this worked (the green LED on your card should now have flicked into life) run the command ‘dmesg’ and you should get some info on how your wireless card has been installed, for example</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>ndiswrapper version 1.1 loaded (preempt=no,smp=no)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ndiswrapper version 1.1 loaded (preempt=no,smp=no)
 ndiswrapper: driver wg511v2 (NETGEAR,02/22/2005,3.1.1.7) loaded[4296766.069000] PCI: Enabling device 0000:22:00.0 (0000 -&gt; 0002)
 ACPI: PCI Interrupt 0000:02:02.0[A] -&gt; Link [LNKA] -&gt; GSI 11 (level, low) -&gt; IRQ 12
 PCI: Setting latency timer of device 0002:02:00.0 to 64
 ndiswrapper: using irq 12
 wlan0: ndiswrapper ethernet device 01:0f:b5:8e:4e:2d using driver wg511v2, configuration file 11AB:1FAA:2385:4E00.5.conf
 wlan0: encryption modes supported: WEP, WPA with TKIP, WPA with AES/CCMP
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>From the above output I can now tell that my card has been assigned to the ‘wlan0’ interface. Yours may differ.</p>
@@ -230,9 +223,8 @@ wlan0: encryption modes supported: WEP, WPA with TKIP, WPA with AES/CCMP
   <li>
     <p>Your card is now ready for use. You can use the ‘iwlist’ command to scan for connections. For example (replace ‘wlan0’ with the interface that your card in the dmesg output above),</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>iwlist wlan0 scan
-</code></pre>
-    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iwlist wlan0 scan
+</code></pre></div>    </div>
   </li>
   <li>
     <p>One final thing, set the ‘sudo modprobe ndiswrapper’ command to be run on each boot (how you do this will depend on your disto). Otherwise, you’d have to run this command each time you log in.</p>

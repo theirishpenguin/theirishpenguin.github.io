@@ -130,15 +130,14 @@
       <article class="post-content">
         <p><p>Just add something like the following to /etc/fstab…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>UUID=1208c5dc-d4a6-a7a2-8352-ab12ecd64412 /media/disk-1  ext4    relatime,errors=remount-ro 0 2
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UUID=1208c5dc-d4a6-a7a2-8352-ab12ecd64412 /media/disk-1  ext4    relatime,errors=remount-ro 0 2
+</code></pre></div></div>
 
 <p>… where</p>
 
 <ul>
   <li>
-    <p>UUID uniquely identifies the partition you wish to add (you can get the UUID for you drive using <code class="highlighter-rouge">ls -l /dev/disk/by-uuid</code>)</p>
+    <p>UUID uniquely identifies the partition you wish to add (you can get the UUID for you drive using <code class="language-plaintext highlighter-rouge">ls -l /dev/disk/by-uuid</code>)</p>
   </li>
   <li>
     <p>/media/disk-1/ can be changed to be location on your system - it’s where the partition will be added</p>

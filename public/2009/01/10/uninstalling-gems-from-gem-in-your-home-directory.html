@@ -128,16 +128,15 @@
       </div>
       <h3>Uninstalling Gems from ~/.gem in your Home Directory</h3>
       <article class="post-content">
-        <p><p><code class="highlighter-rouge">"It's installed Gem but not as we know it"</code>
+        <p><p><code class="language-plaintext highlighter-rouge">"It's installed Gem but not as we know it"</code>
 – Bones, if he was a Ruby Developer –</p>
 
 <p>Unfortunately, a careless keystroke can leave gems in lots of unusual places. About five minutes ago, that fate befell me as I ended up with gems under my home directory at ~/.gems. Not what I was expecting. To make matters worse when I tried to remove them I had no success - possibly there were PATH or GEM_PATH issues</p>
 
 <p>Fortunately, Google was to the rescue before you could say ‘gem is no apt-get’, with the command…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>gem uninstall ruby-debug-ide --install-dir $HOME/.gem/ruby/1.8
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem uninstall ruby-debug-ide --install-dir $HOME/.gem/ruby/1.8
+</code></pre></div></div>
 
 <p>… where in this case ruby-debug-ide is the misplaced gem in question.</p>
 

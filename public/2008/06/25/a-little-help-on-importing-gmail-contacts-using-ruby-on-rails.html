@@ -136,7 +136,7 @@
 
 <p>Create yourself a controller called ImportedContacts</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>class ImportedContactsController &lt; ApplicationController
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ImportedContactsController &lt; ApplicationController
 
     def authenticate
         # Put the code from point 1 in the Atlantic Domain Solutions article here.
@@ -173,16 +173,14 @@
         # I also changed the local variable 'contacts' to '@contacts' so that it is available to views
     end
 end
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>To see the contacts after importing, I created a folder called ‘imported_contacts’ under app/views and placed the file import.rhtml in it, containing the following code.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;table&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;table&gt;
   &lt;%= @contacts.map { |c| "&lt;tr&gt;&lt;td&gt;Name: #{c['name']}&lt;/td&gt;&lt;td&gt;Email: #{c['email']}&lt;/td&gt;&lt;/tr&gt;" } %&gt;
 &lt;/table&gt;
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Ok! You should be ready to rock! Ensure that you are not logged into gmail and visit http://localhost:3000/imported_contacts/authenticate</p>
 
