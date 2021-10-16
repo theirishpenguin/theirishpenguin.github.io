@@ -7,7 +7,7 @@ author :
   github : theirishpenguin
   twitter : theirishpenguin
   feedburner : theirishpenguin
-production_url : http://www.theirishpenguin.com # Needs to be set for disqus
+production_url : https://www.theirishpenguin.com # Needs to be set for disqus
 
 # Some extra settings from old jekyll site (disabled)
 #permalink: /:categories/:year/:month/:day/:title.html
@@ -23,7 +23,7 @@ description: > # this means to ignore newlines until "baseurl:"
   starts writing words when the Internet is down. Thoughts and opinions
   expressed here are my own.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.theirishpenguin.com" # the base hostname & protocol for your site
+url: "https://www.theirishpenguin.com" # the base hostname & protocol for your site
 twitter_username: theirishpenguin
 github_username:  theirishpenguin
 #google_play: 'GDGX'
@@ -32,7 +32,7 @@ github_username:  theirishpenguin
 #facebook_app_id: 12345
 
 # For twitter unfurling
-title_image: "http://www.theirishpenguin.com/images/coffee_avatar.jpg"
+title_image: "https://www.theirishpenguin.com/images/coffee_avatar.jpg"
 creator: theirishpenguin
 
 # Layout settings
