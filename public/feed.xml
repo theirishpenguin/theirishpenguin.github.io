@@ -6,8 +6,8 @@
 </description>
     <link>https://www.theirishpenguin.com/</link>
     <atom:link href="https://www.theirishpenguin.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Oct 2021 00:15:26 +0100</pubDate>
-    <lastBuildDate>Sun, 17 Oct 2021 00:15:26 +0100</lastBuildDate>
+    <pubDate>Sat, 18 May 2024 00:49:10 +0100</pubDate>
+    <lastBuildDate>Sat, 18 May 2024 00:49:10 +0100</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
     
       <item>
@@ -24,7 +24,7 @@ which tackles the question:&lt;/p&gt;
 &lt;p&gt;        &lt;strong&gt;&lt;em&gt;Your job as a manager should be to act as a proponent and propagator of moral action for your team&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;        … and, in some way, for your organisation and wider society.&lt;/p&gt;
 
 &lt;div style=&quot;text-align: right; padding-bottom: 30px;&quot;&gt;
-&lt;i&gt;(But let's scope this to the first one for now and not get overly ambitious &lt;/i&gt;😀&lt;i&gt;)&lt;/i&gt;
+&lt;i&gt;(But let&apos;s scope this to the first one for now and not get overly ambitious &lt;/i&gt;😀&lt;i&gt;)&lt;/i&gt;
 &lt;/div&gt;
 
 &lt;p&gt;If you disagree, then you may be on shaky ground…&lt;/p&gt;
@@ -54,7 +54,7 @@ will not put words in anyone’s mouth. However, in part, it appears to allude t
 is; admittedly, that is a big assumption). A crucial one to add to that list of responsibilities, the trait that, no doubt, many have seen as lacking in their leaders over the years, is:&lt;/p&gt;
 
 &lt;div style=&quot;padding-bottom: 20px;&quot;&gt;
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;b&gt;&lt;i&gt;Don't throw people under a bus when the&lt;/i&gt;&lt;/b&gt; 💩 &lt;b&gt;&lt;i&gt;hits the fan.&lt;/i&gt;&lt;/b&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;b&gt;&lt;i&gt;Don&apos;t throw people under a bus when the&lt;/i&gt;&lt;/b&gt; 💩 &lt;b&gt;&lt;i&gt;hits the fan.&lt;/i&gt;&lt;/b&gt;
 &lt;/div&gt;
 
 &lt;p&gt;That takes courage. And if you don’t think you have that yet, then you
@@ -94,7 +94,7 @@ ever-loving crap out of me.)&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;div style=&quot;text-align: right; padding-bottom: 30px;&quot;&gt;
-&lt;i&gt;&lt;b&gt;Sidenote: &lt;/b&gt;Charity's follow-on analogy to sleepless, vomit-coated parenthood is hilarious&lt;/i&gt; 😀
+&lt;i&gt;&lt;b&gt;Sidenote: &lt;/b&gt;Charity&apos;s follow-on analogy to sleepless, vomit-coated parenthood is hilarious&lt;/i&gt; 😀
 &lt;/div&gt;
 
 &lt;p&gt;My claim of a moral core requirement may appear too closely tied to
@@ -605,7 +605,7 @@ debate” is a satisfactory recommendation.&lt;/p&gt;
       </item>
     
       <item>
-        <title>On Sam Harris, Jordan Peterson and Douglas Murray at Dublin's 3Arena. And Why...</title>
+        <title>On Sam Harris, Jordan Peterson and Douglas Murray at Dublin&apos;s 3Arena. And Why...</title>
         <description>&lt;p&gt;An event that caused plenty of controversy in some quarters went down in front of quite a full house of eight and half thousand in the 3Arena on Saturday 14th of July. Here, a few of the Intellectual Dark Web’s (&lt;a href=&quot;http://intellectualdark.website/&quot;&gt;IDW&lt;/a&gt;) leading actors interlocked for the first time in Dublin. &lt;a href=&quot;https://en.wikipedia.org/wiki/Jordan_Peterson&quot;&gt;Jordan Peterson&lt;/a&gt; is a Canadian clinical psychologist and a professor of psychology at the University of Toronto. He became infamous in 2016 for announcing his objection to the Canadian government’s Bill C-16 and said he would not use the preferred gender pronouns of students and faculty. This, along with his disdain for what he describes as the radical left, make him a divisive figure to say the least. &lt;a href=&quot;https://en.wikipedia.org/wiki/Sam_Harris&quot;&gt;Sam Harris&lt;/a&gt; is an American philosopher, neuroscientist, and author of the &lt;a href=&quot;https://samharris.org/podcast/&quot;&gt;Waking Up podcast&lt;/a&gt;. He is a strong critic of religion and posits that science can provide the answers to improving human well-being and society. &lt;a href=&quot;https://en.wikipedia.org/wiki/Douglas_Murray_(author)&quot;&gt;Douglas Murray&lt;/a&gt; is a British author, journalist and political commentator. He is a particularly strong critic of recent European migration policy and advocated the case for Britain to vote “leave” during the Brexit referendum.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt=&quot;Lightbulb&quot; src=&quot;/assets/images/lightbulb-1875247_640.jpg&quot; /&gt;&lt;/p&gt;
@@ -959,9 +959,9 @@ is a short hop to the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/
 article&lt;/a&gt;.
 So I rushed to the first example, which is&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var myImage = document.querySelector('img');
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var myImage = document.querySelector(&apos;img&apos;);
 
-fetch('flowers.jpg')
+fetch(&apos;flowers.jpg&apos;)
 .then(function(response) {
   return response.blob();
 })
@@ -973,7 +973,7 @@ fetch('flowers.jpg')
 
 &lt;p&gt;and wrote the equivalent code (slightly ES6-ified) that I needed which was…&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(&apos;my-json-serving-url&apos;)
 .then(response =&amp;gt; {
   debugger
   //return response.blob();
@@ -1015,13 +1015,13 @@ It occurred to me that instead of going for the cheapest item in the
 shop, I should probably try the second cheapest. I’ll
 try two then() calls one after the other.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(&apos;my-json-serving-url&apos;)
 .then(response =&amp;gt; {
   return response.json();
 })
 .then(responseBody =&amp;gt; {
   debugger
-  // oh responseBody, just please have something in you that isn't pending!
+  // oh responseBody, just please have something in you that isn&apos;t pending!
 })
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -1031,18 +1031,18 @@ could now make sense of more of the original Mozilla Developer Network
 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch&quot;&gt;page&lt;/a&gt;,
 in particular their Checking For Success example…&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('flowers.jpg').then(function(response) {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(&apos;flowers.jpg&apos;).then(function(response) {
   if(response.ok) {
     response.blob().then(function(myBlob) {
       var objectURL = URL.createObjectURL(myBlob);
       myImage.src = objectURL;
     });
   } else {
-    console.log('Network response was not ok.');
+    console.log(&apos;Network response was not ok.&apos;);
   }
 })
 .catch(function(error) {
-  console.log('There has been a problem with your fetch operation: ' +
+  console.log(&apos;There has been a problem with your fetch operation: &apos; +
 error.message);
 });
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1051,19 +1051,19 @@ error.message);
 attempt at calling fetch() earlier. But now I could see that I could do
 the chaining all in one…&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(&apos;my-json-serving-url&apos;)
 .then(response =&amp;gt; {
   response.json().then(responseBody =&amp;gt; {
     debugger
     console.log(responseBody)
-    // Go'on the responseBody, ya beauty!
+    // Go&apos;on the responseBody, ya beauty!
   })
 })
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The ES5 equivalent is something like…&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch('my-json-serving-url')
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(&apos;my-json-serving-url&apos;)
 .then(function(response){
   response.json().then(function(responseBody){
     console.log(responseBody)
