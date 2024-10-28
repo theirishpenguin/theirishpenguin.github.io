@@ -55,8 +55,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rdiscount (2.2.0.2)
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
+    rexml (3.3.9)
     rouge (3.26.1)
     ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
@@ -70,7 +69,6 @@ GEM
       rack (~> 2.2)
       rack-protection (= 2.2.3)
       tilt (~> 2.0)
-    strscan (3.1.0)
     tilt (2.0.11)
 
 PLATFORMS
